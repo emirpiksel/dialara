@@ -1,9 +1,44 @@
+# 🔐 Environment Variables
 .env
 .env.*
+
+# 🧪 Python
 __pycache__/
-node_modules/
+*.py[cod]
+*.log
 venv/
-*.zip
-.DS_Store
+*.sqlite3
+
+# 🧱 Node / React
+node_modules/
 dist/
+build/
+.cache/
+
+# 📦 Package locks (keep only one)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# 🧹 OS / Editor junk
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# 🚫 Local files you don’t want pushed
+*.zip
+*.bak
+*.old
+*.tmp
+*.backup
+
+# 🐛 Logs
+*.log
+*.log.*
+logs/
+*.out
+
+# 🚨 Specific to Dialara
 backend/webhook_raw.log
+supabase_dump.backup
