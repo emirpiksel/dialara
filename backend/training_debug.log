@@ -1,0 +1,1128 @@
+2025-07-01 01:59:21,038 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getTrainingCategories → No body
+2025-07-01 01:59:21,541 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getTrainingCategories → Response: 200
+2025-07-01 01:59:21,555 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/b0794994-6b58-4f5f-9768-aadae2e9ac5d → No body
+2025-07-01 01:59:21,560 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/1358331d-02ab-478d-81a2-dc9ab17553a3 → No body
+2025-07-01 01:59:21,563 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/b1d7ea4b-a477-49ad-a45f-f78c5c016ef1 → No body
+2025-07-01 01:59:21,564 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/19a98b47-a803-41e3-a1aa-2841bfadf259 → No body
+2025-07-01 01:59:21,568 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/f5d9c7a6-167d-4c59-ac9f-9a938a9191f0 → No body
+2025-07-01 01:59:21,568 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/c985e207-2bde-4ba5-9d53-9ac426573abf → No body
+2025-07-01 01:59:21,829 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/b0794994-6b58-4f5f-9768-aadae2e9ac5d → Response: 200
+2025-07-01 01:59:21,833 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/19a98b47-a803-41e3-a1aa-2841bfadf259 → Response: 200
+2025-07-01 01:59:21,841 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/1358331d-02ab-478d-81a2-dc9ab17553a3 → Response: 200
+2025-07-01 01:59:21,842 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/b1d7ea4b-a477-49ad-a45f-f78c5c016ef1 → Response: 200
+2025-07-01 01:59:22,352 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/f5d9c7a6-167d-4c59-ac9f-9a938a9191f0 → Response: 200
+2025-07-01 01:59:22,356 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/c985e207-2bde-4ba5-9d53-9ac426573abf → Response: 200
+2025-07-01 01:59:22,378 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → No body
+2025-07-01 01:59:22,380 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → No body
+2025-07-01 01:59:22,381 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/dc7ef304-66f6-46a0-87ff-80be4e3b92ad → No body
+2025-07-01 01:59:22,381 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/cc3e96d9-0f08-4b52-94b5-f0e7b8862329 → No body
+2025-07-01 01:59:22,383 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/df8a0002-7991-426e-803e-391ff2827db3 → No body
+2025-07-01 01:59:22,386 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/6b263d34-0c21-4290-8f11-e6a188aa1daa → No body
+2025-07-01 01:59:22,391 [INFO] main: 📥 Fetching scenarios for module_id=dc7ef304-66f6-46a0-87ff-80be4e3b92ad
+2025-07-01 01:59:22,396 [INFO] main: 📥 Fetching scenarios for module_id=cc3e96d9-0f08-4b52-94b5-f0e7b8862329
+2025-07-01 01:59:22,403 [INFO] main: 📥 Fetching scenarios for module_id=d4295bc8-0bb1-4889-9cf9-e8926d44e4d6
+2025-07-01 01:59:22,410 [INFO] main: 📥 Fetching scenarios for module_id=df8a0002-7991-426e-803e-391ff2827db3
+2025-07-01 01:59:22,414 [INFO] main: 📥 Fetching scenarios for module_id=6b263d34-0c21-4290-8f11-e6a188aa1daa
+2025-07-01 01:59:22,415 [INFO] main: 📥 Fetching scenarios for module_id=221945b8-5436-4f2b-8328-c5e88da83a4d
+2025-07-01 01:59:22,664 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → Response: 200
+2025-07-01 01:59:22,664 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/dc7ef304-66f6-46a0-87ff-80be4e3b92ad → Response: 200
+2025-07-01 01:59:22,666 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → Response: 200
+2025-07-01 01:59:22,677 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/1ffa34b5-a927-4cc8-a835-53d40f38b834 → No body
+2025-07-01 01:59:22,678 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a → No body
+2025-07-01 01:59:22,679 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/84e615cf-8b81-4240-a2df-6441042a3ecc → No body
+2025-07-01 01:59:22,680 [INFO] main: 📥 Fetching scenarios for module_id=84e615cf-8b81-4240-a2df-6441042a3ecc
+2025-07-01 01:59:22,680 [INFO] main: 📥 Fetching scenarios for module_id=4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a
+2025-07-01 01:59:22,680 [INFO] main: 📥 Fetching scenarios for module_id=1ffa34b5-a927-4cc8-a835-53d40f38b834
+2025-07-01 01:59:22,970 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/df8a0002-7991-426e-803e-391ff2827db3 → Response: 200
+2025-07-01 01:59:22,976 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/7d987d15-a450-4cee-9441-ad91dcff8ee2 → No body
+2025-07-01 01:59:22,977 [INFO] main: 📥 Fetching scenarios for module_id=7d987d15-a450-4cee-9441-ad91dcff8ee2
+2025-07-01 01:59:23,004 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/84e615cf-8b81-4240-a2df-6441042a3ecc → Response: 200
+2025-07-01 01:59:23,005 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a → Response: 200
+2025-07-01 01:59:23,006 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/1ffa34b5-a927-4cc8-a835-53d40f38b834 → Response: 200
+2025-07-01 01:59:23,008 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/cc3e96d9-0f08-4b52-94b5-f0e7b8862329 → Response: 200
+2025-07-01 01:59:23,021 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/6ffdd556-17cb-45d8-9bc1-202f153be192 → No body
+2025-07-01 01:59:23,022 [INFO] main: 📥 Fetching scenarios for module_id=6ffdd556-17cb-45d8-9bc1-202f153be192
+2025-07-01 01:59:23,027 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/dca015eb-f0f5-43d1-a854-330b83ef9d16 → No body
+2025-07-01 01:59:23,028 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/827a771d-2f16-4bdf-b0bc-a419a43b6b35 → No body
+2025-07-01 01:59:23,029 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/7a45bdb5-9935-47de-af59-1dc34002b574 → No body
+2025-07-01 01:59:23,030 [INFO] main: 📥 Fetching scenarios for module_id=7a45bdb5-9935-47de-af59-1dc34002b574
+2025-07-01 01:59:23,030 [INFO] main: 📥 Fetching scenarios for module_id=dca015eb-f0f5-43d1-a854-330b83ef9d16
+2025-07-01 01:59:23,032 [INFO] main: 📥 Fetching scenarios for module_id=827a771d-2f16-4bdf-b0bc-a419a43b6b35
+2025-07-01 01:59:23,234 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/6b263d34-0c21-4290-8f11-e6a188aa1daa → Response: 200
+2025-07-01 01:59:23,240 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9 → No body
+2025-07-01 01:59:23,241 [INFO] main: 📥 Fetching scenarios for module_id=ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9
+2025-07-01 01:59:23,314 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/7d987d15-a450-4cee-9441-ad91dcff8ee2 → Response: 200
+2025-07-01 01:59:23,318 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/7a45bdb5-9935-47de-af59-1dc34002b574 → Response: 200
+2025-07-01 01:59:23,322 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568 → No body
+2025-07-01 01:59:23,324 [INFO] main: 📥 Fetching scenarios for module_id=a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568
+2025-07-01 01:59:23,328 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/34895df3-e1a8-402b-a67f-5fcd4b7c8e1c → No body
+2025-07-01 01:59:23,328 [INFO] main: 📥 Fetching scenarios for module_id=34895df3-e1a8-402b-a67f-5fcd4b7c8e1c
+2025-07-01 01:59:23,489 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/6ffdd556-17cb-45d8-9bc1-202f153be192 → Response: 200
+2025-07-01 01:59:23,490 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/dca015eb-f0f5-43d1-a854-330b83ef9d16 → Response: 200
+2025-07-01 01:59:23,494 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/827a771d-2f16-4bdf-b0bc-a419a43b6b35 → Response: 200
+2025-07-01 01:59:23,501 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/89595561-d3a7-4ca8-ba29-a5f9289446c0 → No body
+2025-07-01 01:59:23,502 [INFO] main: 📥 Fetching scenarios for module_id=89595561-d3a7-4ca8-ba29-a5f9289446c0
+2025-07-01 01:59:23,506 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/5b9c8a33-175f-40d7-94ee-aebd279f5aaa → No body
+2025-07-01 01:59:23,507 [INFO] main: 📥 Fetching scenarios for module_id=5b9c8a33-175f-40d7-94ee-aebd279f5aaa
+2025-07-01 01:59:23,509 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/1b19d393-e7fd-4295-b2bf-1e7e6a405795 → No body
+2025-07-01 01:59:23,510 [INFO] main: 📥 Fetching scenarios for module_id=1b19d393-e7fd-4295-b2bf-1e7e6a405795
+2025-07-01 01:59:23,575 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9 → Response: 200
+2025-07-01 01:59:23,742 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/34895df3-e1a8-402b-a67f-5fcd4b7c8e1c → Response: 200
+2025-07-01 01:59:23,742 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568 → Response: 200
+2025-07-01 01:59:23,743 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/89595561-d3a7-4ca8-ba29-a5f9289446c0 → Response: 200
+2025-07-01 01:59:23,757 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/5b9c8a33-175f-40d7-94ee-aebd279f5aaa → Response: 200
+2025-07-01 01:59:23,759 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/1b19d393-e7fd-4295-b2bf-1e7e6a405795 → Response: 200
+2025-07-01 01:59:24,990 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → No body
+2025-07-01 01:59:24,991 [INFO] main: 📥 Fetching scenarios for module_id=d4295bc8-0bb1-4889-9cf9-e8926d44e4d6
+2025-07-01 01:59:24,994 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getUniversalAgent → No body
+2025-07-01 01:59:24,996 [INFO] main: 📥 Fetching universal agent...
+2025-07-01 01:59:25,279 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getUniversalAgent → Response: 200
+2025-07-01 01:59:25,282 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → Response: 200
+2025-07-01 01:59:36,152 [INFO] main: 🔄 POST http://127.0.0.1:8000/api/start-training-call → Body: {"call_id":"11779891-1c98-4e7e-8c54-b0973a82681d","user_id":"ede16300-bf93-4aee-93cb-188d6ae47894","module_id":"d4295bc8-0bb1-4889-9cf9-e8926d44e4d6","scenario_id":"5c5cceb8-0880-4189-aeef-25698bdb11f8"}...
+2025-07-01 01:59:36,160 [INFO] main: 📥 /api/start-training-call → call_id=11779891-1c98-4e7e-8c54-b0973a82681d, user_id=ede16300-bf93-4aee-93cb-188d6ae47894
+2025-07-01 01:59:36,892 [INFO] main: ✅ Inserted training_sessions for call_id=11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 01:59:36,892 [INFO] main: ✅ POST http://127.0.0.1:8000/api/start-training-call → Response: 200
+2025-07-01 01:59:40,027 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751324379720,"type":"status-update","status":"in-progress","artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 2\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751324369246,"secondsFromStart":0}],"messagesOpenAIFormatted":[{"role":"system","content":"You are simulating ...
+2025-07-01 01:59:40,028 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 01:59:40,028 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751324379720, 'type': 'status-update', 'status': 'in-progress', 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751324369246, 'secondsFromStart': 0}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}]}, 'call': {'id': '11779891-1c98-4e7e-8c54-b0973a82681d', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'createdAt': '2025-06-30T22:59:29.127Z', 'updatedAt': '2025-06-30T22:59:29.127Z', 'type': 'webCall', 'monitor': {'listenUrl': 'wss://phone-call-websocket.aw
+2025-07-01 01:59:40,030 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'artifact', 'call', 'assistant']
+2025-07-01 01:59:40,030 [INFO] main: 📨 Event type: status-update
+2025-07-01 01:59:40,031 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-01 01:59:40,031 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 01:59:40,349 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751324380071,"type":"speech-update","status":"started","role":"assistant","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 2\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751324369246,"secondsFromStart":0}],"messagesOpenAIFormatted":[{"role":"system","conte...
+2025-07-01 01:59:40,351 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 01:59:40,352 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751324380071, 'type': 'speech-update', 'status': 'started', 'role': 'assistant', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751324369246, 'secondsFromStart': 0}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}]}, 'call': {'id': '11779891-1c98-4e7e-8c54-b0973a82681d', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'createdAt': '2025-06-30T22:59:29.127Z', 'updatedAt': '2025-06-30T22:59:29.127Z', 'type': 'webCall', 'monitor': {'listenUrl': 'w
+2025-07-01 01:59:40,355 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-01 01:59:40,355 [INFO] main: 📨 Event type: speech-update
+2025-07-01 01:59:40,355 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-01 01:59:40,355 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 01:59:42,146 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751324382071,"type":"speech-update","status":"stopped","role":"assistant","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 2\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751324369246,"secondsFromStart":0}],"messagesOpenAIFormatted":[{"role":"system","conte...
+2025-07-01 01:59:42,154 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 01:59:42,155 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751324382071, 'type': 'speech-update', 'status': 'stopped', 'role': 'assistant', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751324369246, 'secondsFromStart': 0}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}]}, 'call': {'id': '11779891-1c98-4e7e-8c54-b0973a82681d', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'createdAt': '2025-06-30T22:59:29.127Z', 'updatedAt': '2025-06-30T22:59:29.127Z', 'type': 'webCall', 'monitor': {'listenUrl': 'w
+2025-07-01 01:59:42,156 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-01 01:59:42,156 [INFO] main: 📨 Event type: speech-update
+2025-07-01 01:59:42,156 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-01 01:59:42,157 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 01:59:42,209 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751324382089,"type":"conversation-update","conversation":[{"role":"system","content":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 2\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session."},{"role":"assistant","content":"Hello. How can I help you today?"}],"messages":[{"role":"system","message":"You are simulating a scenario title...
+2025-07-01 01:59:42,212 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 01:59:42,214 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751324382089, 'type': 'conversation-update', 'conversation': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}], 'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751324369246, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751324371994, 'endTime': 1751324373854, 'secondsFromStart': 2.48, 'duration': 1860, 'source': ''}], 'messagesOpenAIFormatted': [], 'artifact': {'messages': [{'role
+2025-07-01 01:59:42,215 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'conversation', 'messages', 'messagesOpenAIFormatted', 'artifact', 'call', 'assistant']
+2025-07-01 01:59:42,216 [INFO] main: 📨 Event type: conversation-update
+2025-07-01 01:59:42,216 [INFO] main: ℹ️ Ignored webhook event type: conversation-update
+2025-07-01 01:59:42,217 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 02:00:05,907 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → No body
+2025-07-01 02:00:05,909 [INFO] main: ⚡ Quick status check for call_id: 11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:06,310 [ERROR] main: ❌ Error checking call status for 11779891-1c98-4e7e-8c54-b0973a82681d
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-01 02:00:06,314 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → Response: 200
+2025-07-01 02:00:07,889 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → No body
+2025-07-01 02:00:07,890 [INFO] main: ⚡ Quick status check for call_id: 11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:08,153 [ERROR] main: ❌ Error checking call status for 11779891-1c98-4e7e-8c54-b0973a82681d
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-01 02:00:08,155 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → Response: 200
+2025-07-01 02:00:08,987 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → No body
+2025-07-01 02:00:08,989 [INFO] main: ⚡ Quick status check for call_id: 11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:09,016 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751324408620,"type":"status-update","status":"ended","endedReason":"customer-ended-call","artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 2\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751324369246,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I hel...
+2025-07-01 02:00:09,017 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 02:00:09,017 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751324408620, 'type': 'status-update', 'status': 'ended', 'endedReason': 'customer-ended-call', 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751324369246, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751324371994, 'endTime': 1751324373854, 'secondsFromStart': 2.48, 'duration': 1860, 'source': ''}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you
+2025-07-01 02:00:09,021 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'endedReason', 'artifact', 'call', 'assistant']
+2025-07-01 02:00:09,022 [INFO] main: 📨 Event type: status-update
+2025-07-01 02:00:09,022 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-01 02:00:09,022 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 02:00:09,231 [ERROR] main: ❌ Error checking call status for 11779891-1c98-4e7e-8c54-b0973a82681d
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-01 02:00:09,232 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → Response: 200
+2025-07-01 02:00:10,450 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → No body
+2025-07-01 02:00:10,451 [INFO] main: ⚡ Quick status check for call_id: 11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:10,702 [ERROR] main: ❌ Error checking call status for 11779891-1c98-4e7e-8c54-b0973a82681d
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-01 02:00:10,704 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → Response: 200
+2025-07-01 02:00:12,377 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → No body
+2025-07-01 02:00:12,379 [INFO] main: ⚡ Quick status check for call_id: 11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:12,732 [ERROR] main: ❌ Error checking call status for 11779891-1c98-4e7e-8c54-b0973a82681d
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-01 02:00:12,733 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/11779891-1c98-4e7e-8c54-b0973a82681d → Response: 200
+2025-07-01 02:00:12,759 [INFO] main: 🔄 GET http://127.0.0.1:8000/log-call?call_id=11779891-1c98-4e7e-8c54-b0973a82681d → No body
+2025-07-01 02:00:12,760 [INFO] main: 📤 GET /log-call?call_id=11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:13,144 [INFO] main: ✅ Found session data for call_id=11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:13,145 [DEBUG] main: 📊 Returning data - transcript_length: 0, score: 0, sentiment: neutral
+2025-07-01 02:00:13,145 [INFO] main: ✅ GET http://127.0.0.1:8000/log-call?call_id=11779891-1c98-4e7e-8c54-b0973a82681d → Response: 200
+2025-07-01 02:00:13,171 [INFO] main: 🔄 POST http://127.0.0.1:8000/api/end-training-session → Body: {"call_id":"11779891-1c98-4e7e-8c54-b0973a82681d"}...
+2025-07-01 02:00:13,179 [INFO] main: 🛑 Ending training session → call_id: 11779891-1c98-4e7e-8c54-b0973a82681d at 2025-06-30 23:00:13
+2025-07-01 02:00:13,453 [INFO] main: ✅ Training session ended → call_id: 11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:13,455 [INFO] main: ✅ POST http://127.0.0.1:8000/api/end-training-session → Response: 200
+2025-07-01 02:00:20,608 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751324420213,"type":"end-of-call-report","analysis":{"summary":"The call began with the AI greeting the customer and offering assistance. However, the customer ended the call immediately after the greeting, before any substantive interaction could occur.","successEvaluation":"false"},"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 2\" inside the module \"Cart Abandonment Follow-up\" for the ca...
+2025-07-01 02:00:20,609 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 02:00:20,610 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751324420213, 'type': 'end-of-call-report', 'analysis': {'summary': 'The call began with the AI greeting the customer and offering assistance. However, the customer ended the call immediately after the greeting, before any substantive interaction could occur.', 'successEvaluation': 'false'}, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751324369246, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751324371994, 'endTime': 1751324373854, 'secondsFromStart': 2.48, 'duration': 1860, 'source': ''}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 2" inside the module "Cart Aba
+2025-07-01 02:00:20,611 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'analysis', 'artifact', 'startedAt', 'endedAt', 'endedReason', 'cost', 'costBreakdown', 'costs', 'durationMs', 'durationSeconds', 'durationMinutes', 'summary', 'transcript', 'messages', 'recordingUrl', 'stereoRecordingUrl', 'call', 'assistant']
+2025-07-01 02:00:20,611 [INFO] main: 📨 Event type: end-of-call-report
+2025-07-01 02:00:21,026 [INFO] main: 🎓 Call 11779891-1c98-4e7e-8c54-b0973a82681d identified as TRAINING call
+2025-07-01 02:00:21,027 [INFO] main: 🎓 Processing TRAINING call with enhanced scoring
+2025-07-01 02:00:21,027 [INFO] main: 📄 Extracted - transcript_length: 37, summary_length: 190
+2025-07-01 02:00:21,027 [INFO] main: 📊 Extracted - sentiment: neutral, ended_reason: customer-ended-call
+2025-07-01 02:00:21,028 [INFO] main: ⏱️ Duration extracted: 26s (from raw: 26.397)
+2025-07-01 02:00:21,028 [INFO] main: 🔍 Looking up existing training session for call_id: 11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:21,295 [INFO] main: ✅ Found existing training session: 9c99f8ea-509c-42c2-b92a-537ad2ea392e
+2025-07-01 02:00:21,559 [INFO] main: 📊 Scenario difficulty: 2
+2025-07-01 02:00:21,559 [INFO] main: 🧠 Running enhanced scoring analysis...
+2025-07-01 02:00:21,559 [INFO] main: 📊 Enhanced scoring complete:
+2025-07-01 02:00:21,560 [INFO] main:   - Raw Score: 2.2/10 → Database Score: 2/10
+2025-07-01 02:00:21,560 [INFO] main:   - Breakdown: {'engagement': 0, 'communication': 2, 'problem_solving': 2, 'professionalism': 8, 'duration_factor': 5}
+2025-07-01 02:00:21,560 [INFO] main:   - XP: 22 (bonus: 0)
+2025-07-01 02:00:21,560 [INFO] main:   - Feedback length: 399 chars
+2025-07-01 02:00:21,561 [INFO] main: 💾 Upserting enhanced training payload:
+2025-07-01 02:00:21,561 [INFO] main:   - Score: 2/10
+2025-07-01 02:00:21,561 [INFO] main:   - XP: 22 (bonus: 0)
+2025-07-01 02:00:21,561 [INFO] main:   - Feedback: 📚 This scenario needs more practice. Focus on the feedback below. 💡 Increase engagement by asking mo...
+2025-07-01 02:00:21,813 [INFO] main: ✅ Successfully upserted training_sessions with enhanced scoring for call_id=11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:21,814 [DEBUG] main: ✅ Upsert result: [{'id': '9c99f8ea-509c-42c2-b92a-537ad2ea392e', 'user_id': 'ede16300-bf93-4aee-93cb-188d6ae47894', 'module_id': 'd4295bc8-0bb1-4889-9cf9-e8926d44e4d6', 'transcript': 'AI: Hello. How can I help you today?\n', 'duration': 26, 'score': 2, 'sentiment': 'neutral', 'started_at': '2025-06-30T22:59:36', 'ended_at': '2025-06-30T22:59:29.127', 'call_id': '11779891-1c98-4e7e-8c54-b0973a82681d', 'feedback': '📚 This scenario needs more practice. Focus on the feedback below. 💡 Increase engagement by asking more questions and providing detailed responses. 🗣️ Work on communication clarity - provide more detailed and thoughtful responses. 🧠 Enhance problem-solving by exploring the scenario more deeply and asking follow-up questions. ⏱️ Try to engage longer with the scenario to fully explore the situation.', 'passed': False, 'created_at': '2025-06-30T22:59:36', 'recording_url': None, 'scenario_id': '5c5cceb8-0880-4189-aeef-25698bdb11f8', 'summary': 'The call began with the AI greeting the customer and offering assistance. However, the customer ended the call immediately after the greeting, before any substantive interaction could occur.', 'ended_reason': 'customer-ended-call', 'agent_id': '17c2b88e-097d-4b53-aea3-b4871cb48339', 'xp': 22, 'bonus_xp': 0, 'scoring_breakdown': '{"engagement": 0, "communication": 2, "problem_solving": 2, "professionalism": 8, "duration_factor": 5, "raw_score": 2.2}'}]
+2025-07-01 02:00:21,814 [INFO] main: ✅ Enhanced training webhook processing complete for call_id=11779891-1c98-4e7e-8c54-b0973a82681d
+2025-07-01 02:00:21,815 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 02:01:26,620 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/test-call-id-1751324486601 → No body
+2025-07-01 02:01:26,626 [INFO] main: ⚡ Quick status check for call_id: test-call-id-1751324486601
+2025-07-01 02:01:27,604 [ERROR] main: ❌ Error checking call status for test-call-id-1751324486601
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 791, in get_call_status
+    ).eq("call_id", call_id).maybe_single().execute()
+                                            ^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 143, in execute
+    raise APIError(
+postgrest.exceptions.APIError: {'message': 'Missing response', 'code': '204', 'hint': 'Please check traceback of the code', 'details': "Postgrest couldn't retrieve response, please check traceback of the code. Please create an issue in `supabase-community/postgrest-py` if needed."}
+2025-07-01 02:01:27,608 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/test-call-id-1751324486601 → Response: 200
+2025-07-01 02:01:28,431 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/test-call-id-1751324486601 → No body
+2025-07-01 02:01:28,432 [INFO] main: ⚡ Quick status check for call_id: test-call-id-1751324486601
+2025-07-01 02:01:28,713 [ERROR] main: ❌ Error checking call status for test-call-id-1751324486601
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 791, in get_call_status
+    ).eq("call_id", call_id).maybe_single().execute()
+                                            ^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 143, in execute
+    raise APIError(
+postgrest.exceptions.APIError: {'message': 'Missing response', 'code': '204', 'hint': 'Please check traceback of the code', 'details': "Postgrest couldn't retrieve response, please check traceback of the code. Please create an issue in `supabase-community/postgrest-py` if needed."}
+2025-07-01 02:01:28,714 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/test-call-id-1751324486601 → Response: 200
+2025-07-01 02:01:29,933 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/test-call-id-1751324486601 → No body
+2025-07-01 02:01:29,936 [INFO] main: ⚡ Quick status check for call_id: test-call-id-1751324486601
+2025-07-01 02:01:30,243 [ERROR] main: ❌ Error checking call status for test-call-id-1751324486601
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 791, in get_call_status
+    ).eq("call_id", call_id).maybe_single().execute()
+                                            ^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 143, in execute
+    raise APIError(
+postgrest.exceptions.APIError: {'message': 'Missing response', 'code': '204', 'hint': 'Please check traceback of the code', 'details': "Postgrest couldn't retrieve response, please check traceback of the code. Please create an issue in `supabase-community/postgrest-py` if needed."}
+2025-07-01 02:01:30,244 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/test-call-id-1751324486601 → Response: 200
+2025-07-01 02:01:31,862 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/test-call-id-1751324486601 → No body
+2025-07-01 02:01:31,864 [INFO] main: ⚡ Quick status check for call_id: test-call-id-1751324486601
+2025-07-01 02:01:32,190 [ERROR] main: ❌ Error checking call status for test-call-id-1751324486601
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 791, in get_call_status
+    ).eq("call_id", call_id).maybe_single().execute()
+                                            ^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 143, in execute
+    raise APIError(
+postgrest.exceptions.APIError: {'message': 'Missing response', 'code': '204', 'hint': 'Please check traceback of the code', 'details': "Postgrest couldn't retrieve response, please check traceback of the code. Please create an issue in `supabase-community/postgrest-py` if needed."}
+2025-07-01 02:01:32,191 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/test-call-id-1751324486601 → Response: 200
+2025-07-01 02:01:32,206 [INFO] main: 🔄 GET http://127.0.0.1:8000/log-call?call_id=test-call-id-1751324486601 → No body
+2025-07-01 02:01:32,209 [INFO] main: 📤 GET /log-call?call_id=test-call-id-1751324486601
+2025-07-01 02:01:32,441 [ERROR] main: 🔥 Error in /log-call for call_id=test-call-id-1751324486601
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 720, in get_call_log
+    ).eq("call_id", call_id).maybe_single().execute()
+                                            ^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 143, in execute
+    raise APIError(
+postgrest.exceptions.APIError: {'message': 'Missing response', 'code': '204', 'hint': 'Please check traceback of the code', 'details': "Postgrest couldn't retrieve response, please check traceback of the code. Please create an issue in `supabase-community/postgrest-py` if needed."}
+2025-07-01 02:01:32,443 [INFO] main: ✅ GET http://127.0.0.1:8000/log-call?call_id=test-call-id-1751324486601 → Response: 500
+2025-07-01 02:01:32,457 [INFO] main: 🔄 GET http://127.0.0.1:8000/log-call?call_id=test-call-id-1751324486601 → No body
+2025-07-01 02:01:32,460 [INFO] main: 📤 GET /log-call?call_id=test-call-id-1751324486601
+2025-07-01 02:01:32,706 [ERROR] main: 🔥 Error in /log-call for call_id=test-call-id-1751324486601
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 720, in get_call_log
+    ).eq("call_id", call_id).maybe_single().execute()
+                                            ^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 143, in execute
+    raise APIError(
+postgrest.exceptions.APIError: {'message': 'Missing response', 'code': '204', 'hint': 'Please check traceback of the code', 'details': "Postgrest couldn't retrieve response, please check traceback of the code. Please create an issue in `supabase-community/postgrest-py` if needed."}
+2025-07-01 02:01:32,707 [INFO] main: ✅ GET http://127.0.0.1:8000/log-call?call_id=test-call-id-1751324486601 → Response: 500
+2025-07-01 02:01:32,720 [INFO] main: 🔄 GET http://127.0.0.1:8000/log-call?call_id=test-call-id-1751324486601 → No body
+2025-07-01 02:01:32,720 [INFO] main: 📤 GET /log-call?call_id=test-call-id-1751324486601
+2025-07-01 02:01:33,007 [ERROR] main: 🔥 Error in /log-call for call_id=test-call-id-1751324486601
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 720, in get_call_log
+    ).eq("call_id", call_id).maybe_single().execute()
+                                            ^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 143, in execute
+    raise APIError(
+postgrest.exceptions.APIError: {'message': 'Missing response', 'code': '204', 'hint': 'Please check traceback of the code', 'details': "Postgrest couldn't retrieve response, please check traceback of the code. Please create an issue in `supabase-community/postgrest-py` if needed."}
+2025-07-01 02:01:33,009 [INFO] main: ✅ GET http://127.0.0.1:8000/log-call?call_id=test-call-id-1751324486601 → Response: 500
+2025-07-01 02:01:35,032 [INFO] main: 🔄 GET http://127.0.0.1:8000/log-call?call_id=test-call-id-1751324486601 → No body
+2025-07-01 02:01:35,033 [INFO] main: 📤 GET /log-call?call_id=test-call-id-1751324486601
+2025-07-01 02:01:35,370 [ERROR] main: 🔥 Error in /log-call for call_id=test-call-id-1751324486601
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 720, in get_call_log
+    ).eq("call_id", call_id).maybe_single().execute()
+                                            ^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 143, in execute
+    raise APIError(
+postgrest.exceptions.APIError: {'message': 'Missing response', 'code': '204', 'hint': 'Please check traceback of the code', 'details': "Postgrest couldn't retrieve response, please check traceback of the code. Please create an issue in `supabase-community/postgrest-py` if needed."}
+2025-07-01 02:01:35,377 [INFO] main: ✅ GET http://127.0.0.1:8000/log-call?call_id=test-call-id-1751324486601 → Response: 500
+2025-07-01 02:01:35,458 [INFO] main: 🔄 POST http://127.0.0.1:8000/api/end-training-session → Body: {"call_id":"test-call-id-1751324486601"}...
+2025-07-01 02:01:35,464 [INFO] main: 🛑 Ending training session → call_id: test-call-id-1751324486601 at 2025-06-30 23:01:35
+2025-07-01 02:01:35,721 [ERROR] main: 🔥 Error in /api/end-training-session
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 1080, in end_training_session
+    }).eq("call_id", data.call_id).execute()
+                                   ^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 78, in execute
+    raise APIError(r.json())
+postgrest.exceptions.APIError: {'code': '22P02', 'details': None, 'hint': None, 'message': 'invalid input syntax for type uuid: "test-call-id-1751324486601"'}
+2025-07-01 02:01:35,723 [INFO] main: ✅ POST http://127.0.0.1:8000/api/end-training-session → Response: 500
+2025-07-01 03:47:53,235 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getTrainingCategories → No body
+2025-07-01 03:47:56,844 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getTrainingCategories → Response: 200
+2025-07-01 03:47:56,857 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/b0794994-6b58-4f5f-9768-aadae2e9ac5d → No body
+2025-07-01 03:47:56,861 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/1358331d-02ab-478d-81a2-dc9ab17553a3 → No body
+2025-07-01 03:47:56,864 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/b1d7ea4b-a477-49ad-a45f-f78c5c016ef1 → No body
+2025-07-01 03:47:56,864 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/19a98b47-a803-41e3-a1aa-2841bfadf259 → No body
+2025-07-01 03:47:56,865 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/f5d9c7a6-167d-4c59-ac9f-9a938a9191f0 → No body
+2025-07-01 03:47:56,866 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/c985e207-2bde-4ba5-9d53-9ac426573abf → No body
+2025-07-01 03:47:57,572 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/19a98b47-a803-41e3-a1aa-2841bfadf259 → Response: 200
+2025-07-01 03:47:57,574 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/1358331d-02ab-478d-81a2-dc9ab17553a3 → Response: 200
+2025-07-01 03:47:57,576 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/f5d9c7a6-167d-4c59-ac9f-9a938a9191f0 → Response: 200
+2025-07-01 03:47:57,581 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/c985e207-2bde-4ba5-9d53-9ac426573abf → Response: 200
+2025-07-01 03:47:57,586 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/b0794994-6b58-4f5f-9768-aadae2e9ac5d → Response: 200
+2025-07-01 03:47:57,587 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/b1d7ea4b-a477-49ad-a45f-f78c5c016ef1 → Response: 200
+2025-07-01 03:47:57,607 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → No body
+2025-07-01 03:47:57,608 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → No body
+2025-07-01 03:47:57,616 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/dc7ef304-66f6-46a0-87ff-80be4e3b92ad → No body
+2025-07-01 03:47:57,617 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/cc3e96d9-0f08-4b52-94b5-f0e7b8862329 → No body
+2025-07-01 03:47:57,619 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/df8a0002-7991-426e-803e-391ff2827db3 → No body
+2025-07-01 03:47:57,621 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/6b263d34-0c21-4290-8f11-e6a188aa1daa → No body
+2025-07-01 03:47:57,624 [INFO] main: 📥 Fetching scenarios for module_id=d4295bc8-0bb1-4889-9cf9-e8926d44e4d6
+2025-07-01 03:47:57,628 [INFO] main: 📥 Fetching scenarios for module_id=cc3e96d9-0f08-4b52-94b5-f0e7b8862329
+2025-07-01 03:47:57,631 [INFO] main: 📥 Fetching scenarios for module_id=df8a0002-7991-426e-803e-391ff2827db3
+2025-07-01 03:47:57,633 [INFO] main: 📥 Fetching scenarios for module_id=dc7ef304-66f6-46a0-87ff-80be4e3b92ad
+2025-07-01 03:47:57,635 [INFO] main: 📥 Fetching scenarios for module_id=6b263d34-0c21-4290-8f11-e6a188aa1daa
+2025-07-01 03:47:57,637 [INFO] main: 📥 Fetching scenarios for module_id=221945b8-5436-4f2b-8328-c5e88da83a4d
+2025-07-01 03:47:57,975 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → Response: 200
+2025-07-01 03:47:57,982 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → Response: 200
+2025-07-01 03:47:57,984 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/1ffa34b5-a927-4cc8-a835-53d40f38b834 → No body
+2025-07-01 03:47:57,986 [INFO] main: 📥 Fetching scenarios for module_id=1ffa34b5-a927-4cc8-a835-53d40f38b834
+2025-07-01 03:47:57,991 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a → No body
+2025-07-01 03:47:57,992 [INFO] main: 📥 Fetching scenarios for module_id=4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a
+2025-07-01 03:47:58,240 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/6b263d34-0c21-4290-8f11-e6a188aa1daa → Response: 200
+2025-07-01 03:47:58,260 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/1ffa34b5-a927-4cc8-a835-53d40f38b834 → Response: 200
+2025-07-01 03:47:58,260 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/dc7ef304-66f6-46a0-87ff-80be4e3b92ad → Response: 200
+2025-07-01 03:47:58,266 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a → Response: 200
+2025-07-01 03:47:58,267 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/cc3e96d9-0f08-4b52-94b5-f0e7b8862329 → Response: 200
+2025-07-01 03:47:58,269 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/84e615cf-8b81-4240-a2df-6441042a3ecc → No body
+2025-07-01 03:47:58,271 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/df8a0002-7991-426e-803e-391ff2827db3 → Response: 200
+2025-07-01 03:47:58,274 [INFO] main: 📥 Fetching scenarios for module_id=84e615cf-8b81-4240-a2df-6441042a3ecc
+2025-07-01 03:47:58,295 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/7d987d15-a450-4cee-9441-ad91dcff8ee2 → No body
+2025-07-01 03:47:58,297 [INFO] main: 📥 Fetching scenarios for module_id=7d987d15-a450-4cee-9441-ad91dcff8ee2
+2025-07-01 03:47:58,302 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/6ffdd556-17cb-45d8-9bc1-202f153be192 → No body
+2025-07-01 03:47:58,303 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/dca015eb-f0f5-43d1-a854-330b83ef9d16 → No body
+2025-07-01 03:47:58,305 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/827a771d-2f16-4bdf-b0bc-a419a43b6b35 → No body
+2025-07-01 03:47:58,306 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/7a45bdb5-9935-47de-af59-1dc34002b574 → No body
+2025-07-01 03:47:58,308 [INFO] main: 📥 Fetching scenarios for module_id=7a45bdb5-9935-47de-af59-1dc34002b574
+2025-07-01 03:47:58,308 [INFO] main: 📥 Fetching scenarios for module_id=6ffdd556-17cb-45d8-9bc1-202f153be192
+2025-07-01 03:47:58,308 [INFO] main: 📥 Fetching scenarios for module_id=827a771d-2f16-4bdf-b0bc-a419a43b6b35
+2025-07-01 03:47:58,308 [INFO] main: 📥 Fetching scenarios for module_id=dca015eb-f0f5-43d1-a854-330b83ef9d16
+2025-07-01 03:47:58,548 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/84e615cf-8b81-4240-a2df-6441042a3ecc → Response: 200
+2025-07-01 03:47:58,555 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9 → No body
+2025-07-01 03:47:58,557 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/827a771d-2f16-4bdf-b0bc-a419a43b6b35 → Response: 200
+2025-07-01 03:47:58,559 [INFO] main: 📥 Fetching scenarios for module_id=ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9
+2025-07-01 03:47:58,566 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568 → No body
+2025-07-01 03:47:58,568 [INFO] main: 📥 Fetching scenarios for module_id=a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568
+2025-07-01 03:47:58,569 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/7a45bdb5-9935-47de-af59-1dc34002b574 → Response: 200
+2025-07-01 03:47:58,573 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/7d987d15-a450-4cee-9441-ad91dcff8ee2 → Response: 200
+2025-07-01 03:47:58,578 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/34895df3-e1a8-402b-a67f-5fcd4b7c8e1c → No body
+2025-07-01 03:47:58,580 [INFO] main: 📥 Fetching scenarios for module_id=34895df3-e1a8-402b-a67f-5fcd4b7c8e1c
+2025-07-01 03:47:58,583 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/89595561-d3a7-4ca8-ba29-a5f9289446c0 → No body
+2025-07-01 03:47:58,584 [INFO] main: 📥 Fetching scenarios for module_id=89595561-d3a7-4ca8-ba29-a5f9289446c0
+2025-07-01 03:47:58,801 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/dca015eb-f0f5-43d1-a854-330b83ef9d16 → Response: 200
+2025-07-01 03:47:58,807 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/5b9c8a33-175f-40d7-94ee-aebd279f5aaa → No body
+2025-07-01 03:47:58,809 [INFO] main: 📥 Fetching scenarios for module_id=5b9c8a33-175f-40d7-94ee-aebd279f5aaa
+2025-07-01 03:47:58,946 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9 → Response: 200
+2025-07-01 03:47:58,947 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568 → Response: 200
+2025-07-01 03:47:58,949 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/89595561-d3a7-4ca8-ba29-a5f9289446c0 → Response: 200
+2025-07-01 03:47:58,961 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/1b19d393-e7fd-4295-b2bf-1e7e6a405795 → No body
+2025-07-01 03:47:58,964 [INFO] main: 📥 Fetching scenarios for module_id=1b19d393-e7fd-4295-b2bf-1e7e6a405795
+2025-07-01 03:47:59,063 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/6ffdd556-17cb-45d8-9bc1-202f153be192 → Response: 200
+2025-07-01 03:47:59,211 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/1b19d393-e7fd-4295-b2bf-1e7e6a405795 → Response: 200
+2025-07-01 03:47:59,212 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/5b9c8a33-175f-40d7-94ee-aebd279f5aaa → Response: 200
+2025-07-01 03:47:59,214 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/34895df3-e1a8-402b-a67f-5fcd4b7c8e1c → Response: 200
+2025-07-01 03:48:03,208 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → No body
+2025-07-01 03:48:03,211 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getUniversalAgent → No body
+2025-07-01 03:48:03,219 [INFO] main: 📥 Fetching scenarios for module_id=221945b8-5436-4f2b-8328-c5e88da83a4d
+2025-07-01 03:48:03,222 [INFO] main: 📥 Fetching universal agent...
+2025-07-01 03:48:03,461 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → Response: 200
+2025-07-01 03:48:03,482 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getUniversalAgent → Response: 200
+2025-07-01 03:48:13,254 [INFO] main: 🔄 POST http://127.0.0.1:8000/api/start-training-call → Body: {"call_id":"69aa1b6f-2938-451f-9f2f-45a231ad1774","user_id":"ede16300-bf93-4aee-93cb-188d6ae47894","module_id":"221945b8-5436-4f2b-8328-c5e88da83a4d","scenario_id":"09cf9168-918d-4835-9c8c-1972ed54948b"}...
+2025-07-01 03:48:13,256 [INFO] main: 📥 /api/start-training-call → call_id=69aa1b6f-2938-451f-9f2f-45a231ad1774, user_id=ede16300-bf93-4aee-93cb-188d6ae47894
+2025-07-01 03:48:13,870 [INFO] main: ✅ Inserted training_sessions for call_id=69aa1b6f-2938-451f-9f2f-45a231ad1774
+2025-07-01 03:48:13,870 [INFO] main: ✅ POST http://127.0.0.1:8000/api/start-training-call → Response: 200
+2025-07-01 03:48:15,427 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330895009,"type":"status-update","status":"in-progress","artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751330888673,"secondsFromStart":0}],"messagesOpenAIFormatted":[{"role":"system","content":"You are simulating a ...
+2025-07-01 03:48:15,428 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:15,429 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330895009, 'type': 'status-update', 'status': 'in-progress', 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}]}, 'call': {'id': '69aa1b6f-2938-451f-9f2f-45a231ad1774', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'createdAt': '2025-07-01T00:48:08.504Z', 'updatedAt': '2025-07-01T00:48:08.504Z', 'type': 'webCall', 'monitor': {'listenUrl': 'wss://phone-call-websocket.aws-us
+2025-07-01 03:48:15,431 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:15,432 [INFO] main: 📨 Event type: status-update
+2025-07-01 03:48:15,433 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-01 03:48:15,433 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:15,490 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330895110,"type":"speech-update","status":"started","role":"assistant","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751330888673,"secondsFromStart":0}],"messagesOpenAIFormatted":[{"role":"system","content...
+2025-07-01 03:48:15,491 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:15,491 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330895110, 'type': 'speech-update', 'status': 'started', 'role': 'assistant', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}]}, 'call': {'id': '69aa1b6f-2938-451f-9f2f-45a231ad1774', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'createdAt': '2025-07-01T00:48:08.504Z', 'updatedAt': '2025-07-01T00:48:08.504Z', 'type': 'webCall', 'monitor': {'listenUrl': 'wss:/
+2025-07-01 03:48:15,495 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:15,495 [INFO] main: 📨 Event type: speech-update
+2025-07-01 03:48:15,495 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-01 03:48:15,496 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:16,893 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330896790,"type":"conversation-update","conversation":[{"role":"system","content":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session."},{"role":"assistant","content":"Hello. How can I help you today?"}],"messages":[{"role":"system","message":"You are simulating a scenario titled ...
+2025-07-01 03:48:16,896 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:16,896 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330896790, 'type': 'conversation-update', 'conversation': [{'role': 'system', 'content': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}], 'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751330890190, 'endTime': 1751330891890, 'secondsFromStart': 1.36, 'duration': 1700, 'source': ''}], 'messagesOpenAIFormatted': [], 'artifact': {'messages': [{'role': '
+2025-07-01 03:48:16,898 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'conversation', 'messages', 'messagesOpenAIFormatted', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:16,898 [INFO] main: 📨 Event type: conversation-update
+2025-07-01 03:48:16,898 [INFO] main: ℹ️ Ignored webhook event type: conversation-update
+2025-07-01 03:48:16,899 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:16,973 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330896861,"type":"speech-update","status":"stopped","role":"assistant","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751330888673,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you to...
+2025-07-01 03:48:16,974 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:16,975 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330896861, 'type': 'speech-update', 'status': 'stopped', 'role': 'assistant', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751330890190, 'endTime': 1751330891890, 'secondsFromStart': 1.36, 'duration': 1700, 'source': ''}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'
+2025-07-01 03:48:16,978 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:16,978 [INFO] main: 📨 Event type: speech-update
+2025-07-01 03:48:16,978 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-01 03:48:16,978 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:28,260 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330907890,"type":"speech-update","status":"started","role":"user","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751330888673,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you today?"...
+2025-07-01 03:48:28,262 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:28,262 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330907890, 'type': 'speech-update', 'status': 'started', 'role': 'user', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751330890190, 'endTime': 1751330891890, 'secondsFromStart': 1.36, 'duration': 1700, 'source': ''}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}]}, 
+2025-07-01 03:48:28,264 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:28,264 [INFO] main: 📨 Event type: speech-update
+2025-07-01 03:48:28,264 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-01 03:48:28,264 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:29,457 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330909290,"type":"speech-update","status":"stopped","role":"user","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751330888673,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you today?"...
+2025-07-01 03:48:29,459 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:29,459 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330909290, 'type': 'speech-update', 'status': 'stopped', 'role': 'user', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751330890190, 'endTime': 1751330891890, 'secondsFromStart': 1.36, 'duration': 1700, 'source': ''}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}]}, 
+2025-07-01 03:48:29,460 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:29,461 [INFO] main: 📨 Event type: speech-update
+2025-07-01 03:48:29,461 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-01 03:48:29,462 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:29,799 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330909472,"type":"conversation-update","conversation":[{"role":"system","content":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session."},{"role":"assistant","content":"Hello. How can I help you today?"},{"role":"user","content":"What is the name of the person?"}],"messages":[{"rol...
+2025-07-01 03:48:29,800 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:29,800 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330909472, 'type': 'conversation-update', 'conversation': [{'role': 'system', 'content': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}, {'role': 'user', 'content': 'What is the name of the person?'}], 'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751330890190, 'endTime': 1751330891890, 'secondsFromStart': 1.36, 'duration': 1700, 'source': ''}, {'ro
+2025-07-01 03:48:29,802 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'conversation', 'messages', 'messagesOpenAIFormatted', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:29,802 [INFO] main: 📨 Event type: conversation-update
+2025-07-01 03:48:29,803 [INFO] main: ℹ️ Ignored webhook event type: conversation-update
+2025-07-01 03:48:29,804 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:30,535 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330910423,"type":"speech-update","status":"started","role":"assistant","turn":1,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751330888673,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you to...
+2025-07-01 03:48:30,536 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:30,537 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330910423, 'type': 'speech-update', 'status': 'started', 'role': 'assistant', 'turn': 1, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751330890190, 'endTime': 1751330891890, 'secondsFromStart': 1.36, 'duration': 1700, 'source': ''}, {'role': 'user', 'message': 'What is the name of the person?', 'time': 1751330902750, 'endTime': 1751330904290, 'secondsFromStart': 13.92, 'duration': 1540}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerc
+2025-07-01 03:48:30,538 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:30,538 [INFO] main: 📨 Event type: speech-update
+2025-07-01 03:48:30,539 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-01 03:48:30,539 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:33,099 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330912994,"type":"conversation-update","conversation":[{"role":"system","content":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session."},{"role":"assistant","content":"Hello. How can I help you today?"},{"role":"user","content":"What is the name of the person?"},{"role":"assistant...
+2025-07-01 03:48:33,101 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:33,101 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330912994, 'type': 'conversation-update', 'conversation': [{'role': 'system', 'content': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}, {'role': 'user', 'content': 'What is the name of the person?'}, {'role': 'assistant', 'content': "Could you clarify which person you're referring to?"}], 'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751330890190, 
+2025-07-01 03:48:33,104 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'conversation', 'messages', 'messagesOpenAIFormatted', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:33,104 [INFO] main: 📨 Event type: conversation-update
+2025-07-01 03:48:33,104 [INFO] main: ℹ️ Ignored webhook event type: conversation-update
+2025-07-01 03:48:33,104 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:37,065 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/69aa1b6f-2938-451f-9f2f-45a231ad1774 → No body
+2025-07-01 03:48:37,068 [INFO] main: ⚡ Quick status check for call_id: 69aa1b6f-2938-451f-9f2f-45a231ad1774
+2025-07-01 03:48:40,241 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330919856,"type":"status-update","status":"ended","endedReason":"customer-ended-call","artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product Feature Questions\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751330888673,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help ...
+2025-07-01 03:48:40,244 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:40,245 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330919856, 'type': 'status-update', 'status': 'ended', 'endedReason': 'customer-ended-call', 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751330890190, 'endTime': 1751330891890, 'secondsFromStart': 1.36, 'duration': 1700, 'source': ''}, {'role': 'user', 'message': 'What is the name of the person?', 'time': 1751330902750, 'endTime': 1751330904290, 'secondsFromStart': 13.92, 'duration': 1540}, {'role': 'bot', 'message': "Could you clarify which person you're referring to?", 'time': 1751330905590, 'endTime': 1751330908090, 'secondsFromStart': 16.76, 'duration': 2500, 'source': ''}], 'messagesOpen
+2025-07-01 03:48:40,250 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'endedReason', 'artifact', 'call', 'assistant']
+2025-07-01 03:48:40,251 [INFO] main: 📨 Event type: status-update
+2025-07-01 03:48:40,252 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-01 03:48:40,254 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:41,990 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751330921807,"type":"end-of-call-report","analysis":{"summary":"The user inquired about the name of a person, but the AI requested clarification as to which individual they were referring to. The call then ended without the user providing further details or the question being answered.","successEvaluation":"false"},"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Product Feature Questions Scenario 2\" inside the module \"Product ...
+2025-07-01 03:48:41,991 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 03:48:41,992 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751330921807, 'type': 'end-of-call-report', 'analysis': {'summary': 'The user inquired about the name of a person, but the AI requested clarification as to which individual they were referring to. The call then ended without the user providing further details or the question being answered.', 'successEvaluation': 'false'}, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Product Feature Questions Scenario 2" inside the module "Product Feature Questions" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751330888673, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751330890190, 'endTime': 1751330891890, 'secondsFromStart': 1.36, 'duration': 1700, 'source': ''}, {'role': 'user', 'message': 'What is the name of the person?', 'time': 1751330902750, 'endTime': 1751330904290, 'secondsFromStart': 13
+2025-07-01 03:48:41,994 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'analysis', 'artifact', 'startedAt', 'endedAt', 'endedReason', 'cost', 'costBreakdown', 'costs', 'durationMs', 'durationSeconds', 'durationMinutes', 'summary', 'transcript', 'messages', 'recordingUrl', 'stereoRecordingUrl', 'call', 'assistant']
+2025-07-01 03:48:41,995 [INFO] main: 📨 Event type: end-of-call-report
+2025-07-01 03:48:52,258 [ERROR] main: ❌ Error checking call status for 69aa1b6f-2938-451f-9f2f-45a231ad1774
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-01 03:48:52,281 [INFO] main: 🎓 Call 69aa1b6f-2938-451f-9f2f-45a231ad1774 identified as TRAINING call
+2025-07-01 03:48:52,282 [INFO] main: 🎓 Processing TRAINING call with enhanced scoring
+2025-07-01 03:48:52,282 [INFO] main: 📄 Extracted - transcript_length: 131, summary_length: 222
+2025-07-01 03:48:52,282 [INFO] main: 📊 Extracted - sentiment: neutral, ended_reason: customer-ended-call
+2025-07-01 03:48:52,282 [INFO] main: ⏱️ Duration extracted: 22s (from raw: 22.346)
+2025-07-01 03:48:52,282 [INFO] main: 🔍 Looking up existing training session for call_id: 69aa1b6f-2938-451f-9f2f-45a231ad1774
+2025-07-01 03:48:52,529 [INFO] main: ✅ Found existing training session: 7e150a6d-4d0f-45e0-8aee-2c82bfd57d68
+2025-07-01 03:48:53,077 [INFO] main: 📊 Scenario difficulty: 2
+2025-07-01 03:48:53,077 [INFO] main: 🧠 Running enhanced scoring analysis...
+2025-07-01 03:48:53,129 [INFO] main: 📊 Enhanced scoring complete:
+2025-07-01 03:48:53,129 [INFO] main:   - Raw Score: 3.9/10 → Database Score: 4/10
+2025-07-01 03:48:53,129 [INFO] main:   - Breakdown: {'engagement': 3, 'communication': 7, 'problem_solving': 2, 'professionalism': 8, 'duration_factor': 5}
+2025-07-01 03:48:53,129 [INFO] main:   - XP: 39 (bonus: 0)
+2025-07-01 03:48:53,129 [INFO] main:   - Feedback length: 316 chars
+2025-07-01 03:48:53,130 [INFO] main: 💾 Upserting enhanced training payload:
+2025-07-01 03:48:53,131 [INFO] main:   - Score: 4/10
+2025-07-01 03:48:53,131 [INFO] main:   - XP: 39 (bonus: 0)
+2025-07-01 03:48:53,131 [INFO] main:   - Feedback: 📚 This scenario needs more practice. Focus on the feedback below. 💡 Increase engagement by asking mo...
+2025-07-01 03:48:56,030 [INFO] main: ✅ Successfully upserted training_sessions with enhanced scoring for call_id=69aa1b6f-2938-451f-9f2f-45a231ad1774
+2025-07-01 03:48:56,030 [DEBUG] main: ✅ Upsert result: [{'id': '7e150a6d-4d0f-45e0-8aee-2c82bfd57d68', 'user_id': 'ede16300-bf93-4aee-93cb-188d6ae47894', 'module_id': '221945b8-5436-4f2b-8328-c5e88da83a4d', 'transcript': "AI: Hello. How can I help you today?\nUser: What is the name of the person?\nAI: Could you clarify which person you're referring to?\n", 'duration': 22, 'score': 4, 'sentiment': 'neutral', 'started_at': '2025-07-01T00:48:13', 'ended_at': '2025-07-01T00:48:08.504', 'call_id': '69aa1b6f-2938-451f-9f2f-45a231ad1774', 'feedback': '📚 This scenario needs more practice. Focus on the feedback below. 💡 Increase engagement by asking more questions and providing detailed responses. 🧠 Enhance problem-solving by exploring the scenario more deeply and asking follow-up questions. ⏱️ Try to engage longer with the scenario to fully explore the situation.', 'passed': False, 'created_at': '2025-07-01T00:48:13', 'recording_url': None, 'scenario_id': '09cf9168-918d-4835-9c8c-1972ed54948b', 'summary': 'The user inquired about the name of a person, but the AI requested clarification as to which individual they were referring to. The call then ended without the user providing further details or the question being answered.', 'ended_reason': 'customer-ended-call', 'agent_id': '17c2b88e-097d-4b53-aea3-b4871cb48339', 'xp': 39, 'bonus_xp': 0, 'scoring_breakdown': '{"engagement": 3, "communication": 7, "problem_solving": 2, "professionalism": 8, "duration_factor": 5, "raw_score": 3.9}'}]
+2025-07-01 03:48:56,033 [INFO] main: ✅ Enhanced training webhook processing complete for call_id=69aa1b6f-2938-451f-9f2f-45a231ad1774
+2025-07-01 03:48:56,034 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 03:48:56,037 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/69aa1b6f-2938-451f-9f2f-45a231ad1774 → Response: 200
+2025-07-01 03:48:57,582 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/69aa1b6f-2938-451f-9f2f-45a231ad1774 → No body
+2025-07-01 03:48:57,583 [INFO] main: ⚡ Quick status check for call_id: 69aa1b6f-2938-451f-9f2f-45a231ad1774
+2025-07-01 03:48:57,822 [INFO] main: 📊 Status for 69aa1b6f-2938-451f-9f2f-45a231ad1774: processed=True, transcript=True, score=True
+2025-07-01 03:48:57,824 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/69aa1b6f-2938-451f-9f2f-45a231ad1774 → Response: 200
+2025-07-01 03:48:57,846 [INFO] main: 🔄 GET http://127.0.0.1:8000/log-call?call_id=69aa1b6f-2938-451f-9f2f-45a231ad1774 → No body
+2025-07-01 03:48:57,847 [INFO] main: 📤 GET /log-call?call_id=69aa1b6f-2938-451f-9f2f-45a231ad1774
+2025-07-01 03:48:58,093 [INFO] main: ✅ Found session data for call_id=69aa1b6f-2938-451f-9f2f-45a231ad1774
+2025-07-01 03:48:58,093 [DEBUG] main: 📊 Returning data - transcript_length: 131, score: 4, sentiment: neutral
+2025-07-01 03:48:58,093 [INFO] main: ✅ GET http://127.0.0.1:8000/log-call?call_id=69aa1b6f-2938-451f-9f2f-45a231ad1774 → Response: 200
+2025-07-01 03:48:58,188 [INFO] main: 🔄 POST http://127.0.0.1:8000/api/end-training-session → Body: {"call_id":"69aa1b6f-2938-451f-9f2f-45a231ad1774"}...
+2025-07-01 03:48:58,189 [INFO] main: 🛑 Ending training session → call_id: 69aa1b6f-2938-451f-9f2f-45a231ad1774 at 2025-07-01 00:48:58
+2025-07-01 03:48:58,495 [INFO] main: ✅ Training session ended → call_id: 69aa1b6f-2938-451f-9f2f-45a231ad1774
+2025-07-01 03:48:58,496 [INFO] main: ✅ POST http://127.0.0.1:8000/api/end-training-session → Response: 200
+2025-07-01 04:05:49,348 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"test": "webhook test from terminal"}...
+2025-07-01 04:05:49,355 [INFO] main: 🔍 Raw webhook payload keys: ['test']
+2025-07-01 04:05:49,355 [DEBUG] main: 📋 Full payload preview: {'test': 'webhook test from terminal'}
+2025-07-01 04:05:49,357 [INFO] main: 🔍 Message keys: No message
+2025-07-01 04:05:49,357 [INFO] main: 📨 Event type: unknown
+2025-07-01 04:05:49,357 [INFO] main: ℹ️ Ignored webhook event type: unknown
+2025-07-01 04:05:49,359 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:13:40,002 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751332419659,"type":"end-of-call-report","analysis":{},"artifact":{},"endedReason":"customer-did-not-answer","cost":0,"costs":[],"call":{"id":"7452997b-767b-49da-98c5-32e5497fdb1a","assistantId":"780bad63-528a-46ac-8035-e213d01a8675","customerId":null,"phoneNumberId":"7fead4e4-f64a-4b67-9fbc-d9fb63d5f636","type":"outboundPhoneCall","startedAt":null,"endedAt":null,"transcript":null,"recordingUrl":null,"summary":null,"createdAt":"2025-07-01T01:12:50.765Z","updatedAt":"2025...
+2025-07-01 04:13:40,012 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 04:13:40,015 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751332419659, 'type': 'end-of-call-report', 'analysis': {}, 'artifact': {}, 'endedReason': 'customer-did-not-answer', 'cost': 0, 'costs': [], 'call': {'id': '7452997b-767b-49da-98c5-32e5497fdb1a', 'assistantId': '780bad63-528a-46ac-8035-e213d01a8675', 'customerId': None, 'phoneNumberId': '7fead4e4-f64a-4b67-9fbc-d9fb63d5f636', 'type': 'outboundPhoneCall', 'startedAt': None, 'endedAt': None, 'transcript': None, 'recordingUrl': None, 'summary': None, 'createdAt': '2025-07-01T01:12:50.765Z', 'updatedAt': '2025-07-01T01:13:39.631Z', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'cost': 0, 'twilioCallSid': None, 'twilioCallStatus': None, 'webCallUrl': None, 'assistant': None, 'phoneNumber': None, 'customer': {'number': '+905520247786'}, 'status': 'ended', 'endedReason': 'customer-did-not-answer', 'messages': None, 'maxDurationSeconds': None, 'stereoRecordingUrl': None, 'costBreakdown': None, 'metadata': None, 'phoneCallProvider': 'twilio', 'phoneCallProviderId'
+2025-07-01 04:13:40,020 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'analysis', 'artifact', 'endedReason', 'cost', 'costs', 'call', 'phoneNumber', 'assistant']
+2025-07-01 04:13:40,020 [INFO] main: 📨 Event type: end-of-call-report
+2025-07-01 04:13:40,357 [INFO] main: 📞 Call 7452997b-767b-49da-98c5-32e5497fdb1a identified as OUTBOUND call
+2025-07-01 04:13:40,359 [INFO] main: 📋 Processing regular call: 7452997b-767b-49da-98c5-32e5497fdb1a (type: outbound)
+2025-07-01 04:13:40,599 [INFO] main: 💾 Upserting regular call to call_logs: 7452997b-767b-49da-98c5-32e5497fdb1a
+2025-07-01 04:13:40,601 [DEBUG] main: 📋 Payload: {
+  "call_id": "7452997b-767b-49da-98c5-32e5497fdb1a",
+  "agent_id": "780bad63-528a-46ac-8035-e213d01a8675",
+  "caller_number": "+905520247786",
+  "call_type": "outbound",
+  "duration": 0,
+  "recording_url": null,
+  "transcript": "",
+  "status": "completed",
+  "timestamp": "2025-07-01T01:13:39.631Z",
+  "created_at": "2025-07-01T01:13:40.599076",
+  "updated_at": "2025-07-01T01:13:40.599104",
+  "ended_reason": "customer-did-not-answer",
+  "summary": "",
+  "topic_summary": "",
+  "user_id": null,
+  "score": 6,
+  "sentiment": "neutral",
+  "call_start": "2025-07-01T01:12:50.765Z",
+  "call_end": "2025-07-01T01:13:39.631Z",
+  "provider": "vapi",
+  "feedback": "Call completed successfully",
+  "twilio_sid": "CA8044570005087277c0e53e039aeae871"
+}
+2025-07-01 04:13:40,842 [ERROR] main: 🔥 Error processing regular call
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 241, in handle_regular_call
+    result = supabase.table("call_logs").upsert(payload, on_conflict=["call_id"]).execute()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 78, in execute
+    raise APIError(r.json())
+postgrest.exceptions.APIError: {'code': '23502', 'details': 'Failing row contains (null, 7452997b-767b-49da-98c5-32e5497fdb1a, 780bad63-528a-46ac-8035-e213d01a8675, null, +905520247786, outbound, 0, null, , completed, 2025-07-01 01:13:39.631+00, 2025-07-01 01:13:40.599076+00, 2025-07-01 01:13:40.599104+00, customer-did-not-answer, , null, CA8044570005087277c0e53e039aeae871, null, , null, 6, neutral, 2025-07-01 01:12:50.765+00, 2025-07-01 01:13:39.631+00, vapi, null, Call completed successfully).', 'hint': None, 'message': 'null value in column "id" of relation "call_logs" violates not-null constraint'}
+2025-07-01 04:13:40,854 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:13:41,090 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751332420979,"type":"status-update","status":"ended","endedReason":"customer-did-not-answer","call":{"id":"7452997b-767b-49da-98c5-32e5497fdb1a","assistantId":"780bad63-528a-46ac-8035-e213d01a8675","customerId":null,"phoneNumberId":"7fead4e4-f64a-4b67-9fbc-d9fb63d5f636","type":"outboundPhoneCall","startedAt":null,"endedAt":null,"transcript":null,"recordingUrl":null,"summary":null,"createdAt":"2025-07-01T01:12:50.765Z","updatedAt":"2025-07-01T01:12:53.383Z","orgId":"e3428...
+2025-07-01 04:13:41,091 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 04:13:41,091 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751332420979, 'type': 'status-update', 'status': 'ended', 'endedReason': 'customer-did-not-answer', 'call': {'id': '7452997b-767b-49da-98c5-32e5497fdb1a', 'assistantId': '780bad63-528a-46ac-8035-e213d01a8675', 'customerId': None, 'phoneNumberId': '7fead4e4-f64a-4b67-9fbc-d9fb63d5f636', 'type': 'outboundPhoneCall', 'startedAt': None, 'endedAt': None, 'transcript': None, 'recordingUrl': None, 'summary': None, 'createdAt': '2025-07-01T01:12:50.765Z', 'updatedAt': '2025-07-01T01:12:53.383Z', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'cost': 0, 'twilioCallSid': None, 'twilioCallStatus': None, 'webCallUrl': None, 'assistant': None, 'phoneNumber': None, 'customer': {'number': '+905520247786'}, 'status': 'ringing', 'endedReason': None, 'messages': None, 'maxDurationSeconds': None, 'stereoRecordingUrl': None, 'costBreakdown': None, 'metadata': None, 'phoneCallProvider': 'twilio', 'phoneCallProviderId': 'CA8044570005087277c0e53e039aeae871', 'webCallSipUri': None
+2025-07-01 04:13:41,092 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'endedReason', 'call', 'phoneNumber', 'customer']
+2025-07-01 04:13:41,092 [INFO] main: 📨 Event type: status-update
+2025-07-01 04:13:41,092 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-01 04:13:41,094 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:15:17,724 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751332517350,"type":"end-of-call-report","analysis":{},"artifact":{},"endedReason":"customer-did-not-answer","cost":0,"costs":[],"call":{"id":"c50a7010-b319-4b6e-8236-7ab7b513f9df","assistantId":"780bad63-528a-46ac-8035-e213d01a8675","customerId":null,"phoneNumberId":"7fead4e4-f64a-4b67-9fbc-d9fb63d5f636","type":"outboundPhoneCall","startedAt":null,"endedAt":null,"transcript":null,"recordingUrl":null,"summary":null,"createdAt":"2025-07-01T01:14:27.565Z","updatedAt":"2025...
+2025-07-01 04:15:17,725 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 04:15:17,726 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751332517350, 'type': 'end-of-call-report', 'analysis': {}, 'artifact': {}, 'endedReason': 'customer-did-not-answer', 'cost': 0, 'costs': [], 'call': {'id': 'c50a7010-b319-4b6e-8236-7ab7b513f9df', 'assistantId': '780bad63-528a-46ac-8035-e213d01a8675', 'customerId': None, 'phoneNumberId': '7fead4e4-f64a-4b67-9fbc-d9fb63d5f636', 'type': 'outboundPhoneCall', 'startedAt': None, 'endedAt': None, 'transcript': None, 'recordingUrl': None, 'summary': None, 'createdAt': '2025-07-01T01:14:27.565Z', 'updatedAt': '2025-07-01T01:15:17.317Z', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'cost': 0, 'twilioCallSid': None, 'twilioCallStatus': None, 'webCallUrl': None, 'assistant': None, 'phoneNumber': None, 'customer': {'number': '+905520247786'}, 'status': 'ended', 'endedReason': 'customer-did-not-answer', 'messages': None, 'maxDurationSeconds': None, 'stereoRecordingUrl': None, 'costBreakdown': None, 'metadata': None, 'phoneCallProvider': 'twilio', 'phoneCallProviderId'
+2025-07-01 04:15:17,727 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'analysis', 'artifact', 'endedReason', 'cost', 'costs', 'call', 'phoneNumber', 'assistant']
+2025-07-01 04:15:17,728 [INFO] main: 📨 Event type: end-of-call-report
+2025-07-01 04:15:17,975 [INFO] main: 📞 Call c50a7010-b319-4b6e-8236-7ab7b513f9df identified as OUTBOUND call
+2025-07-01 04:15:17,975 [INFO] main: 📋 Processing regular call: c50a7010-b319-4b6e-8236-7ab7b513f9df (type: outbound)
+2025-07-01 04:15:18,197 [INFO] main: 💾 Upserting regular call to call_logs: c50a7010-b319-4b6e-8236-7ab7b513f9df
+2025-07-01 04:15:18,198 [DEBUG] main: 📋 Payload: {
+  "call_id": "c50a7010-b319-4b6e-8236-7ab7b513f9df",
+  "agent_id": "780bad63-528a-46ac-8035-e213d01a8675",
+  "caller_number": "+905520247786",
+  "call_type": "outbound",
+  "duration": 0,
+  "recording_url": null,
+  "transcript": "",
+  "status": "completed",
+  "timestamp": "2025-07-01T01:15:17.317Z",
+  "created_at": "2025-07-01T01:15:18.197691",
+  "updated_at": "2025-07-01T01:15:18.197714",
+  "ended_reason": "customer-did-not-answer",
+  "summary": "",
+  "topic_summary": "",
+  "user_id": null,
+  "score": 6,
+  "sentiment": "neutral",
+  "call_start": "2025-07-01T01:14:27.565Z",
+  "call_end": "2025-07-01T01:15:17.317Z",
+  "provider": "vapi",
+  "feedback": "Call completed successfully",
+  "twilio_sid": "CAb17da201cd2c4bb10bf5e8198f17064c"
+}
+2025-07-01 04:15:18,437 [ERROR] main: 🔥 Error processing regular call
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 241, in handle_regular_call
+    result = supabase.table("call_logs").upsert(payload, on_conflict=["call_id"]).execute()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 78, in execute
+    raise APIError(r.json())
+postgrest.exceptions.APIError: {'code': '23502', 'details': 'Failing row contains (null, c50a7010-b319-4b6e-8236-7ab7b513f9df, 780bad63-528a-46ac-8035-e213d01a8675, null, +905520247786, outbound, 0, null, , completed, 2025-07-01 01:15:17.317+00, 2025-07-01 01:15:18.197691+00, 2025-07-01 01:15:18.197714+00, customer-did-not-answer, , null, CAb17da201cd2c4bb10bf5e8198f17064c, null, , null, 6, neutral, 2025-07-01 01:14:27.565+00, 2025-07-01 01:15:17.317+00, vapi, null, Call completed successfully).', 'hint': None, 'message': 'null value in column "id" of relation "call_logs" violates not-null constraint'}
+2025-07-01 04:15:18,449 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:15:19,033 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751332518921,"type":"status-update","status":"ended","endedReason":"customer-did-not-answer","call":{"id":"c50a7010-b319-4b6e-8236-7ab7b513f9df","assistantId":"780bad63-528a-46ac-8035-e213d01a8675","customerId":null,"phoneNumberId":"7fead4e4-f64a-4b67-9fbc-d9fb63d5f636","type":"outboundPhoneCall","startedAt":null,"endedAt":null,"transcript":null,"recordingUrl":null,"summary":null,"createdAt":"2025-07-01T01:14:27.565Z","updatedAt":"2025-07-01T01:14:30.903Z","orgId":"e3428...
+2025-07-01 04:15:19,038 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 04:15:19,039 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751332518921, 'type': 'status-update', 'status': 'ended', 'endedReason': 'customer-did-not-answer', 'call': {'id': 'c50a7010-b319-4b6e-8236-7ab7b513f9df', 'assistantId': '780bad63-528a-46ac-8035-e213d01a8675', 'customerId': None, 'phoneNumberId': '7fead4e4-f64a-4b67-9fbc-d9fb63d5f636', 'type': 'outboundPhoneCall', 'startedAt': None, 'endedAt': None, 'transcript': None, 'recordingUrl': None, 'summary': None, 'createdAt': '2025-07-01T01:14:27.565Z', 'updatedAt': '2025-07-01T01:14:30.903Z', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'cost': 0, 'twilioCallSid': None, 'twilioCallStatus': None, 'webCallUrl': None, 'assistant': None, 'phoneNumber': None, 'customer': {'number': '+905520247786'}, 'status': 'ringing', 'endedReason': None, 'messages': None, 'maxDurationSeconds': None, 'stereoRecordingUrl': None, 'costBreakdown': None, 'metadata': None, 'phoneCallProvider': 'twilio', 'phoneCallProviderId': 'CAb17da201cd2c4bb10bf5e8198f17064c', 'webCallSipUri': None
+2025-07-01 04:15:19,047 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'endedReason', 'call', 'phoneNumber', 'customer']
+2025-07-01 04:15:19,047 [INFO] main: 📨 Event type: status-update
+2025-07-01 04:15:19,047 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-01 04:15:19,047 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:16:03,054 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {
+    "type": "phone-call-started",
+    "call": {
+      "id": "test-inbound-call-id",
+      "type": "inboundPhoneCall",
+      "assistantId": "780bad63-528a-46ac-8035-e213d01a8675",
+      "phoneNumberId": "7fead4e4-f64a-4b67-9fbc-d9fb63d5f636",
+      "customer": {
+        "number": "+905520247786"
+      }
+    }
+  }...
+2025-07-01 04:16:03,055 [INFO] main: 🔍 Raw webhook payload keys: ['type', 'call']
+2025-07-01 04:16:03,055 [DEBUG] main: 📋 Full payload preview: {'type': 'phone-call-started', 'call': {'id': 'test-inbound-call-id', 'type': 'inboundPhoneCall', 'assistantId': '780bad63-528a-46ac-8035-e213d01a8675', 'phoneNumberId': '7fead4e4-f64a-4b67-9fbc-d9fb63d5f636', 'customer': {'number': '+905520247786'}}}
+2025-07-01 04:16:03,056 [INFO] main: 🔍 Message keys: No message
+2025-07-01 04:16:03,056 [INFO] main: 📨 Event type: unknown
+2025-07-01 04:16:03,056 [INFO] main: ℹ️ Ignored webhook event type: unknown
+2025-07-01 04:16:03,056 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:17:25,646 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {
+    "type": "phone-call-ended",
+    "call": {
+      "id": "test-inbound-call-id-2",
+      "type": "inboundPhoneCall",
+      "assistantId": "780bad63-528a-46ac-8035-e213d01a8675",
+      "phoneNumberId": "7fead4e4-f64a-4b67-9fbc-d9fb63d5f636",
+      "endedReason": "customer-ended-call",
+      "customer": {
+        "number": "+905520247786"
+      }
+    }
+  }...
+2025-07-01 04:17:25,647 [INFO] main: 🔍 Raw webhook payload keys: ['type', 'call']
+2025-07-01 04:17:25,647 [DEBUG] main: 📋 Full payload preview: {'type': 'phone-call-ended', 'call': {'id': 'test-inbound-call-id-2', 'type': 'inboundPhoneCall', 'assistantId': '780bad63-528a-46ac-8035-e213d01a8675', 'phoneNumberId': '7fead4e4-f64a-4b67-9fbc-d9fb63d5f636', 'endedReason': 'customer-ended-call', 'customer': {'number': '+905520247786'}}}
+2025-07-01 04:17:25,649 [INFO] main: 🔍 Message keys: No message
+2025-07-01 04:17:25,649 [INFO] main: 📨 Event type: unknown
+2025-07-01 04:17:25,649 [INFO] main: ℹ️ Ignored webhook event type: unknown
+2025-07-01 04:17:25,650 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:17:46,854 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {
+    "type": "transcript",
+    "call": {
+      "id": "test-transcript-id",
+      "type": "inboundPhoneCall"
+    },
+    "transcript": {
+      "text": "Hello, this is a test message",
+      "role": "user"
+    }
+  }...
+2025-07-01 04:17:46,856 [INFO] main: 🔍 Raw webhook payload keys: ['type', 'call', 'transcript']
+2025-07-01 04:17:46,856 [DEBUG] main: 📋 Full payload preview: {'type': 'transcript', 'call': {'id': 'test-transcript-id', 'type': 'inboundPhoneCall'}, 'transcript': {'text': 'Hello, this is a test message', 'role': 'user'}}
+2025-07-01 04:17:46,856 [INFO] main: 🔍 Message keys: No message
+2025-07-01 04:17:46,856 [INFO] main: 📨 Event type: unknown
+2025-07-01 04:17:46,856 [INFO] main: ℹ️ Ignored webhook event type: unknown
+2025-07-01 04:17:46,857 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:17:51,640 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {
+    "type": "assistant-request",
+    "call": {
+      "id": "test-assistant-id",
+      "type": "inboundPhoneCall"
+    },
+    "messages": [
+      {"role": "user", "content": "Hello"}
+    ]
+  }...
+2025-07-01 04:17:51,641 [INFO] main: 🔍 Raw webhook payload keys: ['type', 'call', 'messages']
+2025-07-01 04:17:51,641 [DEBUG] main: 📋 Full payload preview: {'type': 'assistant-request', 'call': {'id': 'test-assistant-id', 'type': 'inboundPhoneCall'}, 'messages': [{'role': 'user', 'content': 'Hello'}]}
+2025-07-01 04:17:51,641 [INFO] main: 🔍 Message keys: No message
+2025-07-01 04:17:51,641 [INFO] main: 📨 Event type: unknown
+2025-07-01 04:17:51,641 [INFO] main: ℹ️ Ignored webhook event type: unknown
+2025-07-01 04:17:51,642 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:18:34,526 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751332714167,"type":"status-update","status":"in-progress","artifact":{"messages":[{"role":"system","message":"You are Riley, a professional and friendly AI phone assistant for a leading medical clinic specializing in international patients. Your job is to handle inbound and outbound calls with empathy, precision, and persuasive clarity.\n\n🎯 Primary Objectives:\nGreet callers professionally.\n\nQualify leads quickly using smart, natural questions.\n\nExplain procedures ...
+2025-07-01 04:18:34,528 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 04:18:34,529 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751332714167, 'type': 'status-update', 'status': 'in-progress', 'artifact': {'messages': [{'role': 'system', 'message': "You are Riley, a professional and friendly AI phone assistant for a leading medical clinic specializing in international patients. Your job is to handle inbound and outbound calls with empathy, precision, and persuasive clarity.\n\n🎯 Primary Objectives:\nGreet callers professionally.\n\nQualify leads quickly using smart, natural questions.\n\nExplain procedures clearly (e.g., hair transplant, rhinoplasty, dental implants).\n\nOvercome objections (e.g., price, travel concerns, trust).\n\nConvert interest into confirmed appointments.\n\nCollect and confirm caller’s contact info for follow-up.\n\nEscalate complex medical questions to a human expert when needed.\n\nAlways stay compliant (no false promises, no diagnostics).\n\n🔧 Personality Settings:\nTone: Calm, confident, professional, and slightly warm.\n\nStyle: Clear, concise, and persuasiv
+2025-07-01 04:18:34,531 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'artifact', 'call', 'assistant']
+2025-07-01 04:18:34,532 [INFO] main: 📨 Event type: status-update
+2025-07-01 04:18:34,532 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-01 04:18:34,532 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:18:44,355 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751332723978,"type":"status-update","status":"ended","endedReason":"customer-ended-call","artifact":{"messages":[{"role":"system","message":"You are Riley, a professional and friendly AI phone assistant for a leading medical clinic specializing in international patients. Your job is to handle inbound and outbound calls with empathy, precision, and persuasive clarity.\n\n🎯 Primary Objectives:\nGreet callers professionally.\n\nQualify leads quickly using smart, natural que...
+2025-07-01 04:18:44,360 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 04:18:44,360 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751332723978, 'type': 'status-update', 'status': 'ended', 'endedReason': 'customer-ended-call', 'artifact': {'messages': [{'role': 'system', 'message': "You are Riley, a professional and friendly AI phone assistant for a leading medical clinic specializing in international patients. Your job is to handle inbound and outbound calls with empathy, precision, and persuasive clarity.\n\n🎯 Primary Objectives:\nGreet callers professionally.\n\nQualify leads quickly using smart, natural questions.\n\nExplain procedures clearly (e.g., hair transplant, rhinoplasty, dental implants).\n\nOvercome objections (e.g., price, travel concerns, trust).\n\nConvert interest into confirmed appointments.\n\nCollect and confirm caller’s contact info for follow-up.\n\nEscalate complex medical questions to a human expert when needed.\n\nAlways stay compliant (no false promises, no diagnostics).\n\n🔧 Personality Settings:\nTone: Calm, confident, professional, and slightly warm.\n\nStyl
+2025-07-01 04:18:44,361 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'endedReason', 'artifact', 'call', 'assistant']
+2025-07-01 04:18:44,361 [INFO] main: 📨 Event type: status-update
+2025-07-01 04:18:44,361 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-01 04:18:44,362 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:18:46,587 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751332726313,"type":"end-of-call-report","analysis":{"summary":"The call began with an AI scheduling assistant from Wellness Partners introducing herself and offering assistance. However, the call ended abruptly immediately after the AI's greeting, without the customer making any request.","successEvaluation":"false"},"artifact":{"messages":[{"role":"system","message":"You are Riley, a professional and friendly AI phone assistant for a leading medical clinic specializing...
+2025-07-01 04:18:46,596 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-01 04:18:46,600 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751332726313, 'type': 'end-of-call-report', 'analysis': {'summary': "The call began with an AI scheduling assistant from Wellness Partners introducing herself and offering assistance. However, the call ended abruptly immediately after the AI's greeting, without the customer making any request.", 'successEvaluation': 'false'}, 'artifact': {'messages': [{'role': 'system', 'message': "You are Riley, a professional and friendly AI phone assistant for a leading medical clinic specializing in international patients. Your job is to handle inbound and outbound calls with empathy, precision, and persuasive clarity.\n\n🎯 Primary Objectives:\nGreet callers professionally.\n\nQualify leads quickly using smart, natural questions.\n\nExplain procedures clearly (e.g., hair transplant, rhinoplasty, dental implants).\n\nOvercome objections (e.g., price, travel concerns, trust).\n\nConvert interest into confirmed appointments.\n\nCollect and confirm caller’s contact info for f
+2025-07-01 04:18:46,613 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'analysis', 'artifact', 'startedAt', 'endedAt', 'endedReason', 'cost', 'costBreakdown', 'costs', 'durationMs', 'durationSeconds', 'durationMinutes', 'summary', 'transcript', 'messages', 'recordingUrl', 'stereoRecordingUrl', 'call', 'assistant']
+2025-07-01 04:18:46,613 [INFO] main: 📨 Event type: end-of-call-report
+2025-07-01 04:18:46,895 [INFO] main: 🌐 Call 6a9216f7-fe81-4e7f-ad2c-59ae71a71814 identified as WEB call
+2025-07-01 04:18:46,895 [INFO] main: 📋 Processing regular call: 6a9216f7-fe81-4e7f-ad2c-59ae71a71814 (type: webCall)
+2025-07-01 04:18:47,230 [INFO] main: 💾 Upserting regular call to call_logs: 6a9216f7-fe81-4e7f-ad2c-59ae71a71814
+2025-07-01 04:18:47,230 [DEBUG] main: 📋 Payload: {
+  "call_id": "6a9216f7-fe81-4e7f-ad2c-59ae71a71814",
+  "agent_id": "780bad63-528a-46ac-8035-e213d01a8675",
+  "caller_number": "",
+  "call_type": "webCall",
+  "duration": 7,
+  "recording_url": null,
+  "transcript": "AI: Thank you for calling Wellness Partners. This is Riley, your scheduling assistant. How may I help you today?\n",
+  "status": "completed",
+  "timestamp": "2025-07-01T01:18:26.247Z",
+  "created_at": "2025-07-01T01:18:47.230617",
+  "updated_at": "2025-07-01T01:18:47.230631",
+  "ended_reason": "customer-ended-call",
+  "summary": "The call began with an AI scheduling assistant from Wellness Partners introducing herself and offering assistance. However, the call ended abruptly immediately after the AI's greeting, without the customer making any request.",
+  "topic_summary": "The call began with an AI scheduling assistant from Wellness Partners introducing herself and offering assistance. However, the call ended abruptly immediately after the AI's greeting, without the customer making any request.",
+  "user_id": null,
+  "score": 6,
+  "sentiment": "neutral",
+  "call_start": "2025-07-01T01:18:26.247Z",
+  "call_end": "2025-07-01T01:18:26.247Z",
+  "provider": "vapi",
+  "feedback": "The call began with an AI scheduling assistant from Wellness Partners introducing herself and offering assistance. However, the call ended abruptly immediately after the AI's greeting, without the customer making any request."
+}
+2025-07-01 04:18:47,472 [ERROR] main: 🔥 Error processing regular call
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 241, in handle_regular_call
+    result = supabase.table("call_logs").upsert(payload, on_conflict=["call_id"]).execute()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/Desktop/Arşiv/venv/lib/python3.12/site-packages/postgrest/_sync/request_builder.py", line 78, in execute
+    raise APIError(r.json())
+postgrest.exceptions.APIError: {'code': '23502', 'details': 'Failing row contains (null, 6a9216f7-fe81-4e7f-ad2c-59ae71a71814, 780bad63-528a-46ac-8035-e213d01a8675, null, , webCall, 7, null, AI: Thank you for calling Wellness Partners. This is Riley, your..., completed, 2025-07-01 01:18:26.247+00, 2025-07-01 01:18:47.230617+00, 2025-07-01 01:18:47.230631+00, customer-ended-call, The call began with an AI scheduling assistant from Wellness Par..., null, null, null, The call began with an AI scheduling assistant from Wellness Par..., null, 6, neutral, 2025-07-01 01:18:26.247+00, 2025-07-01 01:18:26.247+00, vapi, null, The call began with an AI scheduling assistant from Wellness Par...).', 'hint': None, 'message': 'null value in column "id" of relation "call_logs" violates not-null constraint'}
+2025-07-01 04:18:47,473 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:23:22,942 [INFO] main: 🔄 GET https://8db4-24-133-173-110.ngrok-free.app/webhook → No body
+2025-07-01 04:23:22,965 [INFO] main: ✅ GET https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 405
+2025-07-01 04:23:40,161 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"test": "data"}...
+2025-07-01 04:23:40,164 [INFO] main: 🔍 Raw webhook payload keys: ['test']
+2025-07-01 04:23:40,164 [DEBUG] main: 📋 Full payload preview: {'test': 'data'}
+2025-07-01 04:23:40,165 [INFO] main: 🔍 Message keys: No message
+2025-07-01 04:23:40,166 [INFO] main: 📨 Event type: unknown
+2025-07-01 04:23:40,166 [INFO] main: ℹ️ Ignored webhook event type: unknown
+2025-07-01 04:23:40,167 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:25:50,360 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {
+    "type": "assistant-request",
+    "call": {"id": "test"},
+    "messages": [{"role": "user", "content": "Hello"}]
+  }...
+2025-07-01 04:25:50,361 [INFO] main: 🔍 Raw webhook payload keys: ['type', 'call', 'messages']
+2025-07-01 04:25:50,362 [DEBUG] main: 📋 Full payload preview: {'type': 'assistant-request', 'call': {'id': 'test'}, 'messages': [{'role': 'user', 'content': 'Hello'}]}
+2025-07-01 04:25:50,363 [INFO] main: 🔍 Message keys: No message
+2025-07-01 04:25:50,363 [INFO] main: 📨 Event type: unknown
+2025-07-01 04:25:50,363 [INFO] main: ℹ️ Ignored webhook event type: unknown
+2025-07-01 04:25:50,365 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-01 04:32:44,689 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/vapi/inbound-call → Body: Called=%2B17623394796&ToState=GA&CallerCountry=TR&Direction=inbound&CallerState=&ToZip=&CallSid=CA07b004a8c54c510a18523b5aabe4d28d&To=%2B17623394796&CallerZip=&ToCountry=US&StirVerstat=TN-Validation-Passed-C&CallToken=%257B%2522parentCallInfoToken%2522%253A%2522eyJhbGciOiJFUzI1NiJ9.eyJjYWxsU2lkIjoiQ0EwN2IwMDRhOGM1NGM1MTBhMTg1MjNiNWFhYmU0ZDI4ZCIsImZyb20iOiIrOTA1NTIwMjQ3Nzg2IiwidG8iOiIrMTc2MjMzOTQ3OTYiLCJpYXQiOiIxNzUxMzMzNTY0In0.yA36qOZrgNa39bE0mYywGqufCi_f-Ppv3OC7dA2pbYo2RaKmTpwvYKiXuUlMqEP-Mb4Yj...
+2025-07-01 04:32:44,696 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/vapi/inbound-call → Response: 404
+2025-07-01 04:33:58,607 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/vapi/inbound-call → Body: Called=%2B17623394796&ToState=GA&CallerCountry=TR&Direction=inbound&CallerState=&ToZip=&CallSid=CAe0b61875afae0c80b326770eff92eca9&To=%2B17623394796&CallerZip=&ToCountry=US&StirVerstat=TN-Validation-Passed-C&CallToken=%257B%2522parentCallInfoToken%2522%253A%2522eyJhbGciOiJFUzI1NiJ9.eyJjYWxsU2lkIjoiQ0FlMGI2MTg3NWFmYWUwYzgwYjMyNjc3MGVmZjkyZWNhOSIsImZyb20iOiIrOTA1NTIwMjQ3Nzg2IiwidG8iOiIrMTc2MjMzOTQ3OTYiLCJpYXQiOiIxNzUxMzMzNjM4In0.pAlagyppLIw1u_VzTYy6kroEQBYY7TgNdnD3ncScHl9Nf0tIGLxR5--6dM7Fo4HXXe9R3...
+2025-07-01 04:33:58,608 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/vapi/inbound-call → Response: 404
+2025-07-01 04:34:03,826 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/vapi/inbound-call → Body: Called=%2B17623394796&ToState=GA&CallerCountry=TR&Direction=inbound&CallerState=&ToZip=&CallSid=CA5df1e5d578ad75c6347d6287b7fdac47&To=%2B17623394796&CallerZip=&ToCountry=US&StirVerstat=TN-Validation-Passed-C&CallToken=%257B%2522parentCallInfoToken%2522%253A%2522eyJhbGciOiJFUzI1NiJ9.eyJjYWxsU2lkIjoiQ0E1ZGYxZTVkNTc4YWQ3NWM2MzQ3ZDYyODdiN2ZkYWM0NyIsImZyb20iOiIrOTA1NTIwMjQ3Nzg2IiwidG8iOiIrMTc2MjMzOTQ3OTYiLCJpYXQiOiIxNzUxMzMzNjQzIn0.s71aJvh0kPCxdEn_HEnecs1q3T0jTt-x5-q9NpbQySUxjCPfHvMic2egLwYLwbshxQb0H...
+2025-07-01 04:34:03,827 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/vapi/inbound-call → Response: 404
+2025-07-01 04:34:10,585 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/vapi/inbound-call → Body: Called=%2B17623394796&ToState=GA&CallerCountry=TR&Direction=inbound&CallerState=&ToZip=&CallSid=CA81f284a9f78528908f3a067753c11592&To=%2B17623394796&CallerZip=&ToCountry=US&StirVerstat=TN-Validation-Passed-C&CallToken=%257B%2522parentCallInfoToken%2522%253A%2522eyJhbGciOiJFUzI1NiJ9.eyJjYWxsU2lkIjoiQ0E4MWYyODRhOWY3ODUyODkwOGYzYTA2Nzc1M2MxMTU5MiIsImZyb20iOiIrOTA1NTIwMjQ3Nzg2IiwidG8iOiIrMTc2MjMzOTQ3OTYiLCJpYXQiOiIxNzUxMzMzNjUwIn0.NyP1cQbRbe3MTE-he-J98r0SDzXE5Lej_RoMUrnqwWahnPM_3ByMM-oBKFQOf9vSqOTie...
+2025-07-01 04:34:10,585 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/vapi/inbound-call → Response: 404
+2025-07-01 04:36:20,034 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/twilio/inbound_call → Body: CallSid=test&From=%2B905520247786&To=%2B17623394796...
+2025-07-01 04:36:20,042 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/twilio/inbound_call → Response: 404
+2025-07-01 04:37:16,853 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/twilio/inbound_call → Body: Called=%2B17623394796&ToState=GA&CallerCountry=TR&Direction=inbound&CallerState=&ToZip=&CallSid=CAccd09e20aff6e049f947d97bddf86e2c&To=%2B17623394796&CallerZip=&ToCountry=US&StirVerstat=TN-Validation-Passed-C&CallToken=%257B%2522parentCallInfoToken%2522%253A%2522eyJhbGciOiJFUzI1NiJ9.eyJjYWxsU2lkIjoiQ0FjY2QwOWUyMGFmZjZlMDQ5Zjk0N2Q5N2JkZGY4NmUyYyIsImZyb20iOiIrOTA1NTIwMjQ3Nzg2IiwidG8iOiIrMTc2MjMzOTQ3OTYiLCJpYXQiOiIxNzUxMzMzODM2In0.2G6Ydu19qppe3crm_G55h649UzHo_TY2RRT0N5tZVns6b8Ss1u8UrknDuiCD5r10c4xlG...
+2025-07-01 04:37:16,855 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/twilio/inbound_call → Response: 404
+2025-07-07 12:10:25,855 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getTrainingCategories → No body
+2025-07-07 12:10:28,477 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getTrainingCategories → Response: 200
+2025-07-07 12:10:28,526 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/b0794994-6b58-4f5f-9768-aadae2e9ac5d → No body
+2025-07-07 12:10:28,539 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/1358331d-02ab-478d-81a2-dc9ab17553a3 → No body
+2025-07-07 12:10:28,546 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/b1d7ea4b-a477-49ad-a45f-f78c5c016ef1 → No body
+2025-07-07 12:10:28,559 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/19a98b47-a803-41e3-a1aa-2841bfadf259 → No body
+2025-07-07 12:10:28,568 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/f5d9c7a6-167d-4c59-ac9f-9a938a9191f0 → No body
+2025-07-07 12:10:28,578 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/c985e207-2bde-4ba5-9d53-9ac426573abf → No body
+2025-07-07 12:10:28,804 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/1358331d-02ab-478d-81a2-dc9ab17553a3 → Response: 200
+2025-07-07 12:10:28,806 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/b1d7ea4b-a477-49ad-a45f-f78c5c016ef1 → Response: 200
+2025-07-07 12:10:28,829 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/b0794994-6b58-4f5f-9768-aadae2e9ac5d → Response: 200
+2025-07-07 12:10:28,835 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/19a98b47-a803-41e3-a1aa-2841bfadf259 → Response: 200
+2025-07-07 12:10:29,231 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/f5d9c7a6-167d-4c59-ac9f-9a938a9191f0 → Response: 200
+2025-07-07 12:10:29,233 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/c985e207-2bde-4ba5-9d53-9ac426573abf → Response: 200
+2025-07-07 12:10:29,249 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → No body
+2025-07-07 12:10:29,251 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → No body
+2025-07-07 12:10:29,251 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/dc7ef304-66f6-46a0-87ff-80be4e3b92ad → No body
+2025-07-07 12:10:29,252 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/cc3e96d9-0f08-4b52-94b5-f0e7b8862329 → No body
+2025-07-07 12:10:29,265 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/df8a0002-7991-426e-803e-391ff2827db3 → No body
+2025-07-07 12:10:29,267 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/6b263d34-0c21-4290-8f11-e6a188aa1daa → No body
+2025-07-07 12:10:29,279 [INFO] main: 📥 Fetching scenarios for module_id=d4295bc8-0bb1-4889-9cf9-e8926d44e4d6
+2025-07-07 12:10:29,285 [INFO] main: 📥 Fetching scenarios for module_id=df8a0002-7991-426e-803e-391ff2827db3
+2025-07-07 12:10:29,287 [INFO] main: 📥 Fetching scenarios for module_id=6b263d34-0c21-4290-8f11-e6a188aa1daa
+2025-07-07 12:10:29,291 [INFO] main: 📥 Fetching scenarios for module_id=cc3e96d9-0f08-4b52-94b5-f0e7b8862329
+2025-07-07 12:10:29,296 [INFO] main: 📥 Fetching scenarios for module_id=dc7ef304-66f6-46a0-87ff-80be4e3b92ad
+2025-07-07 12:10:29,301 [INFO] main: 📥 Fetching scenarios for module_id=221945b8-5436-4f2b-8328-c5e88da83a4d
+2025-07-07 12:10:29,578 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → Response: 200
+2025-07-07 12:10:29,584 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → Response: 200
+2025-07-07 12:10:29,587 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/1ffa34b5-a927-4cc8-a835-53d40f38b834 → No body
+2025-07-07 12:10:29,590 [INFO] main: 📥 Fetching scenarios for module_id=1ffa34b5-a927-4cc8-a835-53d40f38b834
+2025-07-07 12:10:29,601 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a → No body
+2025-07-07 12:10:29,603 [INFO] main: 📥 Fetching scenarios for module_id=4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a
+2025-07-07 12:10:29,851 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/df8a0002-7991-426e-803e-391ff2827db3 → Response: 200
+2025-07-07 12:10:29,852 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/6b263d34-0c21-4290-8f11-e6a188aa1daa → Response: 200
+2025-07-07 12:10:29,854 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/cc3e96d9-0f08-4b52-94b5-f0e7b8862329 → Response: 200
+2025-07-07 12:10:29,860 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a → Response: 200
+2025-07-07 12:10:29,864 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/84e615cf-8b81-4240-a2df-6441042a3ecc → No body
+2025-07-07 12:10:29,866 [INFO] main: 📥 Fetching scenarios for module_id=84e615cf-8b81-4240-a2df-6441042a3ecc
+2025-07-07 12:10:29,874 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/7d987d15-a450-4cee-9441-ad91dcff8ee2 → No body
+2025-07-07 12:10:29,875 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/6ffdd556-17cb-45d8-9bc1-202f153be192 → No body
+2025-07-07 12:10:29,875 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/dca015eb-f0f5-43d1-a854-330b83ef9d16 → No body
+2025-07-07 12:10:29,877 [INFO] main: 📥 Fetching scenarios for module_id=7d987d15-a450-4cee-9441-ad91dcff8ee2
+2025-07-07 12:10:29,881 [INFO] main: 📥 Fetching scenarios for module_id=dca015eb-f0f5-43d1-a854-330b83ef9d16
+2025-07-07 12:10:29,881 [INFO] main: 📥 Fetching scenarios for module_id=6ffdd556-17cb-45d8-9bc1-202f153be192
+2025-07-07 12:10:29,924 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/1ffa34b5-a927-4cc8-a835-53d40f38b834 → Response: 200
+2025-07-07 12:10:29,930 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/827a771d-2f16-4bdf-b0bc-a419a43b6b35 → No body
+2025-07-07 12:10:29,932 [INFO] main: 📥 Fetching scenarios for module_id=827a771d-2f16-4bdf-b0bc-a419a43b6b35
+2025-07-07 12:10:30,120 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/7d987d15-a450-4cee-9441-ad91dcff8ee2 → Response: 200
+2025-07-07 12:10:30,121 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/dc7ef304-66f6-46a0-87ff-80be4e3b92ad → Response: 200
+2025-07-07 12:10:30,128 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/7a45bdb5-9935-47de-af59-1dc34002b574 → No body
+2025-07-07 12:10:30,129 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9 → No body
+2025-07-07 12:10:30,129 [INFO] main: 📥 Fetching scenarios for module_id=ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9
+2025-07-07 12:10:30,133 [INFO] main: 📥 Fetching scenarios for module_id=7a45bdb5-9935-47de-af59-1dc34002b574
+2025-07-07 12:10:30,168 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/6ffdd556-17cb-45d8-9bc1-202f153be192 → Response: 200
+2025-07-07 12:10:30,171 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/84e615cf-8b81-4240-a2df-6441042a3ecc → Response: 200
+2025-07-07 12:10:30,178 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568 → No body
+2025-07-07 12:10:30,179 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/34895df3-e1a8-402b-a67f-5fcd4b7c8e1c → No body
+2025-07-07 12:10:30,180 [INFO] main: 📥 Fetching scenarios for module_id=a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568
+2025-07-07 12:10:30,182 [INFO] main: 📥 Fetching scenarios for module_id=34895df3-e1a8-402b-a67f-5fcd4b7c8e1c
+2025-07-07 12:10:30,364 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/827a771d-2f16-4bdf-b0bc-a419a43b6b35 → Response: 200
+2025-07-07 12:10:30,369 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/89595561-d3a7-4ca8-ba29-a5f9289446c0 → No body
+2025-07-07 12:10:30,369 [INFO] main: 📥 Fetching scenarios for module_id=89595561-d3a7-4ca8-ba29-a5f9289446c0
+2025-07-07 12:10:30,383 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9 → Response: 200
+2025-07-07 12:10:30,387 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/5b9c8a33-175f-40d7-94ee-aebd279f5aaa → No body
+2025-07-07 12:10:30,388 [INFO] main: 📥 Fetching scenarios for module_id=5b9c8a33-175f-40d7-94ee-aebd279f5aaa
+2025-07-07 12:10:30,414 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/7a45bdb5-9935-47de-af59-1dc34002b574 → Response: 200
+2025-07-07 12:10:30,419 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/1b19d393-e7fd-4295-b2bf-1e7e6a405795 → No body
+2025-07-07 12:10:30,420 [INFO] main: 📥 Fetching scenarios for module_id=1b19d393-e7fd-4295-b2bf-1e7e6a405795
+2025-07-07 12:10:30,531 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/34895df3-e1a8-402b-a67f-5fcd4b7c8e1c → Response: 200
+2025-07-07 12:10:30,533 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/dca015eb-f0f5-43d1-a854-330b83ef9d16 → Response: 200
+2025-07-07 12:10:30,800 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/1b19d393-e7fd-4295-b2bf-1e7e6a405795 → Response: 200
+2025-07-07 12:10:30,806 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/89595561-d3a7-4ca8-ba29-a5f9289446c0 → Response: 200
+2025-07-07 12:10:31,081 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568 → Response: 200
+2025-07-07 12:10:31,090 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/5b9c8a33-175f-40d7-94ee-aebd279f5aaa → Response: 200
+2025-07-07 12:49:13,391 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getTrainingCategories → No body
+2025-07-07 12:49:13,690 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getTrainingCategories → Response: 200
+2025-07-07 12:49:13,698 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/b0794994-6b58-4f5f-9768-aadae2e9ac5d → No body
+2025-07-07 12:49:13,702 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/1358331d-02ab-478d-81a2-dc9ab17553a3 → No body
+2025-07-07 12:49:13,704 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/b1d7ea4b-a477-49ad-a45f-f78c5c016ef1 → No body
+2025-07-07 12:49:13,708 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/19a98b47-a803-41e3-a1aa-2841bfadf259 → No body
+2025-07-07 12:49:13,726 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/f5d9c7a6-167d-4c59-ac9f-9a938a9191f0 → No body
+2025-07-07 12:49:13,729 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getModulesByCategory/c985e207-2bde-4ba5-9d53-9ac426573abf → No body
+2025-07-07 12:49:13,981 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/b0794994-6b58-4f5f-9768-aadae2e9ac5d → Response: 200
+2025-07-07 12:49:13,983 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/b1d7ea4b-a477-49ad-a45f-f78c5c016ef1 → Response: 200
+2025-07-07 12:49:14,365 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/19a98b47-a803-41e3-a1aa-2841bfadf259 → Response: 200
+2025-07-07 12:49:14,393 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/f5d9c7a6-167d-4c59-ac9f-9a938a9191f0 → Response: 200
+2025-07-07 12:49:14,394 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/c985e207-2bde-4ba5-9d53-9ac426573abf → Response: 200
+2025-07-07 12:49:14,397 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getModulesByCategory/1358331d-02ab-478d-81a2-dc9ab17553a3 → Response: 200
+2025-07-07 12:49:14,424 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → No body
+2025-07-07 12:49:14,427 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → No body
+2025-07-07 12:49:14,429 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/dc7ef304-66f6-46a0-87ff-80be4e3b92ad → No body
+2025-07-07 12:49:14,430 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/cc3e96d9-0f08-4b52-94b5-f0e7b8862329 → No body
+2025-07-07 12:49:14,430 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/df8a0002-7991-426e-803e-391ff2827db3 → No body
+2025-07-07 12:49:14,431 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/6b263d34-0c21-4290-8f11-e6a188aa1daa → No body
+2025-07-07 12:49:14,436 [INFO] main: 📥 Fetching scenarios for module_id=d4295bc8-0bb1-4889-9cf9-e8926d44e4d6
+2025-07-07 12:49:14,437 [INFO] main: 📥 Fetching scenarios for module_id=221945b8-5436-4f2b-8328-c5e88da83a4d
+2025-07-07 12:49:14,437 [INFO] main: 📥 Fetching scenarios for module_id=dc7ef304-66f6-46a0-87ff-80be4e3b92ad
+2025-07-07 12:49:14,442 [INFO] main: 📥 Fetching scenarios for module_id=6b263d34-0c21-4290-8f11-e6a188aa1daa
+2025-07-07 12:49:14,442 [INFO] main: 📥 Fetching scenarios for module_id=cc3e96d9-0f08-4b52-94b5-f0e7b8862329
+2025-07-07 12:49:14,442 [INFO] main: 📥 Fetching scenarios for module_id=df8a0002-7991-426e-803e-391ff2827db3
+2025-07-07 12:49:14,683 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/221945b8-5436-4f2b-8328-c5e88da83a4d → Response: 200
+2025-07-07 12:49:14,685 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → Response: 200
+2025-07-07 12:49:14,685 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/dc7ef304-66f6-46a0-87ff-80be4e3b92ad → Response: 200
+2025-07-07 12:49:14,694 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/1ffa34b5-a927-4cc8-a835-53d40f38b834 → No body
+2025-07-07 12:49:14,695 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a → No body
+2025-07-07 12:49:14,696 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/84e615cf-8b81-4240-a2df-6441042a3ecc → No body
+2025-07-07 12:49:14,697 [INFO] main: 📥 Fetching scenarios for module_id=1ffa34b5-a927-4cc8-a835-53d40f38b834
+2025-07-07 12:49:14,698 [INFO] main: 📥 Fetching scenarios for module_id=4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a
+2025-07-07 12:49:14,699 [INFO] main: 📥 Fetching scenarios for module_id=84e615cf-8b81-4240-a2df-6441042a3ecc
+2025-07-07 12:49:14,710 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/6b263d34-0c21-4290-8f11-e6a188aa1daa → Response: 200
+2025-07-07 12:49:14,712 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/cc3e96d9-0f08-4b52-94b5-f0e7b8862329 → Response: 200
+2025-07-07 12:49:14,716 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/7d987d15-a450-4cee-9441-ad91dcff8ee2 → No body
+2025-07-07 12:49:14,718 [INFO] main: 📥 Fetching scenarios for module_id=7d987d15-a450-4cee-9441-ad91dcff8ee2
+2025-07-07 12:49:14,721 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/6ffdd556-17cb-45d8-9bc1-202f153be192 → No body
+2025-07-07 12:49:14,722 [INFO] main: 📥 Fetching scenarios for module_id=6ffdd556-17cb-45d8-9bc1-202f153be192
+2025-07-07 12:49:14,963 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/df8a0002-7991-426e-803e-391ff2827db3 → Response: 200
+2025-07-07 12:49:14,968 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/dca015eb-f0f5-43d1-a854-330b83ef9d16 → No body
+2025-07-07 12:49:14,970 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/4ee9e0fe-e07f-4a83-8ed0-238ad2f6904a → Response: 200
+2025-07-07 12:49:14,970 [INFO] main: 📥 Fetching scenarios for module_id=dca015eb-f0f5-43d1-a854-330b83ef9d16
+2025-07-07 12:49:14,977 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/827a771d-2f16-4bdf-b0bc-a419a43b6b35 → No body
+2025-07-07 12:49:14,977 [INFO] main: 📥 Fetching scenarios for module_id=827a771d-2f16-4bdf-b0bc-a419a43b6b35
+2025-07-07 12:49:15,006 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/7d987d15-a450-4cee-9441-ad91dcff8ee2 → Response: 200
+2025-07-07 12:49:15,007 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/1ffa34b5-a927-4cc8-a835-53d40f38b834 → Response: 200
+2025-07-07 12:49:15,008 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/84e615cf-8b81-4240-a2df-6441042a3ecc → Response: 200
+2025-07-07 12:49:15,015 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/7a45bdb5-9935-47de-af59-1dc34002b574 → No body
+2025-07-07 12:49:15,016 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9 → No body
+2025-07-07 12:49:15,018 [INFO] main: 📥 Fetching scenarios for module_id=7a45bdb5-9935-47de-af59-1dc34002b574
+2025-07-07 12:49:15,021 [INFO] main: 📥 Fetching scenarios for module_id=ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9
+2025-07-07 12:49:15,025 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568 → No body
+2025-07-07 12:49:15,026 [INFO] main: 📥 Fetching scenarios for module_id=a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568
+2025-07-07 12:49:15,220 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/dca015eb-f0f5-43d1-a854-330b83ef9d16 → Response: 200
+2025-07-07 12:49:15,221 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/6ffdd556-17cb-45d8-9bc1-202f153be192 → Response: 200
+2025-07-07 12:49:15,230 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/34895df3-e1a8-402b-a67f-5fcd4b7c8e1c → No body
+2025-07-07 12:49:15,231 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/89595561-d3a7-4ca8-ba29-a5f9289446c0 → No body
+2025-07-07 12:49:15,232 [INFO] main: 📥 Fetching scenarios for module_id=89595561-d3a7-4ca8-ba29-a5f9289446c0
+2025-07-07 12:49:15,234 [INFO] main: 📥 Fetching scenarios for module_id=34895df3-e1a8-402b-a67f-5fcd4b7c8e1c
+2025-07-07 12:49:15,242 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/827a771d-2f16-4bdf-b0bc-a419a43b6b35 → Response: 200
+2025-07-07 12:49:15,245 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/5b9c8a33-175f-40d7-94ee-aebd279f5aaa → No body
+2025-07-07 12:49:15,246 [INFO] main: 📥 Fetching scenarios for module_id=5b9c8a33-175f-40d7-94ee-aebd279f5aaa
+2025-07-07 12:49:15,466 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/7a45bdb5-9935-47de-af59-1dc34002b574 → Response: 200
+2025-07-07 12:49:15,468 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/34895df3-e1a8-402b-a67f-5fcd4b7c8e1c → Response: 200
+2025-07-07 12:49:15,471 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/1b19d393-e7fd-4295-b2bf-1e7e6a405795 → No body
+2025-07-07 12:49:15,474 [INFO] main: 📥 Fetching scenarios for module_id=1b19d393-e7fd-4295-b2bf-1e7e6a405795
+2025-07-07 12:49:15,475 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/a9d7995f-6d4c-4b11-a4e8-e0b2cd7c9568 → Response: 200
+2025-07-07 12:49:15,643 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/89595561-d3a7-4ca8-ba29-a5f9289446c0 → Response: 200
+2025-07-07 12:49:15,643 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/5b9c8a33-175f-40d7-94ee-aebd279f5aaa → Response: 200
+2025-07-07 12:49:15,693 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/ca2f836c-8bfb-43f5-bcb0-1dbb088ed4b9 → Response: 200
+2025-07-07 12:49:15,695 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/1b19d393-e7fd-4295-b2bf-1e7e6a405795 → Response: 200
+2025-07-07 12:49:19,635 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → No body
+2025-07-07 12:49:19,637 [INFO] main: 📥 Fetching scenarios for module_id=d4295bc8-0bb1-4889-9cf9-e8926d44e4d6
+2025-07-07 12:49:19,642 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/getUniversalAgent → No body
+2025-07-07 12:49:19,643 [INFO] main: 📥 Fetching universal agent...
+2025-07-07 12:49:19,882 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getScenariosByModule/d4295bc8-0bb1-4889-9cf9-e8926d44e4d6 → Response: 200
+2025-07-07 12:49:19,884 [INFO] main: ✅ GET http://127.0.0.1:8000/api/getUniversalAgent → Response: 200
+2025-07-07 12:49:27,245 [INFO] main: 🔄 POST http://127.0.0.1:8000/api/start-training-call → Body: {"call_id":"0028b329-1a67-45b2-80de-5d1d55f2a984","user_id":"ede16300-bf93-4aee-93cb-188d6ae47894","module_id":"d4295bc8-0bb1-4889-9cf9-e8926d44e4d6","scenario_id":"a05ade46-77d1-42af-83fb-2d3cceacf35d"}...
+2025-07-07 12:49:27,252 [INFO] main: 📥 /api/start-training-call → call_id=0028b329-1a67-45b2-80de-5d1d55f2a984, user_id=ede16300-bf93-4aee-93cb-188d6ae47894
+2025-07-07 12:49:27,949 [INFO] main: ✅ Inserted training_sessions for call_id=0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:49:27,950 [INFO] main: ✅ POST http://127.0.0.1:8000/api/start-training-call → Response: 200
+2025-07-07 12:49:30,015 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881769473,"type":"status-update","status":"in-progress","artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0}],"messagesOpenAIFormatted":[{"role":"system","content":"You are simulating ...
+2025-07-07 12:49:30,054 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:30,059 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881769473, 'type': 'status-update', 'status': 'in-progress', 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}]}, 'call': {'id': '0028b329-1a67-45b2-80de-5d1d55f2a984', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'createdAt': '2025-07-07T09:49:23.943Z', 'updatedAt': '2025-07-07T09:49:23.943Z', 'type': 'webCall', 'monitor': {'listenUrl': 'wss://phone-call-websocket.aw
+2025-07-07 12:49:30,191 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:30,197 [INFO] main: 📨 Event type: status-update
+2025-07-07 12:49:30,205 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-07 12:49:30,214 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:30,271 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881769875,"type":"speech-update","status":"started","role":"assistant","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0}],"messagesOpenAIFormatted":[{"role":"system","conte...
+2025-07-07 12:49:30,274 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:30,275 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881769875, 'type': 'speech-update', 'status': 'started', 'role': 'assistant', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}]}, 'call': {'id': '0028b329-1a67-45b2-80de-5d1d55f2a984', 'orgId': 'e3428ec3-00c3-4781-9433-1816547c1c21', 'createdAt': '2025-07-07T09:49:23.943Z', 'updatedAt': '2025-07-07T09:49:23.943Z', 'type': 'webCall', 'monitor': {'listenUrl': 'w
+2025-07-07 12:49:30,295 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:30,295 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:30,295 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:30,296 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:31,809 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881771658,"type":"conversation-update","conversation":[{"role":"system","content":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session."},{"role":"assistant","content":"Hello. How can I help you today?"}],"messages":[{"role":"system","message":"You are simulating a scenario title...
+2025-07-07 12:49:31,811 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:31,811 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881771658, 'type': 'conversation-update', 'conversation': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}], 'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}], 'messagesOpenAIFormatted': [], 'artifact': {'messages': [{'role
+2025-07-07 12:49:31,813 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'conversation', 'messages', 'messagesOpenAIFormatted', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:31,813 [INFO] main: 📨 Event type: conversation-update
+2025-07-07 12:49:31,813 [INFO] main: ℹ️ Ignored webhook event type: conversation-update
+2025-07-07 12:49:31,813 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:31,910 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881771780,"type":"speech-update","status":"stopped","role":"assistant","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you ...
+2025-07-07 12:49:31,911 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:31,911 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881771780, 'type': 'speech-update', 'status': 'stopped', 'role': 'assistant', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you tod
+2025-07-07 12:49:31,921 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:31,923 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:31,923 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:31,924 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:33,386 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881773278,"type":"speech-update","status":"started","role":"user","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you today...
+2025-07-07 12:49:33,389 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:33,389 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881773278, 'type': 'speech-update', 'status': 'started', 'role': 'user', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}
+2025-07-07 12:49:33,392 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:33,392 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:33,393 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:33,393 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:34,243 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881774137,"type":"conversation-update","conversation":[{"role":"system","content":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session."},{"role":"assistant","content":"Hello. How can I help you today?"},{"role":"user","content":"Hello. How are you?"}],"messages":[{"role":"system...
+2025-07-07 12:49:34,244 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:34,244 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881774137, 'type': 'conversation-update', 'conversation': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}, {'role': 'user', 'content': 'Hello. How are you?'}], 'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'us
+2025-07-07 12:49:34,245 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'conversation', 'messages', 'messagesOpenAIFormatted', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:34,245 [INFO] main: 📨 Event type: conversation-update
+2025-07-07 12:49:34,245 [INFO] main: ℹ️ Ignored webhook event type: conversation-update
+2025-07-07 12:49:34,246 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:34,344 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881774238,"type":"speech-update","status":"stopped","role":"user","turn":0,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you today...
+2025-07-07 12:49:34,347 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:34,347 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881774238, 'type': 'speech-update', 'status': 'stopped', 'role': 'user', 'turn': 0, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in cha
+2025-07-07 12:49:34,349 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:34,349 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:34,349 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:34,349 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:35,248 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881775135,"type":"speech-update","status":"started","role":"assistant","turn":1,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you ...
+2025-07-07 12:49:35,249 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:35,249 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881775135, 'type': 'speech-update', 'status': 'started', 'role': 'assistant', 'turn': 1, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}], 'messagesOpenAIFormatted': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay i
+2025-07-07 12:49:35,250 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:35,251 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:35,251 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:35,253 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:40,680 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881779741,"type":"speech-update","status":"stopped","role":"assistant","turn":1,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you ...
+2025-07-07 12:49:40,681 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:40,681 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881779741, 'type': 'speech-update', 'status': 'stopped', 'role': 'assistant', 'turn': 1, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}, {'role': 'bot', 'message': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?", 'time': 1751881771234.0002, 'endTime': 1751881775724, 'secondsFromStart': 6.9900002, 'duration': 4489.9
+2025-07-07 12:49:40,684 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:40,684 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:40,684 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:40,684 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:42,750 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881782099,"type":"speech-update","status":"started","role":"assistant","turn":2,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you ...
+2025-07-07 12:49:42,753 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:42,754 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881782099, 'type': 'speech-update', 'status': 'started', 'role': 'assistant', 'turn': 2, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}, {'role': 'bot', 'message': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?", 'time': 1751881771234.0002, 'endTime': 1751881775724, 'secondsFromStart': 6.9900002, 'duration': 4489.9
+2025-07-07 12:49:42,758 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:42,758 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:42,759 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:42,759 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:42,803 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881782276,"type":"user-interrupted","artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you today?","time":1751881765924,"endTime":17518...
+2025-07-07 12:49:42,803 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:42,804 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881782276, 'type': 'user-interrupted', 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}, {'role': 'bot', 'message': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?", 'time': 1751881771234.0002, 'endTime': 1751881775724, 'secondsFromStart': 6.9900002, 'duration': 4489.999755859375, 'source': ''}], 'messagesOpenAIFormat
+2025-07-07 12:49:42,810 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:42,810 [INFO] main: 📨 Event type: user-interrupted
+2025-07-07 12:49:42,810 [INFO] main: ℹ️ Ignored webhook event type: user-interrupted
+2025-07-07 12:49:42,812 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:42,860 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881782298,"type":"speech-update","status":"stopped","role":"assistant","turn":2,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you ...
+2025-07-07 12:49:42,862 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:42,862 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881782298, 'type': 'speech-update', 'status': 'stopped', 'role': 'assistant', 'turn': 2, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}, {'role': 'bot', 'message': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?", 'time': 1751881771234.0002, 'endTime': 1751881775724, 'secondsFromStart': 6.9900002, 'duration': 4489.9
+2025-07-07 12:49:42,867 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:42,867 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:42,867 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:42,868 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:42,989 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881782638,"type":"speech-update","status":"started","role":"user","turn":1,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you today...
+2025-07-07 12:49:42,991 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:42,991 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881782638, 'type': 'speech-update', 'status': 'started', 'role': 'user', 'turn': 1, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}, {'role': 'bot', 'message': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?", 'time': 1751881771234.0002, 'endTime': 1751881775724, 'secondsFromStart': 6.9900002, 'duration': 4489.999755
+2025-07-07 12:49:42,993 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:42,993 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:42,995 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:42,997 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:44,366 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881784259,"type":"conversation-update","conversation":[{"role":"system","content":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session."},{"role":"assistant","content":"Hello. How can I help you today?"},{"role":"user","content":"Hello. How are you?"},{"role":"assistant","content...
+2025-07-07 12:49:44,367 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:44,368 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881784259, 'type': 'conversation-update', 'conversation': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}, {'role': 'user', 'content': 'Hello. How are you?'}, {'role': 'assistant', 'content': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?"}, {'role': 'user', 'content': 'Yeah. I want to complete my order, but I cannot do it.'}], 'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764
+2025-07-07 12:49:44,373 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'conversation', 'messages', 'messagesOpenAIFormatted', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:44,373 [INFO] main: 📨 Event type: conversation-update
+2025-07-07 12:49:44,373 [INFO] main: ℹ️ Ignored webhook event type: conversation-update
+2025-07-07 12:49:44,375 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:44,545 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881784438,"type":"speech-update","status":"stopped","role":"user","turn":1,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you today...
+2025-07-07 12:49:44,545 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:44,545 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881784438, 'type': 'speech-update', 'status': 'stopped', 'role': 'user', 'turn': 1, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}, {'role': 'bot', 'message': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?", 'time': 1751881771234.0002, 'endTime': 1751881775724, 'secondsFromStart': 6.9900002, 'duration': 4489.999755
+2025-07-07 12:49:44,547 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:44,547 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:44,548 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:44,548 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:45,166 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881785057,"type":"speech-update","status":"started","role":"assistant","turn":3,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you ...
+2025-07-07 12:49:45,167 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:45,167 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881785057, 'type': 'speech-update', 'status': 'started', 'role': 'assistant', 'turn': 3, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}, {'role': 'bot', 'message': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?", 'time': 1751881771234.0002, 'endTime': 1751881775724, 'secondsFromStart': 6.9900002, 'duration': 4489.9
+2025-07-07 12:49:45,169 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:45,169 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:45,170 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:45,172 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:46,293 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881786186,"type":"conversation-update","conversation":[{"role":"system","content":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session."},{"role":"assistant","content":"Hello. How can I help you today?"},{"role":"user","content":"Hello. How are you?"},{"role":"assistant","content...
+2025-07-07 12:49:46,295 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:46,295 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881786186, 'type': 'conversation-update', 'conversation': [{'role': 'system', 'content': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.'}, {'role': 'assistant', 'content': 'Hello. How can I help you today?'}, {'role': 'user', 'content': 'Hello. How are you?'}, {'role': 'assistant', 'content': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?"}, {'role': 'user', 'content': 'Yeah. I want to complete my order, but I cannot do it.'}, {'role': 'assistant', 'content': "I'm glad to help."}], 'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be
+2025-07-07 12:49:46,297 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'conversation', 'messages', 'messagesOpenAIFormatted', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:46,297 [INFO] main: 📨 Event type: conversation-update
+2025-07-07 12:49:46,297 [INFO] main: ℹ️ Ignored webhook event type: conversation-update
+2025-07-07 12:49:46,298 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:54,040 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → No body
+2025-07-07 12:49:54,044 [INFO] main: ⚡ Quick status check for call_id: 0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:49:54,328 [ERROR] main: ❌ Error checking call status for 0028b329-1a67-45b2-80de-5d1d55f2a984
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-07 12:49:54,356 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → Response: 200
+2025-07-07 12:49:55,680 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881795323,"type":"speech-update","status":"stopped","role":"assistant","turn":3,"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I help you ...
+2025-07-07 12:49:55,681 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:55,681 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881795323, 'type': 'speech-update', 'status': 'stopped', 'role': 'assistant', 'turn': 3, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}, {'role': 'bot', 'message': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?", 'time': 1751881771234.0002, 'endTime': 1751881775724, 'secondsFromStart': 6.9900002, 'duration': 4489.9
+2025-07-07 12:49:55,683 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'role', 'turn', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:55,683 [INFO] main: 📨 Event type: speech-update
+2025-07-07 12:49:55,683 [INFO] main: ℹ️ Ignored webhook event type: speech-update
+2025-07-07 12:49:55,683 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:55,878 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → No body
+2025-07-07 12:49:55,879 [INFO] main: ⚡ Quick status check for call_id: 0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:49:56,106 [ERROR] main: ❌ Error checking call status for 0028b329-1a67-45b2-80de-5d1d55f2a984
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-07 12:49:56,107 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → Response: 200
+2025-07-07 12:49:56,848 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881796666,"type":"status-update","status":"ended","endedReason":"customer-ended-call","artifact":{"messages":[{"role":"system","message":"You are simulating a scenario titled \"Cart Abandonment Follow-up Scenario 3\" inside the module \"Cart Abandonment Follow-up\" for the category \"E-Commerce\". Stay in character. Your behavior and tone will be dynamically adjusted per session.","time":1751881764080,"secondsFromStart":0},{"role":"bot","message":"Hello. How can I hel...
+2025-07-07 12:49:56,848 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:56,849 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881796666, 'type': 'status-update', 'status': 'ended', 'endedReason': 'customer-ended-call', 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time': 1751881768944, 'endTime': 1751881770164, 'secondsFromStart': 4.7, 'duration': 1220}, {'role': 'bot', 'message': "I'm doing great. Thank you. How can I assist you with your cart related concerns today?", 'time': 1751881771234.0002, 'endTime': 1751881775724, 'secondsFromStart': 6.9900002, 'duration': 44
+2025-07-07 12:49:56,851 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'status', 'endedReason', 'artifact', 'call', 'assistant']
+2025-07-07 12:49:56,851 [INFO] main: 📨 Event type: status-update
+2025-07-07 12:49:56,851 [INFO] main: ℹ️ Ignored webhook event type: status-update
+2025-07-07 12:49:56,851 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:49:56,924 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → No body
+2025-07-07 12:49:56,925 [INFO] main: ⚡ Quick status check for call_id: 0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:49:57,258 [ERROR] main: ❌ Error checking call status for 0028b329-1a67-45b2-80de-5d1d55f2a984
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-07 12:49:57,259 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → Response: 200
+2025-07-07 12:49:58,475 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → No body
+2025-07-07 12:49:58,475 [INFO] main: ⚡ Quick status check for call_id: 0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:49:58,704 [ERROR] main: ❌ Error checking call status for 0028b329-1a67-45b2-80de-5d1d55f2a984
+Traceback (most recent call last):
+  File "/Users/mac/Desktop/Arşiv/backend/main.py", line 805, in get_call_status
+    has_transcript = bool(data.get("transcript", "").strip())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2025-07-07 12:49:58,705 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → Response: 200
+2025-07-07 12:49:58,968 [INFO] main: 🔄 POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Body: {"message":{"timestamp":1751881798818,"type":"end-of-call-report","analysis":{"summary":"The user called seeking assistance with completing an order, stating they were unable to finalize their purchase. The AI was in the process of asking for more details to understand the specific issue the user was encountering. The call ended before the problem could be fully diagnosed or resolved.","successEvaluation":"false"},"artifact":{"messages":[{"role":"system","message":"You are simulating a scenario ...
+2025-07-07 12:49:58,970 [INFO] main: 🔍 Raw webhook payload keys: ['message']
+2025-07-07 12:49:58,971 [DEBUG] main: 📋 Full payload preview: {'message': {'timestamp': 1751881798818, 'type': 'end-of-call-report', 'analysis': {'summary': 'The user called seeking assistance with completing an order, stating they were unable to finalize their purchase. The AI was in the process of asking for more details to understand the specific issue the user was encountering. The call ended before the problem could be fully diagnosed or resolved.', 'successEvaluation': 'false'}, 'artifact': {'messages': [{'role': 'system', 'message': 'You are simulating a scenario titled "Cart Abandonment Follow-up Scenario 3" inside the module "Cart Abandonment Follow-up" for the category "E-Commerce". Stay in character. Your behavior and tone will be dynamically adjusted per session.', 'time': 1751881764080, 'secondsFromStart': 0}, {'role': 'bot', 'message': 'Hello. How can I help you today?', 'time': 1751881765924, 'endTime': 1751881767704, 'secondsFromStart': 1.68, 'duration': 1780, 'source': ''}, {'role': 'user', 'message': 'Hello. How are you?', 'time
+2025-07-07 12:49:58,972 [INFO] main: 🔍 Message keys: ['timestamp', 'type', 'analysis', 'artifact', 'startedAt', 'endedAt', 'endedReason', 'cost', 'costBreakdown', 'costs', 'durationMs', 'durationSeconds', 'durationMinutes', 'summary', 'transcript', 'messages', 'recordingUrl', 'stereoRecordingUrl', 'call', 'assistant']
+2025-07-07 12:49:58,972 [INFO] main: 📨 Event type: end-of-call-report
+2025-07-07 12:49:59,184 [INFO] main: 🎓 Call 0028b329-1a67-45b2-80de-5d1d55f2a984 identified as TRAINING call
+2025-07-07 12:49:59,185 [INFO] main: 🎓 Processing TRAINING call with enhanced scoring
+2025-07-07 12:49:59,186 [INFO] main: 📄 Extracted - transcript_length: 319, summary_length: 298
+2025-07-07 12:49:59,186 [INFO] main: 📊 Extracted - sentiment: neutral, ended_reason: customer-ended-call
+2025-07-07 12:49:59,188 [INFO] main: ⏱️ Duration extracted: 24s (from raw: 24.69)
+2025-07-07 12:49:59,188 [INFO] main: 🔍 Looking up existing training session for call_id: 0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:49:59,400 [INFO] main: ✅ Found existing training session: 2e51aa58-28e6-4b0e-9ee9-f843911beefe
+2025-07-07 12:49:59,648 [INFO] main: 📊 Scenario difficulty: 3
+2025-07-07 12:49:59,649 [INFO] main: 🧠 Running enhanced scoring analysis...
+2025-07-07 12:49:59,663 [INFO] main: 📊 Enhanced scoring complete:
+2025-07-07 12:49:59,663 [INFO] main:   - Raw Score: 4.4/10 → Database Score: 4/10
+2025-07-07 12:49:59,663 [INFO] main:   - Breakdown: {'engagement': 3, 'communication': 7, 'problem_solving': 4, 'professionalism': 7, 'duration_factor': 5}
+2025-07-07 12:49:59,663 [INFO] main:   - XP: 44 (bonus: 0)
+2025-07-07 12:49:59,663 [INFO] main:   - Feedback length: 316 chars
+2025-07-07 12:49:59,664 [INFO] main: 💾 Upserting enhanced training payload:
+2025-07-07 12:49:59,664 [INFO] main:   - Score: 4/10
+2025-07-07 12:49:59,664 [INFO] main:   - XP: 44 (bonus: 0)
+2025-07-07 12:49:59,664 [INFO] main:   - Feedback: 📚 This scenario needs more practice. Focus on the feedback below. 💡 Increase engagement by asking mo...
+2025-07-07 12:49:59,921 [INFO] main: ✅ Successfully upserted training_sessions with enhanced scoring for call_id=0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:49:59,922 [DEBUG] main: ✅ Upsert result: [{'id': '2e51aa58-28e6-4b0e-9ee9-f843911beefe', 'user_id': 'ede16300-bf93-4aee-93cb-188d6ae47894', 'module_id': 'd4295bc8-0bb1-4889-9cf9-e8926d44e4d6', 'transcript': "AI: Hello. How can I help you today?\nUser: Hello. How are you?\nAI: I'm doing great. Thank you. How can I assist you with your cart related concerns today?\nUser: Yeah. I want to complete my order, but I cannot do it.\nAI: I'm glad to help. Could you share a bit more about the issue you're facing? Are you encountering a\n", 'duration': 24, 'score': 4, 'sentiment': 'neutral', 'started_at': '2025-07-07T09:49:27', 'ended_at': '2025-07-07T09:49:23.943', 'call_id': '0028b329-1a67-45b2-80de-5d1d55f2a984', 'feedback': '📚 This scenario needs more practice. Focus on the feedback below. 💡 Increase engagement by asking more questions and providing detailed responses. 🧠 Enhance problem-solving by exploring the scenario more deeply and asking follow-up questions. ⏱️ Try to engage longer with the scenario to fully explore the situation.', 'passed': False, 'created_at': '2025-07-07T09:49:27', 'recording_url': None, 'scenario_id': 'a05ade46-77d1-42af-83fb-2d3cceacf35d', 'summary': 'The user called seeking assistance with completing an order, stating they were unable to finalize their purchase. The AI was in the process of asking for more details to understand the specific issue the user was encountering. The call ended before the problem could be fully diagnosed or resolved.', 'ended_reason': 'customer-ended-call', 'agent_id': '17c2b88e-097d-4b53-aea3-b4871cb48339', 'xp': 44, 'bonus_xp': 0, 'scoring_breakdown': '{"engagement": 3, "communication": 7, "problem_solving": 4, "professionalism": 7, "duration_factor": 5, "raw_score": 4.4}'}]
+2025-07-07 12:49:59,923 [INFO] main: ✅ Enhanced training webhook processing complete for call_id=0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:49:59,923 [INFO] main: ✅ POST https://8db4-24-133-173-110.ngrok-free.app/webhook → Response: 200
+2025-07-07 12:50:00,325 [INFO] main: 🔄 GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → No body
+2025-07-07 12:50:00,326 [INFO] main: ⚡ Quick status check for call_id: 0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:50:00,542 [INFO] main: 📊 Status for 0028b329-1a67-45b2-80de-5d1d55f2a984: processed=True, transcript=True, score=True
+2025-07-07 12:50:00,542 [INFO] main: ✅ GET http://127.0.0.1:8000/api/call-status/0028b329-1a67-45b2-80de-5d1d55f2a984 → Response: 200
+2025-07-07 12:50:00,552 [INFO] main: 🔄 GET http://127.0.0.1:8000/log-call?call_id=0028b329-1a67-45b2-80de-5d1d55f2a984 → No body
+2025-07-07 12:50:00,555 [INFO] main: 📤 GET /log-call?call_id=0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:50:00,767 [INFO] main: ✅ Found session data for call_id=0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:50:00,767 [DEBUG] main: 📊 Returning data - transcript_length: 319, score: 4, sentiment: neutral
+2025-07-07 12:50:00,768 [INFO] main: ✅ GET http://127.0.0.1:8000/log-call?call_id=0028b329-1a67-45b2-80de-5d1d55f2a984 → Response: 200
+2025-07-07 12:50:00,782 [INFO] main: 🔄 POST http://127.0.0.1:8000/api/end-training-session → Body: {"call_id":"0028b329-1a67-45b2-80de-5d1d55f2a984"}...
+2025-07-07 12:50:00,787 [INFO] main: 🛑 Ending training session → call_id: 0028b329-1a67-45b2-80de-5d1d55f2a984 at 2025-07-07 09:50:00
+2025-07-07 12:50:01,043 [INFO] main: ✅ Training session ended → call_id: 0028b329-1a67-45b2-80de-5d1d55f2a984
+2025-07-07 12:50:01,044 [INFO] main: ✅ POST http://127.0.0.1:8000/api/end-training-session → Response: 200
