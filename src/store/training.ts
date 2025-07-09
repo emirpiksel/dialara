@@ -1,6 +1,7 @@
 // store/training.ts
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
+import { logger } from '../utils/logger';
 
 interface AnalysisResult {
   feedback: string;
@@ -90,7 +91,7 @@ export const useTrainingStore = create<TrainingStore>()(
 
       // Actions
       setSelectedModuleId: (moduleId: string) => {
-        console.log('🎯 Setting module ID:', moduleId);
+        logger.component('TrainingStore').info('Setting module ID', { moduleId });
         set((state) => ({ 
           ...state,
           selectedModuleId: moduleId 
@@ -106,7 +107,7 @@ export const useTrainingStore = create<TrainingStore>()(
         moduleTitle: string,
         categoryName: string
       ) => {
-        console.log('🎯 Setting scenario:', { scenarioId, title, moduleTitle, categoryName });
+        logger.component('TrainingStore').info('Setting scenario', { scenarioId, title, moduleTitle, categoryName });
         set((state) => ({
           ...state,
           selectedScenarioId: scenarioId,
@@ -120,7 +121,7 @@ export const useTrainingStore = create<TrainingStore>()(
       },
 
       setCurrentCallId: (callId: string | null) => {
-        console.log('📞 Setting call ID:', callId);
+        logger.component('TrainingStore').info('Setting call ID', { callId });
         set((state) => ({ 
           ...state,
           currentCallId: callId 
@@ -128,7 +129,7 @@ export const useTrainingStore = create<TrainingStore>()(
       },
 
       setCallActive: (active: boolean) => {
-        console.log('📞 Setting call active:', active);
+        logger.component('TrainingStore').info('Setting call active', { active });
         set((state) => ({ 
           ...state,
           isCallActive: active 
@@ -136,7 +137,13 @@ export const useTrainingStore = create<TrainingStore>()(
       },
 
       setAnalysisResult: (result: AnalysisResult) => {
-        console.log('📊 Setting analysis result:', result);
+        logger.component('TrainingStore').info('Setting analysis result', { 
+          score: result.score, 
+          passed: result.passed, 
+          sentiment: result.sentiment,
+          xp: result.xp,
+          transcriptLength: result.transcript?.length || 0
+        });
         
         // Validate the result to ensure all required fields are present
         const validatedResult = {
@@ -156,7 +163,7 @@ export const useTrainingStore = create<TrainingStore>()(
       },
 
       setUserId: (userId: string) => {
-        console.log('👤 Setting user ID:', userId);
+        logger.component('TrainingStore').info('Setting user ID', { userId });
         set((state) => ({ 
           ...state,
           userId 
@@ -164,7 +171,7 @@ export const useTrainingStore = create<TrainingStore>()(
       },
 
       addXP: (amount: number) => {
-        console.log('✨ Adding XP:', amount);
+        logger.component('TrainingStore').info('Adding XP', { amount });
         set((state) => ({ 
           ...state,
           totalXP: state.totalXP + amount 
@@ -172,7 +179,7 @@ export const useTrainingStore = create<TrainingStore>()(
       },
 
       reset: () => {
-        console.log('🔄 Resetting training store');
+        logger.component('TrainingStore').info('Resetting training store');
         set((state) => ({
           selectedModuleId: null,
           selectedModuleTitle: null,
@@ -192,7 +199,7 @@ export const useTrainingStore = create<TrainingStore>()(
       },
 
       resetAnalysisOnly: () => {
-        console.log('🔄 Resetting analysis data only');
+        logger.component('TrainingStore').info('Resetting analysis data only');
         set((state) => ({
           ...state,
           ...initialAnalysisState,

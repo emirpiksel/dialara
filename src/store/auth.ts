@@ -1,14 +1,9 @@
 import { create } from "zustand";
 import { supabase } from "../lib/supabase";
+import { AuthState } from "../types";
+import { logger } from "../utils/logger";
 
-interface AuthState {
-  isAuthenticated: boolean;
-  userId: string | null;
-  email: string | null;
-  fullName: string | null;
-  clinicName: string | null;
-  isAdmin: boolean;
-  loading: boolean;
+interface AuthStore extends AuthState {
   signIn: (email: string, password: string) => Promise<void>;
   signUp: (email: string, password: string, fullName: string) => Promise<void>;
   signOut: () => Promise<void>;
@@ -17,14 +12,15 @@ interface AuthState {
   resetPassword: (email: string) => Promise<void>;
 }
 
-export const useAuthStore = create<AuthState>((set) => ({
+export const useAuthStore = create<AuthStore>((set) => ({
   isAuthenticated: false,
   userId: null,
   email: null,
   fullName: null,
   clinicName: null,
   isAdmin: false,
-  loading: true,
+  isLoading: true,
+  error: null,
 
   checkAuth: async () => {
     const { data: { session } } = await supabase.auth.getSession();
@@ -38,7 +34,8 @@ export const useAuthStore = create<AuthState>((set) => ({
         fullName: null,
         clinicName: null,
         isAdmin: false,
-        loading: false,
+        isLoading: false,
+        error: null,
       });
       return;
     }
@@ -63,7 +60,7 @@ export const useAuthStore = create<AuthState>((set) => ({
       );
 
       if (insertRes.error) {
-        console.error("User insert error:", insertRes.error);
+        logger.error("User insert error during auth check", { userId, email }, insertRes.error);
         return;
       }
 
@@ -77,7 +74,7 @@ export const useAuthStore = create<AuthState>((set) => ({
       fullName: userData.full_name,
       clinicName: userData.clinic_name ?? null,
       isAdmin: userData.role === "admin" || userData.role === "superadmin",
-      loading: false,
+      isLoading: false,
     });
   },
 
@@ -98,7 +95,7 @@ export const useAuthStore = create<AuthState>((set) => ({
       fullName: userData?.full_name ?? "",
       clinicName: userData?.clinic_name ?? null,
       isAdmin: userData?.role === "admin" || userData?.role === "superadmin",
-      loading: false,
+      isLoading: false,
     });
   },
 
@@ -122,7 +119,7 @@ export const useAuthStore = create<AuthState>((set) => ({
     );
 
     if (insertRes.error) {
-      console.error("Insert error after sign up:", insertRes.error);
+      logger.error("Insert error after sign up", { userId: user.id, email }, insertRes.error);
       throw insertRes.error;
     }
 
@@ -133,7 +130,7 @@ export const useAuthStore = create<AuthState>((set) => ({
       fullName,
       clinicName: null,
       isAdmin: role === "admin" || role === "superadmin",
-      loading: false,
+      isLoading: false,
     });
   },
 
@@ -146,7 +143,7 @@ export const useAuthStore = create<AuthState>((set) => ({
       fullName: null,
       clinicName: null,
       isAdmin: false,
-      loading: false,
+      isLoading: false,
     });
   },
 

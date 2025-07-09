@@ -11,7 +11,11 @@ import {
   Smile,
   Frown,
   Meh,
+  Edit,
+  Save,
+  AlertCircle,
 } from "lucide-react";
+import { useAuthStore } from "../store/auth";
 
 interface TrainingCallDetailModalProps {
   call: {
@@ -35,6 +39,17 @@ export const TrainingCallDetailModal: React.FC<TrainingCallDetailModalProps> = (
   const [summary, setSummary] = useState(call?.analysis?.summary || "");
   const [sentiment, setSentiment] = useState(call?.sentiment || "");
   const [score, setScore] = useState(call?.score || 0);
+  
+  // Edit mode state
+  const [isEditing, setIsEditing] = useState(false);
+  const [editingScore, setEditingScore] = useState(call?.score || 0);
+  const [editingSentiment, setEditingSentiment] = useState(call?.sentiment || "neutral");
+  const [editingFeedback, setEditingFeedback] = useState(call?.analysis?.summary || "");
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  
+  // Auth store
+  const { userId, isAdmin } = useAuthStore();
 
   useEffect(() => {
     if (!call) return;
@@ -43,6 +58,11 @@ export const TrainingCallDetailModal: React.FC<TrainingCallDetailModalProps> = (
     setSummary(call.analysis?.summary || "");
     setSentiment(call.sentiment || "");
     setScore(call.score || 0);
+    
+    // Update editing states when call data changes
+    setEditingScore(call.score || 0);
+    setEditingSentiment(call.sentiment || "neutral");
+    setEditingFeedback(call.analysis?.summary || "");
 
     if (call.call_status === "in-progress" || call.call_status === "ended") {
       pollForTranscript(call.id);
@@ -94,10 +114,60 @@ export const TrainingCallDetailModal: React.FC<TrainingCallDetailModalProps> = (
     }, 3000);
   };
 
-  const renderSentimentIcon = () => {
-    if (sentiment === "positive") return <Smile className="text-green-500 w-5 h-5" />;
-    if (sentiment === "negative") return <Frown className="text-red-500 w-5 h-5" />;
+  const renderSentimentIcon = (sentimentValue: string) => {
+    if (sentimentValue === "positive") return <Smile className="text-green-500 w-5 h-5" />;
+    if (sentimentValue === "negative") return <Frown className="text-red-500 w-5 h-5" />;
     return <Meh className="text-yellow-500 w-5 h-5" />;
+  };
+
+  const handleSaveChanges = async () => {
+    if (!call || !userId) return;
+    
+    setIsSaving(true);
+    setSaveError(null);
+
+    try {
+      const response = await fetch('/api/update-training-call', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          call_id: call.id,
+          user_id: userId,
+          score: editingScore,
+          sentiment: editingSentiment,
+          feedback: editingFeedback,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Failed to update training call');
+      }
+
+      // Update local state
+      setScore(editingScore);
+      setSentiment(editingSentiment);
+      setSummary(editingFeedback);
+      setIsEditing(false);
+      
+      // You might want to trigger a refetch of the training calls here
+      
+    } catch (error) {
+      console.error('Error updating training call:', error);
+      setSaveError(error instanceof Error ? error.message : 'Failed to save changes');
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  const handleCancelEdit = () => {
+    setEditingScore(call?.score || 0);
+    setEditingSentiment(call?.sentiment || "neutral");
+    setEditingFeedback(call?.analysis?.summary || "");
+    setIsEditing(false);
+    setSaveError(null);
   };
 
   return (
@@ -109,10 +179,21 @@ export const TrainingCallDetailModal: React.FC<TrainingCallDetailModalProps> = (
         </button>
 
         {/* Header */}
-        <h2 className="text-2xl font-bold mb-4 flex items-center text-gray-900">
-          <FileText className="w-6 h-6 mr-2 text-blue-500" />
-          Training Call Details
-        </h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-2xl font-bold flex items-center text-gray-900">
+            <FileText className="w-6 h-6 mr-2 text-blue-500" />
+            Training Call Details
+          </h2>
+          {isAdmin && !isEditing && (
+            <button
+              onClick={() => setIsEditing(true)}
+              className="flex items-center px-3 py-1 text-sm font-medium text-blue-600 bg-blue-50 rounded-md hover:bg-blue-100 transition"
+            >
+              <Edit className="w-4 h-4 mr-1" />
+              Edit
+            </button>
+          )}
+        </div>
 
         {/* Metadata */}
         <div className="space-y-4">
@@ -129,23 +210,64 @@ export const TrainingCallDetailModal: React.FC<TrainingCallDetailModalProps> = (
           {/* Score */}
           <div className="flex items-center text-gray-700">
             <Star className="w-5 h-5 text-yellow-500 mr-2" />
-            <span className="text-lg font-semibold">
-              AI Score: {score !== null ? score : "Not Rated"}
-            </span>
+            {isEditing ? (
+              <div className="flex items-center space-x-2">
+                <label className="text-sm font-medium">AI Score:</label>
+                <input
+                  type="number"
+                  min="0"
+                  max="10"
+                  step="0.1"
+                  value={editingScore}
+                  onChange={(e) => setEditingScore(parseFloat(e.target.value) || 0)}
+                  className="w-20 px-2 py-1 border border-gray-300 rounded text-sm"
+                />
+                <span className="text-sm text-gray-500">/ 10</span>
+              </div>
+            ) : (
+              <span className="text-lg font-semibold">
+                AI Score: {score !== null ? score : "Not Rated"}
+              </span>
+            )}
           </div>
 
           {/* Sentiment */}
           <div className="flex items-center text-gray-700">
-            {renderSentimentIcon()}
-            <span className="ml-2 text-sm font-medium">Sentiment: {sentiment || "Unknown"}</span>
+            {renderSentimentIcon(isEditing ? editingSentiment : sentiment)}
+            {isEditing ? (
+              <div className="flex items-center space-x-2 ml-2">
+                <label className="text-sm font-medium">Sentiment:</label>
+                <select
+                  value={editingSentiment}
+                  onChange={(e) => setEditingSentiment(e.target.value)}
+                  className="px-2 py-1 border border-gray-300 rounded text-sm"
+                >
+                  <option value="positive">Positive</option>
+                  <option value="neutral">Neutral</option>
+                  <option value="negative">Negative</option>
+                </select>
+              </div>
+            ) : (
+              <span className="ml-2 text-sm font-medium">Sentiment: {sentiment || "Unknown"}</span>
+            )}
           </div>
 
           {/* Feedback */}
           <div>
             <h3 className="text-sm font-medium text-gray-500">Feedback / Summary:</h3>
-            <p className="text-gray-800 mt-1 text-sm border border-gray-300 bg-gray-100 p-2 rounded">
-              {summary || "Not available yet."}
-            </p>
+            {isEditing ? (
+              <textarea
+                value={editingFeedback}
+                onChange={(e) => setEditingFeedback(e.target.value)}
+                className="w-full mt-1 px-2 py-2 border border-gray-300 rounded text-sm resize-y"
+                rows={4}
+                placeholder="Enter feedback or summary..."
+              />
+            ) : (
+              <p className="text-gray-800 mt-1 text-sm border border-gray-300 bg-gray-100 p-2 rounded">
+                {summary || "Not available yet."}
+              </p>
+            )}
           </div>
 
           {/* Transcript */}
@@ -179,14 +301,51 @@ export const TrainingCallDetailModal: React.FC<TrainingCallDetailModalProps> = (
           )}
         </div>
 
+        {/* Error Message */}
+        {saveError && (
+          <div className="mt-4 flex items-center text-red-600 text-sm">
+            <AlertCircle className="w-4 h-4 mr-2" />
+            {saveError}
+          </div>
+        )}
+
         {/* Footer */}
-        <div className="mt-4 flex justify-end">
-          <button
-            onClick={onClose}
-            className="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-200 rounded-md hover:bg-gray-300"
-          >
-            Close
-          </button>
+        <div className="mt-4 flex justify-end space-x-2">
+          {isEditing ? (
+            <>
+              <button
+                onClick={handleCancelEdit}
+                disabled={isSaving}
+                className="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-200 rounded-md hover:bg-gray-300 disabled:opacity-50"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSaveChanges}
+                disabled={isSaving}
+                className="flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 disabled:opacity-50"
+              >
+                {isSaving ? (
+                  <>
+                    <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                    Saving...
+                  </>
+                ) : (
+                  <>
+                    <Save className="w-4 h-4 mr-2" />
+                    Save Changes
+                  </>
+                )}
+              </button>
+            </>
+          ) : (
+            <button
+              onClick={onClose}
+              className="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-200 rounded-md hover:bg-gray-300"
+            >
+              Close
+            </button>
+          )}
         </div>
       </div>
     </div>

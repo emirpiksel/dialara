@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
-import { GraduationCap, BarChart2, List, Users, User, LogOut } from "lucide-react";
+import { GraduationCap, BarChart2, List, Users, User, LogOut, TrendingUp } from "lucide-react";
 import { useAuthStore } from "@/store/auth";
 import { useTrainingStore } from "@/store/training";
 import { ModeSwitcher } from "./ModeSwitcher";
@@ -41,6 +41,9 @@ export function TrainingLayout() {
             <NavItem to="/training/calls" icon={<List />} label="Training Call Logs" />
             <NavItem to="/training/progress" icon={<BarChart2 />} label="Progress" />
             <NavItem to="/training/leaderboard" icon={<Users />} label="Leaderboard" />
+            {isAdmin && (
+              <NavItem to={`/training-analytics/user/${userId}`} icon={<TrendingUp />} label="Analytics" />
+            )}
           </nav>
 
           {/* Footer */}

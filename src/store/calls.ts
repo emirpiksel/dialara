@@ -2,8 +2,10 @@ import { create } from 'zustand';
 import { supabase } from '../lib/supabase';
 import { Database } from '../lib/database.types';
 import { useAuthStore } from './auth';
+import { CallLog, LoadingState } from '../types';
+import { logger } from '../utils/logger';
 
-type CallLog = Database['public']['Tables']['call_logs']['Row'];
+type DatabaseCallLog = Database['public']['Tables']['call_logs']['Row'];
 
 interface CallStats {
   totalCalls: number;
@@ -21,11 +23,9 @@ export type CallFilter = {
   search?: string;
 };
 
-interface CallsState {
+interface CallsState extends LoadingState {
   calls: CallLog[];
   stats: CallStats;
-  loading: boolean;
-  error: string | null;
   totalPages: number;
   currentPage: number;
   pageSize: number;
@@ -45,7 +45,7 @@ export const useCallsStore = create<CallsState>((set, get) => ({
     uniqueCallers: 0,
     successRate: '0%',
   },
-  loading: false,
+  isLoading: false,
   error: null,
   totalPages: 1,
   currentPage: 1,
@@ -79,14 +79,14 @@ export const useCallsStore = create<CallsState>((set, get) => ({
     const { userId } = useAuthStore.getState(); // Fetch userId from auth store
     
     if (!userId) {
-      console.error('No user ID available');
+      logger.component('CallsStore').error('No user ID available for fetchCalls');
       return;
     }
 
-    set({ loading: true, error: null });
+    set({ isLoading: true, error: null });
 
     try {
-      console.log('Fetching calls for user:', userId);
+      logger.component('CallsStore').info('Fetching calls for user', { userId });
 
       let query = supabase
         .from('call_logs')
@@ -117,24 +117,24 @@ export const useCallsStore = create<CallsState>((set, get) => ({
         .range(from, to);
 
       if (error) {
-        console.error('Error fetching calls:', error);
+        logger.component('CallsStore').error('Error fetching calls', { userId }, error);
         throw error;
       }
 
-      console.log('Fetched calls:', data);
+      logger.component('CallsStore').info('Fetched calls', { userId, count: data?.length || 0 });
 
       // Ensure frontend only displays calls that exist in the database
       set({
         calls: data || [],
         totalPages: Math.ceil((count || 0) / state.pageSize),
-        loading: false,
+        isLoading: false,
       });
 
       // Enable real-time sync for call_logs (deletes, inserts, updates)
       supabase
         .channel('call_logs_changes') // Create a real-time channel
         .on('postgres_changes', { event: 'DELETE', schema: 'public', table: 'call_logs' }, payload => {
-          console.log("Deleted call detected:", payload.old);
+          logger.component('CallsStore').info('Deleted call detected', { deletedCallId: payload.old.id });
           set(prevState => ({
             calls: prevState.calls.filter(call => call.id !== payload.old.id)
           }));
@@ -142,10 +142,10 @@ export const useCallsStore = create<CallsState>((set, get) => ({
         .subscribe();
 
     } catch (error) {
-      console.error('Error in fetchCalls:', error);
+      logger.component('CallsStore').error('Error in fetchCalls', { userId }, error as Error);
       set({ 
         error: 'Failed to fetch calls',
-        loading: false,
+        isLoading: false,
       });
     }
   },
@@ -154,12 +154,12 @@ export const useCallsStore = create<CallsState>((set, get) => ({
     const { userId } = useAuthStore.getState(); // Fetch userId from auth store
     
     if (!userId) {
-      console.error('No user ID available');
+      logger.component('CallsStore').error('No user ID available for fetchStats');
       return;
     }
 
     try {
-      console.log('Fetching stats for user:', userId);
+      logger.component('CallsStore').info('Fetching stats for user', { userId });
       
       const { data: calls, error } = await supabase
         .from('call_logs')
@@ -185,7 +185,7 @@ export const useCallsStore = create<CallsState>((set, get) => ({
         });
       }
     } catch (error) {
-      console.error('Error fetching stats:', error);
+      logger.component('CallsStore').error('Error fetching stats', { userId }, error as Error);
     }
   },
 }));

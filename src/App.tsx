@@ -4,6 +4,7 @@ import { useAuthStore } from "./store/auth";
 import { useAppMode } from "./store/useAppMode";
 import { Layout } from "./components/Layout";
 import { TrainingLayout } from "./components/TrainingLayout";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Dashboard } from "./pages/Dashboard";
 import { Agents } from "./pages/Agents";
 import { Calls } from "./pages/Calls"; // Keep this for general calls
@@ -25,7 +26,9 @@ import { Teams } from "./pages/Teams";
 
 /* ✅ Import Training Pages */
 import Training from "./pages/Training";
-import TrainingCalls from "./pages/Training/TrainingCalls"; // ✅ Import Training Call Logs Page
+import TrainingCalls from "./pages/training/TrainingCalls"; // ✅ Import Training Call Logs Page
+import TrainingAnalytics from "./pages/training/TrainingAnalytics";
+import UserCallDetail from "./pages/training/UserCallDetail";
 
 function App() {
   const { isAuthenticated, checkAuth, loading, isAdmin } = useAuthStore();
@@ -84,7 +87,17 @@ function App() {
                 <Route path="calls" element={<TrainingCalls />} />
                 <Route path="progress" element={<ProgressPage />} />
                 <Route path="leaderboard" element={<LeaderboardPage />} />
-                <Route path="simulator" element={<TrainingSimulator />} />
+                <Route path="simulator" element={
+                  <ErrorBoundary>
+                    <TrainingSimulator />
+                  </ErrorBoundary>
+                } />
+              </Route>
+
+              {/* ✅ Training Analytics Section */}
+              <Route path="training-analytics">
+                <Route path="user/:userId" element={<TrainingAnalytics />} />
+                <Route path="calls/:userId" element={<UserCallDetail />} />
               </Route>
 
               {/* ✅ Teams Page (Only Admins Can Access) */}

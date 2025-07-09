@@ -1,9 +1,21 @@
 import { supabase } from '@/lib/supabase'; // ✅ Use shared client
 import type { Database } from '@/lib/database.types';
+import type { VapiEvent } from '@/types';
 
-export async function POST(req: Request) {
+interface WebhookPayload {
+  call_id: string;
+  agent_id: string;
+  clinic_name: string;
+  caller_number: string;
+  call_type?: 'inbound' | 'outbound';
+  duration?: number;
+  recording_url?: string;
+  timestamp?: string;
+}
+
+export async function POST(req: Request): Promise<Response> {
   try {
-    const data = await req.json();
+    const data: WebhookPayload = await req.json();
     
     // Extract call data from the webhook payload
     const {

@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
 import { Phone, Globe, Clock } from 'lucide-react';
 import { useCallsStore } from '../store/calls';
-import { Database } from '../lib/database.types';
-
-type CallLog = Database['public']['Tables']['call_logs']['Row'];
+import { CallLog } from '../types';
 
 export function CallLogs() {
-  const { calls, loading, fetchCalls } = useCallsStore();
+  const { calls, isLoading, fetchCalls } = useCallsStore();
 
   useEffect(() => {
     fetchCalls();
@@ -34,7 +32,7 @@ export function CallLogs() {
     }
   };
 
-  if (loading) {
+  if (isLoading) {
     return <div className="animate-pulse">Loading calls...</div>;
   }
 

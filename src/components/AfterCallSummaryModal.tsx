@@ -148,7 +148,7 @@ export const AfterCallSummaryModal: React.FC<Props> = ({ isOpen, onClose, onRetr
           <div className="flex flex-col items-center justify-center py-12">
             <Loader2 className="animate-spin w-6 h-6 text-gray-500 mb-3" />
             <p className="text-sm text-gray-600">Analyzing your session...</p>
-            {process.env.NODE_ENV === 'development' && (
+            {import.meta.env.MODE === 'development' && (
               <div className="mt-4 p-3 bg-gray-100 rounded text-xs text-gray-600 w-full">
                 <div className="grid grid-cols-2 gap-1">
                   <div>Transcript: {debugInfo.transcript || 0} chars</div>
