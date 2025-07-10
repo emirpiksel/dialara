@@ -8,7 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "webhook": "node server/webhook.js"
+    "webhook": "node server/webhook.js",
+    "setup-overlay": "node setup-overlay.js",
+    "test-overlay": "node test-overlay.js",
+    "overlay:dev": "cd electron-overlay && npm run dev",
+    "overlay:install": "cd electron-overlay && npm install"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.7",
@@ -26,6 +30,7 @@
     "react-router-dom": "^6.22.3",
     "recharts": "^3.1.0",
     "uuid": "^11.1.0",
+    "ws": "^8.14.2",
     "zustand": "^4.5.2"
   },
   "devDependencies": {

@@ -22,8 +22,14 @@ npm run preview      # Preview production build
 
 ### Backend (FastAPI)
 ```bash
-# Install Python dependencies (if requirements.txt exists)
-pip install fastapi uvicorn python-dotenv requests textblob supabase
+# Set up Python virtual environment
+python -m venv venv
+source venv/bin/activate   # Mac/Linux
+# venv\Scripts\activate    # Windows
+# .\venv\Scripts\Activate.ps1 # PowerShell
+
+# Install Python dependencies from requirements.txt
+pip install -r requirements.txt
 
 # Run FastAPI server
 python backend/main.py
@@ -31,18 +37,23 @@ python backend/main.py
 uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-### Webhook Server
+### Additional Scripts
 ```bash
-# Start webhook server using npm script (uses localtunnel)
-npm run webhook
+# Set up and run agent assist overlay (for CRM mode)
+npm run overlay:install    # Install overlay dependencies
+npm run overlay:dev        # Start overlay in development mode
 
-# Alternative: Start outbound call scheduler
+# Outbound call scheduler
 cd server
 node scheduleOutboundCalls.cjs
 
-# Expose webhook endpoint (temporary setup)
+# Expose webhook endpoint for development (choose one)
 ngrok http http://localhost:8000
-# Note: Currently using temporary ngrok URL for webhook - will be replaced with permanent domain
+# or use localtunnel via npm script:
+npm run webhook
+
+# Test overlay integration
+npm run test-overlay
 ```
 
 ## Architecture
@@ -62,9 +73,11 @@ ngrok http http://localhost:8000
 
 ### Backend Structure
 - **FastAPI** server handling webhooks and API endpoints
+- **Centralized configuration**: `backend/config.py` manages all settings with type safety
 - **Dual webhook processing**: Automatically detects and routes training vs regular calls
-- **Enhanced scoring system**: Detailed performance analysis for training calls
+- **Enhanced scoring system**: Detailed performance analysis for training calls with configurable weights
 - **Supabase integration**: Authentication and database operations
+- **Modular services**: Separate services for scoring, gamification, AI analysis, and webhook handling
 
 ### Database Tables
 - `users` - User authentication and roles
@@ -85,9 +98,10 @@ ngrok http http://localhost:8000
 
 ### Key Dependencies
 - **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, Zustand, React Router, Recharts/Chart.js, Vapi.ai Web SDK
-- **Backend**: FastAPI, Uvicorn, TextBlob (sentiment analysis), Requests, python-dotenv, Supabase Python client
+- **Backend**: FastAPI 0.115.11, Uvicorn 0.34.0, TextBlob (sentiment analysis), Requests 2.31.0, python-dotenv 1.0.1, Pandas 2.0.3, python-multipart 0.0.6, openpyxl 3.1.2, Supabase Python client
 - **Database**: Supabase (PostgreSQL)
 - **Voice**: Vapi.ai SDK, Twilio integration
+- **Agent Assist Overlay**: Electron, OpenAI API (for real-time suggestions)
 - **Development**: ESLint, Autoprefixer, PostCSS, Localtunnel (for webhook development)
 
 ## Configuration
@@ -104,7 +118,12 @@ SUPABASE_URL=your_supabase_url
 SUPABASE_ANON_KEY=your_supabase_anon_key
 VAPI_PRIVATE_KEY=your_vapi_private_key
 VAPI_ASSISTANT_ID=your_vapi_assistant_id
+VAPI_WEBHOOK_SECRET=your_webhook_secret
 WEBHOOK_URL=your_webhook_url
+UNIVERSAL_AGENT_ID=17c2b88e-097d-4b53-aea3-b4871cb48339  # Default training agent
+
+# Agent Assist Overlay (electron-overlay/.env)
+OPENAI_API_KEY=your_openai_api_key
 ```
 
 ### Vite Configuration
@@ -134,6 +153,23 @@ The `/webhook` endpoint automatically:
 - **Call logging**: Comprehensive call history and analytics. Seperate tables for regular calls and training calls
 - **Real-time updates**: WebSocket-like updates through Supabase
 
+### Agent Assist Overlay System
+- **AI-powered suggestions**: Real-time contextual suggestions during live CRM calls
+- **Objection handling**: AI-generated responses to common sales objections
+- **Call checklist**: Dynamic checklist that adapts to call type and lead status
+- **Keyboard shortcuts**: Global hotkeys for quick access (Ctrl+Shift+H, S, O, C)
+- **Live transcript analysis**: Automatically triggers suggestions based on conversation flow
+- **CRM integration**: Seamlessly integrates with existing Dialara stores and data flow
+- **Electron overlay**: Lightweight overlay visible only to agents, not captured in recordings
+
+### AI Function Call Tools
+- **Database operations**: AI can lookup leads, update lead status, and retrieve call history during conversations
+- **Task automation**: Create follow-up tasks, log call outcomes, and schedule meetings automatically
+- **Pricing calculations**: AI provides instant pricing based on customer requirements and type
+- **Calendar integration**: Schedule meetings and find available time slots via AI function calls
+- **Knowledge base search**: AI accesses uploaded documents to answer customer questions
+- **CRM automation**: Update lead statuses and log call outcomes without manual intervention
+
 ## Testing
 
 No specific test framework is configured. Check with the team for preferred testing approach.
@@ -145,6 +181,8 @@ No specific test framework is configured. Check with the team for preferred test
 - Host configuration in vite.config.ts is critical and should remain as 127.0.0.1
 - The system uses a dual-table approach: `call_logs` for regular calls, `training_sessions` for training
 - Universal agent ID is used for training: `17c2b88e-097d-4b53-aea3-b4871cb48339`
+- Backend configuration is centralized in `backend/config.py` with validation - ensure all required env vars are set
+- The scoring system uses configurable weights and thresholds defined in `ScoringConfig`
 
 ### Key API Endpoints
 - `GET /log-call` - Retrieve training call data
@@ -154,6 +192,9 @@ No specific test framework is configured. Check with the team for preferred test
 - `POST /api/start-simulation` - Start training simulation
 - `GET /api/getUserStats/{user_id}` - Get user training statistics
 - `GET /api/call-status/{call_id}` - Quick status check for call processing
+- `POST /api/vapi/function-call` - Handle Vapi AI function calls for database operations
+- `GET /api/vapi/functions` - Get available function definitions for Vapi assistant setup
+- `POST /api/vapi/test-function` - Test function calls with sample data
 
 ### Authentication Flow
 1. Users sign in through Supabase Auth
@@ -171,15 +212,38 @@ No specific test framework is configured. Check with the team for preferred test
 ### Common Development Workflows
 
 #### Setting up development environment
-1. Install dependencies: 
-   - Frontend: `npm install`
-   - Backend: `pip install fastapi uvicorn python-dotenv requests textblob supabase`
-2. Set up environment variables (see Configuration section)
-3. Start backend: `python backend/main.py`
-4. Start frontend: `npm run dev`
-5. For webhook testing: 
-   - Option 1: Use `npm run webhook` (uses localtunnel)
-   - Option 2: Use ngrok with `ngrok http http://localhost:8000`
+1. **Install dependencies**:
+   ```bash
+   # Frontend dependencies
+   npm install
+   
+   # Backend dependencies (in virtual environment)
+   python -m venv venv
+   source venv/bin/activate  # Mac/Linux
+   pip install -r requirements.txt
+   
+   # Agent Assist Overlay dependencies
+   npm run overlay:install
+   ```
+
+2. **Set up environment variables** (see Configuration section above)
+
+3. **Start all services**:
+   ```bash
+   # Terminal 1: Backend
+   source venv/bin/activate
+   python backend/main.py
+   
+   # Terminal 2: Frontend
+   npm run dev
+   
+   # Terminal 3: Agent Assist Overlay (optional, CRM mode only)
+   npm run overlay:dev
+   ```
+
+4. **Webhook setup for development**:
+   - Option 1: `npm run webhook` (uses localtunnel)
+   - Option 2: `ngrok http http://localhost:8000`
    - Copy the provided public URL and update webhook URL in Vapi dashboard
 
 #### Working with the dual-mode system
@@ -206,6 +270,12 @@ No specific test framework is configured. Check with the team for preferred test
 3. **Webhook not receiving data**: Verify the public URL is correctly configured in Vapi dashboard
 4. **Database connection issues**: Ensure Supabase credentials are correct in `.env` file
 5. **Training mode not working**: Check if `training_sessions` table exists and has correct schema
+6. **Agent assist overlay not connecting**: 
+   - Verify overlay is running (`cd electron-overlay && npm run dev`)
+   - Check port 8765 is available
+   - Ensure you're in CRM mode (not Training mode)
+   - Test connection with: `node electron-overlay/test/test-integration.js`
+7. **AI suggestions not working**: Verify OpenAI API key in `electron-overlay/.env`
 
 ## SUPABASE SCHEMAS AND INFORMATION ABOUT TABLES: Below is the full database schema including columns, foreign key relationships, and indexes.
 ## Supabase Table Structures
@@ -1842,3 +1912,43 @@ No specific test framework is configured. Check with the team for preferred test
     "index_method": "btree"
   }
 ]
+
+## Multi-Language Support (CF-9)
+
+The system now supports multiple languages for both UI and voice interactions:
+
+**Supported Languages:**
+- English (en) - Default language with full UI support
+- Turkish (tr) - Complete UI translation and voice support  
+- Spanish (es) - Vapi voice configuration support
+
+**UI Internationalization:**
+- Language selector component in both CRM and Training layouts
+- Comprehensive translation system with context-aware strings
+- Automatic language detection from browser preferences  
+- Persistent language preferences in localStorage and backend database
+- Graceful fallback to English for untranslated content
+
+**Voice/STT Configuration:**
+- Language-specific Vapi assistant configurations with appropriate voice providers
+- Multi-language STT (Speech-to-Text) settings optimized for Deepgram
+- Language-specific system messages and greetings for AI assistants
+- Voice provider configuration (11labs) with language-appropriate voice IDs
+
+**API Endpoints:**
+- `GET /api/language/available` - Get list of available languages
+- `GET /api/language/config/{language_code}` - Get language-specific Vapi configuration  
+- `POST /api/language/set-default` - Set user's default language preference
+- `GET /api/language/user-preference/{user_id}` - Get user's language preference
+- `POST /api/language/create-assistant` - Generate multilingual assistant configuration
+
+**Integration:**
+Language preferences are synchronized between frontend and backend, with backend database storage for user preferences. Vapi assistants can be configured with language-specific voices, transcription settings, and localized system messages for different regions.
+
+**Files Modified:**
+- `src/lib/i18n.ts` - Core internationalization system
+- `src/components/LanguageSelector.tsx` - Language switching UI component
+- `src/components/CRMLayout.tsx` & `TrainingLayout.tsx` - Language selector integration
+- `backend/vapi_functions.py` - Multi-language Vapi configurations  
+- `backend/main.py` - Language preference API endpoints
+- `src/pages/Analytics.tsx` - Translated UI labels (example implementation)

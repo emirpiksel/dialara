@@ -4,6 +4,7 @@ import { GraduationCap, BarChart2, List, Users, User, LogOut, TrendingUp } from 
 import { useAuthStore } from "@/store/auth";
 import { useTrainingStore } from "@/store/training";
 import { ModeSwitcher } from "./ModeSwitcher";
+import { LanguageSelector } from "./LanguageSelector";
 
 export function TrainingLayout() {
   const { fullName, isAuthenticated, isAdmin, signOut, userId } = useAuthStore();
@@ -32,7 +33,10 @@ export function TrainingLayout() {
             <h1 className="text-xl font-bold text-gray-900 truncate">
               {fullName ? `Training Mode 🎓` : "Training Mode"}
             </h1>
-            <ModeSwitcher />
+            <div className="flex items-center justify-between space-x-2">
+              <ModeSwitcher />
+              <LanguageSelector className="ml-auto" />
+            </div>
           </div>
 
           {/* Sidebar Navigation */}

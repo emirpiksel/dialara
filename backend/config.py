@@ -73,6 +73,7 @@ class AppConfig:
     # Vapi configuration
     vapi_private_key: str = None
     vapi_assistant_id: str = None
+    vapi_webhook_secret: str = None
     
     # Webhook configuration
     webhook_timeout: int = 20
@@ -95,6 +96,7 @@ class AppConfig:
         self.supabase_key = os.getenv("SUPABASE_ANON_KEY") or os.getenv("VITE_SUPABASE_ANON_KEY")
         self.vapi_private_key = os.getenv("VAPI_PRIVATE_KEY")
         self.vapi_assistant_id = os.getenv("VAPI_ASSISTANT_ID")
+        self.vapi_webhook_secret = os.getenv("VAPI_WEBHOOK_SECRET")
         self.webhook_url = os.getenv("WEBHOOK_URL")
         
         # Override with environment variables if present

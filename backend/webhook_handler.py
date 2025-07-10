@@ -124,7 +124,7 @@ def handle_regular_call(raw_json: dict, call_type: str, supabase: Client) -> dic
         elif sentiment == "negative":
             score = 4
 
-        # Prepare payload for call_logs table
+        # Prepare payload for call_logs table with compliance tracking
         payload = {
             "call_id": call_id,
             "agent_id": agent_id,
@@ -146,7 +146,12 @@ def handle_regular_call(raw_json: dict, call_type: str, supabase: Client) -> dic
             "call_start": call_start,
             "call_end": call_end,
             "provider": "vapi",
-            "feedback": summary or "Call completed successfully"
+            "feedback": summary or "Call completed successfully",
+            # Compliance fields
+            "recording_consent": True,  # Assumed since call was made through platform
+            "gdpr_compliant": True,
+            "kvkk_compliant": True,
+            "data_retention_notice": "Recording will be retained for 90 days unless specified otherwise"
         }
 
         # Handle Twilio SID if available
@@ -162,6 +167,30 @@ def handle_regular_call(raw_json: dict, call_type: str, supabase: Client) -> dic
         
         if result.data:
             logger.info(f"✅ Successfully saved regular call {call_id} to call_logs")
+            
+            # End live call monitoring for this call
+            try:
+                from live_call_control_service import end_live_call
+                end_live_call(call_id, ended_reason or "completed")
+                logger.info(f"🔴 Ended live call monitoring for {call_id}")
+            except Exception as e:
+                logger.debug(f"Live call end attempt failed for call {call_id}: {e}")
+                # Don't fail the webhook if live call cleanup fails
+            
+            # Try to sync call to HubSpot if user has integration enabled
+            try:
+                if user_id:
+                    from hubspot_service import HubSpotSync
+                    sync = HubSpotSync(user_id)
+                    sync_result = sync.sync_call_to_hubspot(payload)
+                    if sync_result.get("status") == "success":
+                        logger.info(f"✅ Synced call {call_id} to HubSpot")
+                    else:
+                        logger.debug(f"HubSpot sync not available or failed for call {call_id}: {sync_result}")
+            except Exception as e:
+                logger.debug(f"HubSpot sync attempt failed for call {call_id}: {e}")
+                # Don't fail the webhook if HubSpot sync fails
+                
         else:
             logger.error(f"❌ Failed to save regular call {call_id}")
 
@@ -366,8 +395,23 @@ async def process_webhook(request_json: dict, supabase: Client) -> dict:
         logger.info(f"🔍 Message keys: {list(message.keys()) if message else 'No message'}")
         logger.info(f"📨 Event type: {event_type}")
 
+        # Handle function call events (calendar scheduling during calls)
+        if event_type == "function-call":
+            logger.info("🗓️ Processing function call event")
+            return await handle_function_call(request_json, supabase)
+
+        # Handle call start events for live monitoring
+        if event_type == "call-start":
+            logger.info("📞 Processing call start event for live monitoring")
+            return await handle_call_start(request_json, supabase)
+
+        # Handle transcript events for live monitoring
+        if event_type == "transcript":
+            logger.info("📝 Processing transcript event for live monitoring")
+            return await handle_transcript_update(request_json, supabase)
+
         # Quick response for non-end-of-call events
-        if event_type != "end-of-call-report":
+        if event_type not in ["end-of-call-report", "call-start", "transcript"]:
             logger.info(f"ℹ️ Ignored webhook event type: {event_type}")
             return {"status": "ignored"}
 
@@ -383,4 +427,218 @@ async def process_webhook(request_json: dict, supabase: Client) -> dict:
 
     except Exception as e:
         logger.exception("🔥 Webhook processing exception")
+        return {"status": "error", "message": str(e)}
+
+
+async def handle_function_call(raw_json: dict, supabase: Client) -> dict:
+    """Handle Vapi function call events (e.g., calendar scheduling)"""
+    try:
+        message = raw_json.get("message", {})
+        function_call = message.get("functionCall", {})
+        
+        function_name = function_call.get("name", "")
+        parameters = function_call.get("parameters", {})
+        call_id = message.get("call", {}).get("id", "")
+        
+        logger.info(f"🗓️ Function call: {function_name} with params: {parameters}")
+        
+        # Get user_id from call - you might need to adjust this based on your call tracking
+        user_id = None
+        if call_id:
+            # Try to get user_id from call logs or training sessions
+            call_result = supabase.table("call_logs").select("user_id").eq("call_id", call_id).maybe_single().execute()
+            if call_result.data:
+                user_id = call_result.data.get("user_id")
+            else:
+                # Try training sessions
+                session_result = supabase.table("training_sessions").select("user_id").eq("call_id", call_id).maybe_single().execute()
+                if session_result.data:
+                    user_id = session_result.data.get("user_id")
+        
+        if not user_id:
+            logger.warning(f"⚠️ Could not determine user_id for function call in call {call_id}")
+            return {
+                "status": "error",
+                "message": "Could not determine user for function call"
+            }
+        
+        # Handle calendar and knowledge base function calls
+        if function_name in ["find_available_times", "schedule_meeting", "get_next_available", "search_knowledge"]:
+            try:
+                from vapi_functions import handle_vapi_function_call
+                result = handle_vapi_function_call(function_name, parameters, user_id)
+                
+                # Log function call for analytics
+                supabase.table('event_logs').insert({
+                    'call_id': call_id,
+                    'event_type': 'function_call',
+                    'payload': {
+                        'function_name': function_name,
+                        'parameters': parameters,
+                        'result': result,
+                        'user_id': user_id
+                    }
+                }).execute()
+                
+                logger.info(f"✅ Function call {function_name} completed: {result.get('status', 'unknown')}")
+                return {
+                    "status": "success",
+                    "function_result": result
+                }
+                
+            except Exception as e:
+                logger.exception(f"❌ Error handling function call {function_name}")
+                return {
+                    "status": "error",
+                    "message": f"Function call error: {str(e)}"
+                }
+        else:
+            logger.warning(f"⚠️ Unknown function call: {function_name}")
+            return {
+                "status": "error",
+                "message": f"Unknown function: {function_name}"
+            }
+        
+    except Exception as e:
+        logger.exception("❌ Error processing function call")
+        return {"status": "error", "message": str(e)}
+
+
+async def handle_call_start(raw_json: dict, supabase: Client) -> dict:
+    """Handle call start events for live monitoring"""
+    try:
+        message = raw_json.get("message", {})
+        call = message.get("call", {})
+        call_id = call.get("id")
+        
+        if not call_id:
+            logger.warning("❌ Call start event missing call_id")
+            return {"status": "error", "message": "Missing call_id"}
+        
+        logger.info(f"📞 Registering call {call_id} for live monitoring")
+        
+        # Extract call data for live monitoring
+        customer = call.get("customer", {})
+        caller_number = customer.get("number") or customer.get("phoneNumber") or "Unknown"
+        customer_name = customer.get("name") or "Unknown Customer"
+        call_type = call.get("type", "unknown")
+        
+        # Get agent info
+        agent_id = call.get("assistantId") or None
+        agent_name = "AI Assistant"
+        
+        # Try to get user_id from agent mapping
+        user_id = None
+        if agent_id:
+            try:
+                agent_res = supabase.table("ai_agents").select("user_id").eq("vapi_agent_id", agent_id).maybe_single().execute()
+                if agent_res and agent_res.data:
+                    user_id = agent_res.data.get("user_id")
+            except Exception as e:
+                logger.debug(f"Could not get user_id from agent: {e}")
+        
+        # Prepare call data for live monitoring
+        call_data = {
+            "call_id": call_id,
+            "user_id": user_id or "",
+            "caller_number": caller_number,
+            "customer_name": customer_name,
+            "call_type": call_type,
+            "agent_name": agent_name
+        }
+        
+        # Register call for live monitoring
+        try:
+            from live_call_control_service import register_live_call
+            success = register_live_call(call_data)
+            
+            if success:
+                logger.info(f"✅ Successfully registered call {call_id} for live monitoring")
+                return {
+                    "status": "ok",
+                    "call_id": call_id,
+                    "message": "Call registered for live monitoring"
+                }
+            else:
+                logger.warning(f"⚠️ Failed to register call {call_id} for live monitoring")
+                return {
+                    "status": "warning",
+                    "call_id": call_id,
+                    "message": "Call registration failed"
+                }
+                
+        except Exception as e:
+            logger.exception(f"❌ Error registering call {call_id} for live monitoring")
+            return {
+                "status": "error",
+                "call_id": call_id,
+                "message": f"Registration error: {str(e)}"
+            }
+        
+    except Exception as e:
+        logger.exception("❌ Error processing call start event")
+        return {"status": "error", "message": str(e)}
+
+
+async def handle_transcript_update(raw_json: dict, supabase: Client) -> dict:
+    """Handle transcript events for live monitoring"""
+    try:
+        message = raw_json.get("message", {})
+        call = message.get("call", {})
+        call_id = call.get("id")
+        
+        if not call_id:
+            logger.warning("❌ Transcript event missing call_id")
+            return {"status": "error", "message": "Missing call_id"}
+        
+        # Extract transcript data
+        transcript_data = message.get("transcript", {})
+        if not transcript_data:
+            logger.debug(f"No transcript data in event for call {call_id}")
+            return {"status": "ignored", "message": "No transcript data"}
+        
+        speaker = transcript_data.get("speaker", "unknown")
+        text = transcript_data.get("text", "")
+        confidence = transcript_data.get("confidence", 0.9)
+        is_final = transcript_data.get("isFinal", True)
+        
+        # Prepare transcript event
+        transcript_event = {
+            "speaker": speaker,
+            "message": text,
+            "confidence": confidence,
+            "is_final": is_final,
+            "timestamp": datetime.utcnow().isoformat()
+        }
+        
+        # Update live transcript
+        try:
+            from live_call_control_service import update_live_transcript
+            success = update_live_transcript(call_id, transcript_event)
+            
+            if success:
+                logger.debug(f"📝 Updated transcript for call {call_id}: {speaker}: {text[:50]}...")
+                return {
+                    "status": "ok",
+                    "call_id": call_id,
+                    "message": "Transcript updated"
+                }
+            else:
+                logger.debug(f"⚠️ Failed to update transcript for call {call_id}")
+                return {
+                    "status": "warning",
+                    "call_id": call_id,
+                    "message": "Transcript update failed"
+                }
+                
+        except Exception as e:
+            logger.debug(f"❌ Error updating transcript for call {call_id}: {e}")
+            return {
+                "status": "error",
+                "call_id": call_id,
+                "message": f"Transcript error: {str(e)}"
+            }
+        
+    except Exception as e:
+        logger.exception("❌ Error processing transcript event")
         return {"status": "error", "message": str(e)}

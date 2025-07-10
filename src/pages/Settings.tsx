@@ -1,5 +1,10 @@
 import React from 'react';
 import { Save } from 'lucide-react';
+import { HubSpotIntegration } from '../components/HubSpotIntegration';
+import { CalendarIntegration } from '../components/CalendarIntegration';
+import { KnowledgeBase } from '../components/KnowledgeBase';
+import { LiveCallControl } from '../components/LiveCallControl';
+import { HumanTransfer } from '../components/HumanTransfer';
 
 export function Settings() {
   return (
@@ -83,6 +88,41 @@ export function Settings() {
                 </label>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* HubSpot CRM Integration */}
+        <div className="bg-white shadow rounded-lg">
+          <div className="px-4 py-5 sm:p-6">
+            <HubSpotIntegration />
+          </div>
+        </div>
+
+        {/* Google Calendar Integration */}
+        <div className="bg-white shadow rounded-lg">
+          <div className="px-4 py-5 sm:p-6">
+            <CalendarIntegration />
+          </div>
+        </div>
+
+        {/* AI Knowledge Base */}
+        <div className="bg-white shadow rounded-lg">
+          <div className="px-4 py-5 sm:p-6">
+            <KnowledgeBase />
+          </div>
+        </div>
+
+        {/* Live Call Control Panel */}
+        <div className="bg-white shadow rounded-lg">
+          <div className="px-4 py-5 sm:p-6">
+            <LiveCallControl />
+          </div>
+        </div>
+
+        {/* Human Agent Transfer */}
+        <div className="bg-white shadow rounded-lg">
+          <div className="px-4 py-5 sm:p-6">
+            <HumanTransfer />
           </div>
         </div>
 

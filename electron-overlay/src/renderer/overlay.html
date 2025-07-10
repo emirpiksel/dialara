@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialara Agent Assist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="overlay-container">
+        <!-- Header -->
+        <div id="header">
+            <div id="drag-handle" class="drag-handle">
+                <span class="logo">📞 Dialara AI</span>
+            </div>
+            <div class="header-controls">
+                <button id="minimize-btn" class="control-btn" title="Minimize">
+                    <svg width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 6h8" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button id="close-btn" class="control-btn" title="Close">
+                    <svg width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M9 3L3 9M3 3l6 6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Status Bar -->
+        <div id="status-bar">
+            <div class="status-item">
+                <span id="connection-status" class="status-indicator disconnected">●</span>
+                <span>CRM Connected</span>
+            </div>
+            <div class="status-item">
+                <span id="ai-status" class="status-indicator active">●</span>
+                <span>AI Ready</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="main-content">
+            <!-- Current Call Context -->
+            <div id="call-context" class="section">
+                <h3>Current Call</h3>
+                <div id="call-info">
+                    <div class="call-detail">
+                        <span class="label">Contact:</span>
+                        <span id="contact-name">No active call</span>
+                    </div>
+                    <div class="call-detail">
+                        <span class="label">Phone:</span>
+                        <span id="contact-phone">-</span>
+                    </div>
+                    <div class="call-detail">
+                        <span class="label">Duration:</span>
+                        <span id="call-duration">-</span>
+                    </div>
+                    <div class="call-detail">
+                        <span class="label">Status:</span>
+                        <span id="lead-status">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Suggestions -->
+            <div id="suggestions-section" class="section">
+                <div class="section-header">
+                    <h3>AI Suggestions</h3>
+                    <button id="refresh-suggestions" class="action-btn" title="Refresh suggestions">
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                            <path d="M8 2v4l3-3-3-3zM2 8c0 3.31 2.69 6 6 6s6-2.69 6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="suggestions-content">
+                    <div class="suggestion-card" id="loading-suggestions">
+                        <div class="loading-spinner"></div>
+                        <p>Generating suggestions...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objection Handling -->
+            <div id="objections-section" class="section">
+                <div class="section-header">
+                    <h3>Objection Handling</h3>
+                    <button id="refresh-objections" class="action-btn" title="Refresh objections">
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                            <path d="M8 2v4l3-3-3-3zM2 8c0 3.31 2.69 6 6 6s6-2.69 6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="objections-content">
+                    <div class="objection-card">
+                        <div class="objection-type">Common Objections</div>
+                        <div class="objection-responses">
+                            <div class="response-item">
+                                <strong>Price:</strong> Focus on ROI and value proposition
+                            </div>
+                            <div class="response-item">
+                                <strong>Timing:</strong> Emphasize cost of delay
+                            </div>
+                            <div class="response-item">
+                                <strong>Authority:</strong> Identify decision makers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call Checklist -->
+            <div id="checklist-section" class="section">
+                <div class="section-header">
+                    <h3>Call Checklist</h3>
+                    <button id="reset-checklist" class="action-btn" title="Reset checklist">
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                            <path d="M8 2v4l3-3-3-3zM2 8c0 3.31 2.69 6 6 6s6-2.69 6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="checklist-content">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-intro" class="checklist-checkbox">
+                        <label for="check-intro">Proper introduction</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-qualify" class="checklist-checkbox">
+                        <label for="check-qualify">Qualify budget & authority</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-pain" class="checklist-checkbox">
+                        <label for="check-pain">Identify pain points</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-demo" class="checklist-checkbox">
+                        <label for="check-demo">Present solution</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-close" class="checklist-checkbox">
+                        <label for="check-close">Attempt to close</label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check-followup" class="checklist-checkbox">
+                        <label for="check-followup">Schedule follow-up</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <div class="footer-shortcuts">
+                <span class="shortcut">Ctrl+Shift+H: Toggle</span>
+                <span class="shortcut">Ctrl+Shift+S: Refresh</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="overlay.js"></script>
+</body>
+</html>

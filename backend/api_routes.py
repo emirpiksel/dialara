@@ -986,16 +986,412 @@ async def handle_health_check():
     """Handle GET /health endpoint"""
     return {"status": "healthy", "timestamp": datetime.utcnow().isoformat()}
 
+async def handle_import_leads(data: LeadImportRequest):
+    """Handle POST /api/import-leads endpoint"""
+    try:
+        logger.info(f"📥 Importing {len(data.leads)} leads for user {data.user_id}")
+        
+        # Validate user exists and has proper permissions
+        user = get_user_by_id(data.user_id)
+        if not user:
+            raise HTTPException(status_code=404, detail="User not found")
+        
+        # Check consent confirmation
+        if not data.consent_confirmed:
+            raise HTTPException(status_code=400, detail="Consent confirmation required for lead import")
+        
+        # Validate and prepare leads data
+        validated_leads = []
+        errors = []
+        
+        for i, lead in enumerate(data.leads):
+            try:
+                # Validate required fields
+                if not lead.get('clinic_name') or not lead.get('full_name') or not lead.get('phone_number'):
+                    errors.append(f"Row {i+1}: Missing required fields (clinic_name, full_name, phone_number)")
+                    continue
+                
+                # Prepare lead data with consent tracking
+                lead_data = {
+                    "clinic_name": str(lead['clinic_name']).strip(),
+                    "full_name": str(lead['full_name']).strip(),
+                    "phone_number": str(lead['phone_number']).strip(),
+                    "email": str(lead.get('email', '')).strip() if lead.get('email') else None,
+                    "source": str(lead.get('source', 'CSV Import')).strip(),
+                    "notes": str(lead.get('notes', '')).strip() if lead.get('notes') else None,
+                    "status": str(lead.get('status', 'new')).strip(),
+                    "user_id": data.user_id,
+                    "call_status": "pending",
+                    # Compliance tracking
+                    "consent_confirmed": data.consent_confirmed,
+                    "consent_date": datetime.utcnow().isoformat(),
+                    "data_source": "csv_import",
+                    "gdpr_compliant": True,
+                    "kvkk_compliant": True
+                }
+                
+                validated_leads.append(lead_data)
+                
+            except Exception as e:
+                errors.append(f"Row {i+1}: {str(e)}")
+        
+        if not validated_leads:
+            raise HTTPException(status_code=400, detail="No valid leads to import")
+        
+        # Insert leads in bulk
+        inserted_leads = insert_leads_bulk(validated_leads)
+        
+        logger.info(f"✅ Successfully imported {len(inserted_leads)} leads for user {data.user_id}")
+        
+        return {
+            "status": "success",
+            "imported_count": len(inserted_leads),
+            "total_submitted": len(data.leads),
+            "errors": errors,
+            "leads": inserted_leads
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.exception("❌ Error importing leads")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_get_leads(user_id: str = None):
+    """Handle GET /api/leads endpoint"""
+    try:
+        logger.info(f"📥 Fetching leads for user: {user_id}")
+        
+        leads = get_leads(user_id)
+        
+        logger.info(f"✅ Found {len(leads)} leads")
+        return {
+            "status": "success",
+            "count": len(leads),
+            "leads": leads
+        }
+        
+    except Exception as e:
+        logger.exception("❌ Error fetching leads")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_hubspot_oauth_callback(code: str, user_id: str):
+    """Handle HubSpot OAuth callback"""
+    try:
+        from hubspot_service import save_hubspot_credentials
+        import requests
+        
+        # Exchange code for tokens
+        token_url = "https://api.hubapi.com/oauth/v1/token"
+        
+        # Note: In production, you'd need to register your app with HubSpot
+        # and get proper client_id and client_secret
+        client_id = "your_hubspot_client_id"  # This would come from config
+        client_secret = "your_hubspot_client_secret"  # This would come from config
+        redirect_uri = "https://yourapp.com/api/hubspot/callback"  # Your callback URL
+        
+        data = {
+            "grant_type": "authorization_code",
+            "client_id": client_id,
+            "client_secret": client_secret,
+            "redirect_uri": redirect_uri,
+            "code": code
+        }
+        
+        response = requests.post(token_url, data=data)
+        response.raise_for_status()
+        token_data = response.json()
+        
+        # Save credentials
+        success = save_hubspot_credentials(user_id, token_data)
+        
+        if success:
+            return {
+                "status": "success",
+                "message": "HubSpot connected successfully"
+            }
+        else:
+            raise HTTPException(status_code=500, detail="Failed to save credentials")
+            
+    except Exception as e:
+        logger.exception("Error in HubSpot OAuth callback")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_hubspot_sync_contacts(user_id: str):
+    """Handle syncing HubSpot contacts to Dialara"""
+    try:
+        from hubspot_service import HubSpotSync
+        
+        sync = HubSpotSync(user_id)
+        result = sync.sync_contacts_to_dialara()
+        
+        return result
+        
+    except Exception as e:
+        logger.exception("Error syncing HubSpot contacts")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_hubspot_sync_status(user_id: str):
+    """Handle getting HubSpot sync status"""
+    try:
+        from hubspot_service import get_hubspot_sync_status
+        
+        status = get_hubspot_sync_status(user_id)
+        return status
+        
+    except Exception as e:
+        logger.exception("Error getting HubSpot sync status")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_hubspot_disconnect(user_id: str):
+    """Handle disconnecting HubSpot integration"""
+    try:
+        # Remove HubSpot credentials
+        result = supabase.table("integrations").delete().eq("user_id", user_id).eq("provider", "hubspot").execute()
+        
+        return {
+            "status": "success",
+            "message": "HubSpot disconnected successfully"
+        }
+        
+    except Exception as e:
+        logger.exception("Error disconnecting HubSpot")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_calendar_oauth_callback(code: str, user_id: str):
+    """Handle Google Calendar OAuth callback"""
+    try:
+        from calendar_service import save_calendar_credentials
+        import requests
+        
+        # Exchange code for tokens
+        token_url = "https://oauth2.googleapis.com/token"
+        
+        # Note: In production, you'd need proper client_id and client_secret
+        client_id = "your_google_client_id"  # This would come from config
+        client_secret = "your_google_client_secret"  # This would come from config
+        redirect_uri = "https://yourapp.com/api/calendar/callback"  # Your callback URL
+        
+        data = {
+            "grant_type": "authorization_code",
+            "client_id": client_id,
+            "client_secret": client_secret,
+            "redirect_uri": redirect_uri,
+            "code": code
+        }
+        
+        response = requests.post(token_url, data=data)
+        response.raise_for_status()
+        token_data = response.json()
+        
+        # Save credentials
+        success = save_calendar_credentials(user_id, token_data)
+        
+        if success:
+            return {
+                "status": "success",
+                "message": "Google Calendar connected successfully"
+            }
+        else:
+            raise HTTPException(status_code=500, detail="Failed to save credentials")
+            
+    except Exception as e:
+        logger.exception("Error in Google Calendar OAuth callback")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_calendar_status(user_id: str):
+    """Handle getting Google Calendar status"""
+    try:
+        from calendar_service import get_calendar_status
+        
+        status = get_calendar_status(user_id)
+        return status
+        
+    except Exception as e:
+        logger.exception("Error getting calendar status")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_calendar_disconnect(user_id: str):
+    """Handle disconnecting Google Calendar integration"""
+    try:
+        # Remove calendar credentials
+        result = supabase.table("integrations").delete().eq("user_id", user_id).eq("provider", "google_calendar").execute()
+        
+        return {
+            "status": "success",
+            "message": "Google Calendar disconnected successfully"
+        }
+        
+    except Exception as e:
+        logger.exception("Error disconnecting calendar")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_calendar_available_slots(data: dict):
+    """Handle finding available calendar slots"""
+    try:
+        from calendar_service import ai_find_available_times
+        
+        user_id = data.get("user_id")
+        start_date = data.get("start_date")
+        duration = data.get("duration", "60")
+        
+        if not user_id or not start_date:
+            raise HTTPException(status_code=400, detail="user_id and start_date are required")
+        
+        result = ai_find_available_times(user_id, start_date, duration)
+        return result
+        
+    except Exception as e:
+        logger.exception("Error finding available slots")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_calendar_schedule_meeting(data: dict):
+    """Handle scheduling a meeting"""
+    try:
+        from calendar_service import ai_schedule_meeting
+        
+        user_id = data.get("user_id")
+        title = data.get("title")
+        start_time = data.get("start_time")
+        duration = data.get("duration", "60")
+        attendee_email = data.get("attendee_email", "")
+        description = data.get("description", "")
+        
+        if not user_id or not title or not start_time:
+            raise HTTPException(status_code=400, detail="user_id, title, and start_time are required")
+        
+        result = ai_schedule_meeting(user_id, title, start_time, duration, attendee_email, description)
+        return result
+        
+    except Exception as e:
+        logger.exception("Error scheduling meeting")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_calendar_next_available(data: dict):
+    """Handle getting next available time slot"""
+    try:
+        from calendar_service import ai_get_next_available
+        
+        user_id = data.get("user_id")
+        duration = data.get("duration", "60")
+        
+        if not user_id:
+            raise HTTPException(status_code=400, detail="user_id is required")
+        
+        result = ai_get_next_available(user_id, duration)
+        return result
+        
+    except Exception as e:
+        logger.exception("Error getting next available slot")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_knowledge_upload(request):
+    """Handle knowledge base document upload"""
+    try:
+        form = await request.form()
+        file = form.get('file')
+        user_id = form.get('user_id')
+        
+        if not file or not user_id:
+            raise HTTPException(status_code=400, detail="File and user_id are required")
+        
+        # Read file content
+        file_content = await file.read()
+        filename = file.filename
+        file_type = file.content_type
+        
+        # Process document
+        from knowledge_base_service import KnowledgeBase
+        kb = KnowledgeBase(user_id)
+        result = kb.upload_document(file_content, filename, file_type)
+        
+        return result
+        
+    except Exception as e:
+        logger.exception("Error uploading document")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_knowledge_search(data: dict):
+    """Handle knowledge base search"""
+    try:
+        from knowledge_base_service import KnowledgeBase
+        
+        user_id = data.get("user_id")
+        query = data.get("query")
+        max_results = data.get("max_results", 5)
+        
+        if not user_id or not query:
+            raise HTTPException(status_code=400, detail="user_id and query are required")
+        
+        kb = KnowledgeBase(user_id)
+        results = kb.search_knowledge(query, max_results)
+        
+        return {
+            "status": "success",
+            "results": results,
+            "total_found": len(results)
+        }
+        
+    except Exception as e:
+        logger.exception("Error searching knowledge base")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_knowledge_documents(user_id: str):
+    """Handle getting user documents"""
+    try:
+        from knowledge_base_service import KnowledgeBase
+        
+        kb = KnowledgeBase(user_id)
+        documents = kb.get_user_documents()
+        
+        return {
+            "status": "success",
+            "documents": documents,
+            "total_count": len(documents)
+        }
+        
+    except Exception as e:
+        logger.exception("Error getting user documents")
+        raise HTTPException(status_code=500, detail=str(e))
+
+async def handle_knowledge_delete_document(document_id: str, data: dict):
+    """Handle deleting a document"""
+    try:
+        from knowledge_base_service import KnowledgeBase
+        
+        user_id = data.get("user_id")
+        if not user_id:
+            raise HTTPException(status_code=400, detail="user_id is required")
+        
+        kb = KnowledgeBase(user_id)
+        success = kb.delete_document(document_id)
+        
+        if success:
+            return {
+                "status": "success",
+                "message": "Document deleted successfully"
+            }
+        else:
+            raise HTTPException(status_code=404, detail="Document not found or could not be deleted")
+        
+    except Exception as e:
+        logger.exception("Error deleting document")
+        raise HTTPException(status_code=500, detail=str(e))
+
 async def handle_root():
     """Handle GET / endpoint"""
     return {
         "message": "Training Platform API - Enhanced with Outbound Call Support",
         "status": "running",
-        "version": "2.1.0",
+        "version": "2.3.0",
         "features": {
             "training_calls": "Enhanced scoring and feedback system",
             "outbound_calls": "Regular call logging to call_logs table",
-            "dual_webhook": "Handles both training and regular calls"
+            "dual_webhook": "Handles both training and regular calls",
+            "csv_import": "Bulk lead import with consent tracking",
+            "hubspot_integration": "Two-way CRM sync with HubSpot",
+            "calendar_integration": "AI-powered meeting scheduling with Google Calendar",
+            "knowledge_base": "AI-powered document search and reference system"
         },
         "endpoints": {
             "webhook": "/webhook",
@@ -1005,6 +1401,11 @@ async def handle_root():
             "call_logs": "/api/getCallLogs",
             "call_log_details": "/api/getCallLog/{call_id}",
             "user_stats": "/api/getUserStats/{user_id}",
+            "import_leads": "/api/import-leads",
+            "leads": "/api/leads",
+            "hubspot_integration": "/api/hubspot/*",
+            "calendar_integration": "/api/calendar/*",
+            "knowledge_base": "/api/knowledge/*",
             "health": "/health"
         }
     }

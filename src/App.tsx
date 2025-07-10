@@ -16,6 +16,7 @@ import { Profile } from "./pages/Profile";
 import ProgressPage from "./pages/training/progress";
 import LeaderboardPage from "./pages/training/leaderboard";
 import TrainingSimulator from "./pages/training/simulator";
+import { Campaigns } from "./pages/Campaigns";
 
 /* Public Pages */
 import { Homepage } from "./pages/Homepage";
@@ -77,6 +78,7 @@ function App() {
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="agents" element={<Agents />} />
               <Route path="calls" element={<Calls />} />
+              <Route path="campaigns" element={<Campaigns />} />
               <Route path="ai-assistant" element={<RealTimeAssistantPage />} />
               <Route path="leads" element={<Leads />} />
               <Route path="analytics" element={<Analytics />} />

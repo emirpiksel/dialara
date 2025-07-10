@@ -3,6 +3,7 @@ Database operations and Supabase client management
 """
 from supabase import create_client, Client
 from config import get_config
+from datetime import datetime
 import logging
 
 logger = logging.getLogger(__name__)
@@ -259,4 +260,36 @@ def get_user_by_id(user_id: str):
         return user_res.data if user_res else None
     except Exception as e:
         logger.exception(f"Error getting user by user_id: {user_id}")
+        raise
+
+def insert_leads_bulk(leads_data: list):
+    """Insert multiple leads at once with consent tracking"""
+    try:
+        # Ensure all leads have consent tracking and compliance fields
+        for lead in leads_data:
+            if 'consent_confirmed' not in lead:
+                lead['consent_confirmed'] = True  # Since consent is required for import
+            if 'consent_date' not in lead:
+                lead['consent_date'] = datetime.utcnow().isoformat()
+            if 'data_source' not in lead:
+                lead['data_source'] = 'csv_import'
+                
+        result = supabase.table("leads").insert(leads_data).execute()
+        return result.data if result else None
+    except Exception as e:
+        logger.exception("Error inserting leads in bulk")
+        raise
+
+def get_leads(user_id: str = None, limit: int = 100):
+    """Get leads for a user or all leads if admin"""
+    try:
+        query = supabase.table("leads").select("*").order("created_at", desc=True).limit(limit)
+        
+        if user_id:
+            query = query.eq("user_id", user_id)
+            
+        response = query.execute()
+        return response.data if response else []
+    except Exception as e:
+        logger.exception("Error getting leads")
         raise

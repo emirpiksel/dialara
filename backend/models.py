@@ -30,3 +30,8 @@ class UpdateCallIdRequest(BaseModel):
 
 class MigrationRequest(BaseModel):
     confirm: bool = False
+
+class LeadImportRequest(BaseModel):
+    leads: list
+    user_id: str
+    consent_confirmed: bool = False

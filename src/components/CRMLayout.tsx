@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import { ModeSwitcher } from './ModeSwitcher';
+import { LanguageSelector } from './LanguageSelector';
 import {
   Home,
   Notebook as Robot,
@@ -10,6 +11,7 @@ import {
   Phone,
   Users,
   Bot,
+  Megaphone,
 } from "lucide-react";
 import { useAuthStore } from "../store/auth";
 
@@ -32,7 +34,10 @@ export function CRMLayout() {
             <h1 className="text-xl font-bold text-gray-900 truncate">
               {fullName ? `Welcome, ${fullName}` : "Welcome"}
             </h1>
-            <ModeSwitcher />
+            <div className="flex items-center justify-between space-x-2">
+              <ModeSwitcher />
+              <LanguageSelector className="ml-auto" />
+            </div>
           </div>
 
           {/* Sidebar Navigation */}
@@ -40,6 +45,7 @@ export function CRMLayout() {
             <NavItem to="/dashboard" icon={<Home />} label="Dashboard" />
             <NavItem to="/agents" icon={<Robot />} label="Agents" />
             <NavItem to="/calls" icon={<Phone />} label="Calls" />
+            <NavItem to="/campaigns" icon={<Megaphone />} label="Campaigns" />
             <NavItem to="/ai-assistant" icon={<Bot />} label="AI Assistant" />
             <NavItem to="/leads" icon={<Users />} label="Leads" />
             <NavItem to="/analytics" icon={<BarChart2 />} label="Analytics" />
