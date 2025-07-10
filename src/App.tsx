@@ -8,6 +8,7 @@ import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Dashboard } from "./pages/Dashboard";
 import { Agents } from "./pages/Agents";
 import { Calls } from "./pages/Calls"; // Keep this for general calls
+import RealTimeAssistantPage from "./pages/RealTimeAssistant";
 import { Leads } from "./pages/Leads";
 import { Analytics } from "./pages/Analytics";
 import { Settings } from "./pages/Settings";
@@ -76,6 +77,7 @@ function App() {
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="agents" element={<Agents />} />
               <Route path="calls" element={<Calls />} />
+              <Route path="ai-assistant" element={<RealTimeAssistantPage />} />
               <Route path="leads" element={<Leads />} />
               <Route path="analytics" element={<Analytics />} />
               <Route path="settings" element={<Settings />} />

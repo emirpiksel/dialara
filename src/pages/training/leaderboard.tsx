@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Users, Flame, ChevronUp, ChevronDown, Star, Trophy, TrendingUp, Phone } from "lucide-react";
+import { Users, Flame, ChevronUp, ChevronDown, Star, Trophy, TrendingUp, Phone, Award } from "lucide-react";
 import { useAuthStore } from "../../store/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -12,13 +12,18 @@ interface LeaderboardEntry {
   total_sessions: number;
   passed_sessions: number;
   pass_rate: number;
-  sentiment_breakdown: {
+  sentiment_breakdown?: {
     positive: number;
     neutral: number;
     negative: number;
   };
   last_session: string | null;
   rank: number;
+  current_rank?: {
+    name: string;
+    xp_range: [number, number];
+  };
+  badges_count?: number;
 }
 
 const getRankColor = (rank: number) => {
@@ -39,19 +44,29 @@ const LeaderboardPage = () => {
   useEffect(() => {
     const fetchLeaderboard = async () => {
       try {
-        const response = await fetch("/api/leaderboard", {
-          headers: {
-            "X-User-ID": userId || "",
-            "X-Is-Admin": isAdmin ? "true" : "false",
-          },
-        });
-
+        // Try enhanced leaderboard first, fallback to regular leaderboard
+        const response = await fetch("/api/gamification/leaderboard");
+        
         if (!response.ok) {
-          throw new Error("Failed to fetch leaderboard");
+          // Fallback to regular leaderboard
+          const fallbackResponse = await fetch("/api/leaderboard", {
+            headers: {
+              "X-User-ID": userId || "",
+              "X-Is-Admin": isAdmin ? "true" : "false",
+            },
+          });
+          
+          if (!fallbackResponse.ok) {
+            throw new Error("Failed to fetch leaderboard");
+          }
+          
+          const fallbackData = await fallbackResponse.json();
+          setLeaders(Array.isArray(fallbackData) ? fallbackData : []);
+          return;
         }
 
         const data = await response.json();
-        setLeaders(data);
+        setLeaders(Array.isArray(data) ? data : []);
       } catch (err) {
         console.error("❌ Failed to fetch leaderboard:", err);
         setError("Failed to load leaderboard data");
@@ -66,11 +81,11 @@ const LeaderboardPage = () => {
   const sortedLeaders = [...leaders].sort((a, b) => {
     switch (sortBy) {
       case 'score':
-        return b.average_score - a.average_score;
+        return (b.average_score || 0) - (a.average_score || 0);
       case 'pass_rate':
-        return b.pass_rate - a.pass_rate;
+        return (b.pass_rate || 0) - (a.pass_rate || 0);
       default:
-        return b.total_xp - a.total_xp;
+        return (b.total_xp || 0) - (a.total_xp || 0);
     }
   });
 
@@ -154,17 +169,18 @@ const LeaderboardPage = () => {
                 <th className="px-6 py-3 text-left text-sm font-semibold text-gray-600">Sessions</th>
                 <th className="px-6 py-3 text-left text-sm font-semibold text-gray-600">Pass Rate</th>
                 <th className="px-6 py-3 text-left text-sm font-semibold text-gray-600">Sentiment</th>
+                <th className="px-6 py-3 text-left text-sm font-semibold text-gray-600">Badges</th>
                 <th className="px-6 py-3 text-left text-sm font-semibold text-gray-600">Actions</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {loading ? (
                 <tr>
-                  <td colSpan={8} className="text-center p-6 text-gray-500 text-sm">Loading leaderboard...</td>
+                  <td colSpan={9} className="text-center p-6 text-gray-500 text-sm">Loading leaderboard...</td>
                 </tr>
               ) : sortedLeaders.length === 0 ? (
                 <tr>
-                  <td colSpan={8} className="text-center p-6 text-gray-500 text-sm">No training data available yet.</td>
+                  <td colSpan={9} className="text-center p-6 text-gray-500 text-sm">No training data available yet.</td>
                 </tr>
               ) : (
                 sortedLeaders.map((entry, index) => (
@@ -181,35 +197,47 @@ const LeaderboardPage = () => {
                       <div>
                         <div className="font-medium text-gray-800">{entry.full_name || 'Unknown'}</div>
                         <div className="text-gray-500 text-xs">{entry.email}</div>
+                        {entry.current_rank && (
+                          <div className="text-xs text-purple-600 mt-1 flex items-center">
+                            <Trophy className="w-3 h-3 mr-1" />
+                            {entry.current_rank.name}
+                          </div>
+                        )}
                       </div>
                     </td>
-                    <td className="px-6 py-4 text-sm font-semibold text-blue-700">{entry.total_xp} XP</td>
+                    <td className="px-6 py-4 text-sm font-semibold text-blue-700">{entry.total_xp || 0} XP</td>
                     <td className="px-6 py-4 text-sm">
                       <div className="flex items-center">
                         <Star className="w-4 h-4 text-yellow-500 mr-1" />
-                        {entry.average_score.toFixed(1)}
+                        {(entry.average_score || 0).toFixed(1)}
                       </div>
                     </td>
                     <td className="px-6 py-4 text-sm">
                       <div className="flex items-center">
                         <Phone className="w-4 h-4 text-gray-400 mr-1" />
-                        {entry.total_sessions}
+                        {entry.total_sessions || 0}
                       </div>
                     </td>
                     <td className="px-6 py-4 text-sm">
                       <div className={`inline-flex items-center px-2 py-1 rounded-full text-xs font-medium ${
-                        entry.pass_rate >= 80 ? 'bg-green-100 text-green-800' :
-                        entry.pass_rate >= 60 ? 'bg-yellow-100 text-yellow-800' :
+                        (entry.pass_rate || 0) >= 80 ? 'bg-green-100 text-green-800' :
+                        (entry.pass_rate || 0) >= 60 ? 'bg-yellow-100 text-yellow-800' :
                         'bg-red-100 text-red-800'
                       }`}>
-                        {entry.pass_rate}%
+                        {Math.round(entry.pass_rate || 0)}%
                       </div>
                     </td>
                     <td className="px-6 py-4 text-sm">
                       <div className="flex space-x-1">
-                        <div className="w-3 h-3 bg-green-500 rounded-full" title={`Positive: ${entry.sentiment_breakdown.positive}`}></div>
-                        <div className="w-3 h-3 bg-yellow-500 rounded-full" title={`Neutral: ${entry.sentiment_breakdown.neutral}`}></div>
-                        <div className="w-3 h-3 bg-red-500 rounded-full" title={`Negative: ${entry.sentiment_breakdown.negative}`}></div>
+                        <div className="w-3 h-3 bg-green-500 rounded-full" title={`Positive: ${entry.sentiment_breakdown?.positive || 0}`}></div>
+                        <div className="w-3 h-3 bg-yellow-500 rounded-full" title={`Neutral: ${entry.sentiment_breakdown?.neutral || 0}`}></div>
+                        <div className="w-3 h-3 bg-red-500 rounded-full" title={`Negative: ${entry.sentiment_breakdown?.negative || 0}`}></div>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 text-sm">
+                      <div className="flex items-center">
+                        <Award className="w-4 h-4 text-yellow-500 mr-1" />
+                        <span className="font-medium">{entry.badges_count || 0}</span>
                       </div>
                     </td>
                     <td className="px-6 py-4 text-sm">

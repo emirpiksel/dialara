@@ -9,6 +9,7 @@ import {
   LogOut,
   Phone,
   Users,
+  Bot,
 } from "lucide-react";
 import { useAuthStore } from "../store/auth";
 
@@ -39,6 +40,7 @@ export function CRMLayout() {
             <NavItem to="/dashboard" icon={<Home />} label="Dashboard" />
             <NavItem to="/agents" icon={<Robot />} label="Agents" />
             <NavItem to="/calls" icon={<Phone />} label="Calls" />
+            <NavItem to="/ai-assistant" icon={<Bot />} label="AI Assistant" />
             <NavItem to="/leads" icon={<Users />} label="Leads" />
             <NavItem to="/analytics" icon={<BarChart2 />} label="Analytics" />
             {isAuthenticated && isAdmin && (

@@ -22,8 +22,8 @@ npm run preview      # Preview production build
 
 ### Backend (FastAPI)
 ```bash
-# Install Python dependencies
-pip install -r requirements.txt
+# Install Python dependencies (if requirements.txt exists)
+pip install fastapi uvicorn python-dotenv requests textblob supabase
 
 # Run FastAPI server
 python backend/main.py
@@ -36,11 +36,7 @@ uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 # Start webhook server using npm script (uses localtunnel)
 npm run webhook
 
-# Alternative: Start webhook server directly (Express.js)
-cd server
-node server.js
-
-# Start outbound call scheduler
+# Alternative: Start outbound call scheduler
 cd server
 node scheduleOutboundCalls.cjs
 
@@ -88,11 +84,11 @@ ngrok http http://localhost:8000
 - `training.ts` - Training progress and sessions
 
 ### Key Dependencies
-- **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, Zustand, React Router, Recharts/Chart.js
-- **Backend**: FastAPI, Uvicorn, TextBlob (sentiment analysis), Requests, python-dotenv
+- **Frontend**: React 18, TypeScript, Vite, Tailwind CSS, Zustand, React Router, Recharts/Chart.js, Vapi.ai Web SDK
+- **Backend**: FastAPI, Uvicorn, TextBlob (sentiment analysis), Requests, python-dotenv, Supabase Python client
 - **Database**: Supabase (PostgreSQL)
 - **Voice**: Vapi.ai SDK, Twilio integration
-- **Development**: ESLint, Autoprefixer, PostCSS
+- **Development**: ESLint, Autoprefixer, PostCSS, Localtunnel (for webhook development)
 
 ## Configuration
 
@@ -175,7 +171,9 @@ No specific test framework is configured. Check with the team for preferred test
 ### Common Development Workflows
 
 #### Setting up development environment
-1. Install dependencies: `npm install` and `pip install -r requirements.txt`
+1. Install dependencies: 
+   - Frontend: `npm install`
+   - Backend: `pip install fastapi uvicorn python-dotenv requests textblob supabase`
 2. Set up environment variables (see Configuration section)
 3. Start backend: `python backend/main.py`
 4. Start frontend: `npm run dev`
@@ -201,6 +199,13 @@ No specific test framework is configured. Check with the team for preferred test
 - Verify call_id exists in `training_sessions` for training calls
 - Monitor backend logs for webhook processing errors
 - Use `/api/call-status/{call_id}` endpoint to check processing status
+
+#### Common troubleshooting steps
+1. **Vite host configuration**: Ensure `vite.config.ts` host is set to `127.0.0.1` (not `localhost`)
+2. **Backend not starting**: Check if all Python dependencies are installed
+3. **Webhook not receiving data**: Verify the public URL is correctly configured in Vapi dashboard
+4. **Database connection issues**: Ensure Supabase credentials are correct in `.env` file
+5. **Training mode not working**: Check if `training_sessions` table exists and has correct schema
 
 ## SUPABASE SCHEMAS AND INFORMATION ABOUT TABLES: Below is the full database schema including columns, foreign key relationships, and indexes.
 ## Supabase Table Structures
