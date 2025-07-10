@@ -44,7 +44,13 @@ async function testOverlayConnection() {
     console.log('1. Testing WebSocket connection...');
     const ws = new WebSocket('ws://localhost:8765');
 
+    const openTimeout = setTimeout(() => {
+      console.error('❌ WebSocket connection timed out');
+      process.exit(1);
+    }, 5000);
+
     ws.on('open', () => {
+      clearTimeout(openTimeout);
       console.log('✅ WebSocket connected successfully');
       
       // Test sending data
