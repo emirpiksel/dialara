@@ -150,7 +150,7 @@ The `/webhook` endpoint automatically:
 - **Outbound calls**: Automated calling through Vapi integration & Twilio
 - **Inbound calls**: Using phone numbers from Vapi integration
 - **Lead management**: Track and manage prospect information
-- **Call logging**: Comprehensive call history and analytics. Seperate tables for regular calls and training calls
+- **Call logging**: Comprehensive call history and analytics. Separate tables for regular calls and training calls
 - **Real-time updates**: WebSocket-like updates through Supabase
 
 ### Agent Assist Overlay System
