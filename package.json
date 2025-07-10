@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "webhook": "node server/webhook.js",
+    "webhook": "node server/server.js",
     "setup-overlay": "node setup-overlay.js",
     "test-overlay": "node test-overlay.js",
     "overlay:dev": "cd electron-overlay && npm run dev",
