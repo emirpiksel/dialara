@@ -113,7 +113,8 @@ function setupGlobalShortcuts() {
 
 // WebSocket server for communication with main Dialara app
 function createWebSocketServer() {
-  wsServer = new WebSocket.Server({ port: 8765 });
+  const port = parseInt(process.env.OVERLAY_PORT, 10) || 8765;
+  wsServer = new WebSocket.Server({ port });
   
   wsServer.on('connection', (ws) => {
     console.log('Dialara main app connected to overlay');
@@ -137,7 +138,7 @@ function createWebSocketServer() {
     });
   });
   
-  console.log('WebSocket server started on port 8765');
+  console.log(`WebSocket server started on port ${port}`);
 }
 
 // IPC handlers
