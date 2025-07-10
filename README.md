@@ -6,6 +6,7 @@
    ```bash
    npm run webhook
    ```
+   This command runs `node server/server.js`.
 
 2. When the server starts, it will show you a public URL like:
    ```
